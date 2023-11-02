@@ -149,7 +149,9 @@
     sh:nodeKind sh:IRI ;
     dash:editor dash:URIEditor ;
     dash:viewer dash:LabelViewer ;
-  ], [
+  ].
+:DataShape a sh:NodeShape ;
+  sh:property [
     sh:path dc:date ;
     sh:name "date" ;
     sh:datatype xsd:dateTime ;
