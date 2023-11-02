@@ -1,0 +1,172 @@
+@prefix :         <http://fairdatapoint.org/> .
+@prefix dash:     <http://datashapes.org/dash#> .
+@prefix dcat:     <http://www.w3.org/ns/dcat#> .
+@prefix dct:      <http://purl.org/dc/terms/> .
+@prefix sh:       <http://www.w3.org/ns/shacl#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix alm:      <http://purl.org/alm/meta/> .
+@prefix sdo:      <https://schema.org/> .
+@prefix freq:     <http://purl.org/cld/freq/> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/>.
+
+:ResourceShape a sh:NodeShape ;
+  sh:targetClass dcat:Resource ;
+  sh:property [
+    sh:path dct:title ;
+    sh:name "Título"@pt, "Title"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:minCount 1 ;
+    sh:maxCount  1 ;
+    dash:editor dash:TextFieldEditor ;
+  ], [
+    sh:path dct:description ;
+    sh:name "Descrição"@pt, "Description"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:maxCount 1 ;
+    dash:editor dash:TextAreaEditor ;
+  ], [
+    sh:path dct:publisher ;
+    sh:name "Editor"@pt, "Publisher"@en ;
+    sh:node :AgentShape ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    dash:editor dash:BlankNodeEditor ;
+  ], [
+    sh:path dct:creator ;
+    sh:name "Criador"@pt, "Creator"@en ;
+    sh:node :AgentShape ;
+    sh:minCount 1 ;
+    dash:editor dash:BlankNodeEditor ;
+  ], [
+    sh:path dct:modified ;
+    sh:name "Última atualização"@pt, "Last Updated"@en ;
+    sh:datatype xsd:dateTime ;
+    sh:maxCount 1 ;
+    dash:editor dash:DatePickerEditor ;
+    dash:viewer dash:LiteralViewer ;
+   ], [
+    sh:path dct:hasVersion ;
+    sh:name "Versão"@pt, "Version"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path dct:language ;
+    sh:name "Idioma"@pt, "Language"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1 ;
+    dash:editor dash:URIEditor ;
+    dash:viewer dash:LabelViewer ;
+  ], [
+    sh:path dct:license ;
+    sh:name "Licença de uso"@pt, "License"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1 ;
+    dash:editor dash:URIEditor ;
+    dash:viewer dash:LabelViewer ;
+  ], [
+    sh:path dct:rights ;
+    sh:name "Direitos"@pt, "Rights"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:maxCount 1 ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ] .
+
+:AgentShape a sh:NodeShape ;
+  sh:targetClass foaf:Agent ;
+  sh:property [
+    sh:path foaf:name ;
+    sh:name "Nome"@pt, "Name"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:minCount 1 ;
+    sh:maxCount  1 ;
+    dash:editor dash:TextFieldEditor ;
+  ], [
+    sh:path foaf:mbox ;
+    sh:name "E-mail"@pt, "E-mail"@en ;
+    sh:nodeKind sh:Literal ;
+    dash:editor dash:TextFieldEditor ;
+    sh:maxCount 1;
+  ], [
+    sh:path foaf:homepage ;
+    sh:name "Homepage"@pt, "Homepage"@en ;
+    sh:nodeKind sh:IRI;
+    sh:maxCount 1;
+    dash:editor dash:URIEditor ;
+  ] .
+
+:DatasetShape a sh:NodeShape ;
+  sh:targetClass dcat:Dataset ;
+  sh:property [
+    sh:path alm:productGroup ;
+    sh:name "Grupo do Produto"@pt, "Product Group"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 ;
+    dash:editor dash:URIEditor ;
+    dash:viewer dash:LabelViewer ;
+  ], [
+    sh:path alm:productType ;
+    sh:name "Tipo de Produto"@pt, "Product Type"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1 ;
+    dash:editor dash:URIEditor ;
+    dash:viewer dash:LabelViewer ;
+  ], [
+    sh:path alm:theme ;
+    sh:name "Tema"@pt, "Theme"@en ;
+    sh:nodeKind sh:IRI ;
+    dash:editor dash:URIEditor ;
+    dash:viewer dash:LabelViewer ;
+  ], [
+    sh:path dct:accrualPeriodicity ;
+    sh:name "Periodicidade"@pt, "Accrual Periodicity"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:in (freq:daily freq:monthly freq:weekly freq:biweekly freq:irregular freq:continuous) ;
+    sh:minCount 1 ;
+    dash:editor dash:EnumSelectEditor ;
+    dash:viewer dash:LabelViewer ;
+  ], [
+    sh:path alm:location ;
+    sh:name "Localização"@pt, "Location"@en ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    dash:editor dash:URIEditor ;
+    dash:viewer dash:LabelViewer ;
+  ], [
+    sh:path alm:currency ;
+    sh:name "Moeda"@pt, "Currency"@en ;
+    sh:nodeKind sh:Literal ;
+    dash:editor dash:TextFieldEditor ;
+  ], [
+    sh:path alm:startDate ;
+    sh:name "Data de Início"@pt, "Start Date"@en ;
+    sh:datatype xsd:dateTime ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    dash:editor dash:DatePickerEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path alm:endDate ;
+    sh:name "Data de Término"@pt, "End Date"@en ;
+    sh:datatype xsd:dateTime ;
+    sh:maxCount 1 ;
+    dash:editor dash:DatePickerEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path alm:statisticalMethod ;
+    sh:name "Método Estatístico"@pt, "Statistical Method"@en ;
+    sh:nodeKind sh:IRI ;
+    dash:editor dash:URIEditor ;
+    dash:viewer dash:LabelViewer ;
+  ], [
+    sh:path dcat:accessURL ;
+    sh:name "URL de Acesso"@pt, "Access URL"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1 ;
+    dash:editor dash:URIEditor ;
+    dash:viewer dash:LabelViewer ;
+  ] .
