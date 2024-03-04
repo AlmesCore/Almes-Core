@@ -13,7 +13,7 @@
 :ResourceShape a sh:NodeShape ;
   sh:targetClass dcat:Resource ;
   sh:property [
-    sh:path dcterns:title ;
+    sh:path dcterms:title ;
     sh:name "Título"@pt, "Title"@en ;
     sh:nodeKind sh:Literal ;
     sh:minCount 1 ;
