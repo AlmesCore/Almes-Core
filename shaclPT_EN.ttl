@@ -1,51 +1,52 @@
 @prefix :         <http://fairdatapoint.org/> .
 @prefix dash:     <http://datashapes.org/dash#> .
 @prefix dcat:     <http://www.w3.org/ns/dcat#> .
-@prefix dct:      <http://purl.org/dc/terms/> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
 @prefix sh:       <http://www.w3.org/ns/shacl#> .
 @prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
-@prefix alm:      <http://purl.org/alm/meta/> .
-@prefix sdo:      <https://schema.org/> .
+@prefix alm:      <http://purl.org/almescore> .
+@prefix sdo:      <https://schema.org/docs/schemas.html> .
 @prefix freq:     <http://purl.org/cld/freq/> .
 @prefix foaf:     <http://xmlns.com/foaf/0.1/>.
+
 
 :ResourceShape a sh:NodeShape ;
   sh:targetClass dcat:Resource ;
   sh:property [
-    sh:path dct:title ;
+    sh:path dcterns:title ;
     sh:name "Título"@pt, "Title"@en ;
     sh:nodeKind sh:Literal ;
     sh:minCount 1 ;
     sh:maxCount  1 ;
     dash:editor dash:TextFieldEditor ;
   ], [
-    sh:path dct:description ;
+    sh:path dcterms:description ;
     sh:name "Descrição"@pt, "Description"@en ;
     sh:nodeKind sh:Literal ;
     sh:maxCount 1 ;
     dash:editor dash:TextAreaEditor ;
   ], [
-    sh:path dct:publisher ;
+    sh:path dcterms:publisher ;
     sh:name "Editor"@pt, "Publisher"@en ;
     sh:node :AgentShape ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
     dash:editor dash:BlankNodeEditor ;
   ], [
-    sh:path dct:creator ;
+    sh:path dcterms:creator ;
     sh:name "Criador"@pt, "Creator"@en ;
     sh:node :AgentShape ;
     sh:minCount 1 ;
     dash:editor dash:BlankNodeEditor ;
   ], [
-    sh:path dct:modified ;
+    sh:path dcterms:modified ;
     sh:name "Última atualização"@pt, "Last Updated"@en ;
     sh:datatype xsd:dateTime ;
     sh:maxCount 1 ;
     dash:editor dash:DatePickerEditor ;
     dash:viewer dash:LiteralViewer ;
    ], [
-    sh:path dct:hasVersion ;
+    sh:path dcterms:hasVersion ;
     sh:name "Versão"@pt, "Version"@en ;
     sh:nodeKind sh:Literal ;
     sh:minCount 1 ;
@@ -53,21 +54,21 @@
     dash:editor dash:TextFieldEditor ;
     dash:viewer dash:LiteralViewer ;
   ], [
-    sh:path dct:language ;
+    sh:path dcterms:language ;
     sh:name "Idioma"@pt, "Language"@en ;
     sh:nodeKind sh:IRI ;
     sh:maxCount 1 ;
     dash:editor dash:URIEditor ;
     dash:viewer dash:LabelViewer ;
   ], [
-    sh:path dct:license ;
+    sh:path dcterms:license ;
     sh:name "Licença de uso"@pt, "License"@en ;
     sh:nodeKind sh:IRI ;
     sh:maxCount 1 ;
     dash:editor dash:URIEditor ;
     dash:viewer dash:LabelViewer ;
   ], [
-    sh:path dct:rights ;
+    sh:path dcterms:rights ;
     sh:name "Direitos"@pt, "Rights"@en ;
     sh:nodeKind sh:Literal ;
     sh:maxCount 1 ;
@@ -121,7 +122,7 @@
     dash:editor dash:URIEditor ;
     dash:viewer dash:LabelViewer ;
   ], [
-    sh:path dct:accrualPeriodicity ;
+    sh:path dcterms:accrualPeriodicity ;
     sh:name "Periodicidade"@pt, "Accrual Periodicity"@en ;
     sh:nodeKind sh:IRI ;
     sh:in (freq:daily freq:monthly freq:weekly freq:biweekly freq:irregular freq:continuous) ;
