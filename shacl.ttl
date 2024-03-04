@@ -101,16 +101,16 @@
   sh:property [
     sh:path alm:productGroup ;
     sh:name "Grupo do Produto" ;
-    sh:nodeKind sh:IRI ;
-    sh:minCount 1 ;
-    dash:editor dash:URIEditor ;
+    sh:node :ProductGroupShape ;
+    sh:maxCount 1 ;
+    dash:editor dash:BlankNodeEditor ;
     dash:viewer dash:LabelViewer ;
   ], [
     sh:path alm:productType ;
     sh:name "Tipo do Produto" ;
-    sh:nodeKind sh:IRI ;
+    sh:node :ProductTypeShape ;
     sh:maxCount 1 ;
-    dash:editor dash:URIEditor ;
+    dash:editor dash:BlankNodeEditor ;
     dash:viewer dash:LabelViewer ;
   ], [
     sh:path sdo:referenceQuantity ;
@@ -174,3 +174,33 @@
     dash:editor dash:URIEditor ;
     dash:viewer dash:LabelViewer ;
     ] .
+    
+    :ProductTypeShape a sh:NodeShape ;
+  sh:property [
+    sh:path alm:productTypeURI ;
+    sh:name "URI" ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1 ;
+    dash:editor dash:URIEditor ;
+  ], [
+    sh:path alm:productTypeName ;
+    sh:name "Nome" ;
+    sh:nodeKind sh:Literal ;
+    sh:maxCount 1 ;
+    dash:editor dash:TextFieldEditor ;
+  ] .
+
+:ProductGroupShape a sh:NodeShape ;
+  sh:property [
+    sh:path alm:productGroupURI ;
+    sh:name "URI" ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1 ;
+    dash:editor dash:URIEditor ;
+  ], [
+    sh:path alm:productGroupName ;
+    sh:name "Nome" ;
+    sh:nodeKind sh:Literal ;
+    sh:maxCount 1 ;
+    dash:editor dash:TextFieldEditor ;
+  ] .
