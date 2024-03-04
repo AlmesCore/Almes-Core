@@ -55,8 +55,8 @@
     sh:name "Idioma";
     sh:nodeKind sh:Literal ;
     sh:maxCount 1 ;
-    dash:editor dash:URIEditor ;
-    dash:viewer dash:LabelViewer ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
   ], [
     sh:path dcterms:license ;
     sh:name "Licença";
