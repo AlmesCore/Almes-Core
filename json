@@ -1,0 +1,370 @@
+{
+  "@context": {
+    "alm": "http://purl.org/alm/meta/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "sdo": "https://schema.org/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "dcat:Resource",
+      "@type": "rdfs:Class",
+      "rdfs:label": {
+        "en": "Resource",
+        "pt-BR": "Recurso"
+      },
+      "rdfs:comment": "Resource published or curated by a single agent."
+    },
+    {
+      "@id": "dcat:Dataset",
+      "@type": "rdfs:Class",
+      "rdfs:label": {
+        "en": "Dataset",
+        "pt-BR": "Banco de dados"
+      },
+      "rdfs:comment": "A collection of data, published or curated by a single agent, and available for access or download in one or more representations."
+    },
+    {
+      "@id": "foaf:Agent",
+      "@type": "rdfs:Class",
+      "rdfs:label": {
+        "en": "Agent",
+        "pt-BR": "Agente"
+      },
+      "rdfs:comment": "An agent (eg. person, group, software or physical artifact)."
+    },
+    {
+      "@id": "dct:identifier",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "identifier",
+        "pt-BR": "identificador"
+      },
+      "rdfs:comment": "An unambiguous reference to the resource within a given context.",
+      "rdfs:domain": "dcat:Resource",
+      "rdfs:range": "xsd:anyURI"
+    },
+    {
+      "@id": "dc:title",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "title",
+        "pt-BR": "título"
+      },
+      "rdfs:comment": "A name given to the resource.",
+      "rdfs:domain": "dcat:Resource",
+      "rdfs:range": "rdfs:Literal"
+    },
+    {
+      "@id": "dct:description",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "description",
+        "pt-BR": "descrição"
+      },
+      "rdfs:comment": "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.",
+      "rdfs:domain": "dcat:Resource",
+      "rdfs:range": "rdfs:Literal"
+    },
+    {
+      "@id": "dc:publisher",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "publisher",
+        "pt-BR": "editor"
+      },
+      "rdfs:comment": "An entity responsible for making the resource available.",
+      "rdfs:domain": "dcat:Resource",
+      "rdfs:range": "foaf:Agent"
+    },
+    {
+      "@id": "dc:creator",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "creator",
+        "pt-BR": "criador"
+      },
+      "rdfs:comment": "An entity primarily responsible for making the resource.",
+      "rdfs:domain": "dcat:Resource",
+      "rdfs:range": "foaf:Agent"
+    },
+    {
+      "@id": "dct:modified",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "modified",
+        "pt-BR": "última atualização"
+      },
+      "rdfs:comment": "Date on which the resource was changed.",
+      "rdfs:domain": "dcat:Resource",
+      "rdfs:range": "xsd:date"
+    },
+    {
+      "@id": "dct:hasVersion",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "version",
+        "pt-BR": "versão"
+      },
+      "rdfs:comment": "The version indicator (name or identifier) of a resource.",
+      "rdfs:domain": "dcat:Resource",
+      "rdfs:range": "rdfs:Literal"
+    },
+    {
+      "@id": "dct:language",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "language",
+        "pt-BR": "idioma"
+      },
+      "rdfs:comment": "A language of the resource.",
+      "rdfs:domain": "dcat:Resource",
+      "rdfs:range": "rdfs:Literal"
+    },
+    {
+      "@id": "dct:license",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "license",
+        "pt-BR": "licença de uso"
+      },
+      "rdfs:comment": "A legal document giving official permission to do something with the resource.",
+      "rdfs:domain": "dcat:Resource",
+      "rdfs:range": "xsd:anyURI"
+    },
+    {
+      "@id": "dc:rights",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "rights",
+        "pt-BR": "direitos"
+      },
+      "rdfs:comment": "Information about rights held in and over the resource.",
+      "rdfs:domain": "dcat:Resource",
+      "rdfs:range": "rdfs:Literal"
+    },
+    {
+      "@id": "alm:productGroup",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "product group",
+        "pt-BR": "grupo do produto"
+      },
+      "rdfs:comment": "A ProductGroup represents a group of products resulting from agriculture or livestock activities that vary only in certain well-described ways, being aggregated according to common biological traits.",
+      "rdfs:domain": "dcat:Resource",
+      "rdfs:range": "rdfs:Literal"
+    },
+    {
+      "@id": "alm:productGroupURI",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "product group URI",
+        "pt-BR": "URI do grupo do produto"
+      },
+      "rdfs:comment": "A URI of a term from any controlled vocabulary describing a productGroup.",
+      "rdfs:domain": "dcat:Resource",
+      "rdfs:range": "xsd:anyURI"
+    },
+    {
+      "@id": "alm:productGroupName",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "product group name",
+        "pt-BR": "nome do grupo do produto"
+      },
+      "rdfs:comment": "The name of a productGroup in a controlled vocabulary.",
+      "rdfs:domain": "dcat:Resource",
+      "rdfs:range": "rdfs:Literal"
+    },
+    {
+      "@id": "alm:productType",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "product type",
+        "pt-BR": "produto"
+      },
+      "rdfs:comment": "Name of the agricultural or livestock product type targeted by the commercial operation.",
+      "rdfs:domain": "dcat:Resource",
+      "rdfs:range": "rdfs:Literal"
+    },
+    {
+      "@id": "alm:productTypeURI",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "product type URI",
+        "pt-BR": "URI do tipo de produto"
+      },
+      "rdfs:comment": "A URI of a term from any controlled vocabulary describing a productType.",
+      "rdfs:domain": "dcat:Resource",
+      "rdfs:range": "xsd:anyURI"
+    },
+    {
+      "@id": "alm:productTypeName",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "product type name",
+        "pt-BR": "nome do tipo de produto"
+      },
+      "rdfs:comment": "The name of a productType in a controlled vocabulary.",
+      "rdfs:domain": "dcat:Resource",
+      "rdfs:range": "rdfs:Literal"
+    },
+    {
+      "@id": "alm:theme",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "theme",
+        "pt-BR": "tema"
+      },
+      "rdfs:comment": "Indicates the main theme investigated in the economic statistical operation.",
+      "rdfs:domain": "dcat:Resource",
+      "rdfs:range": "rdfs:Literal"
+    },
+    {
+      "@id": "dcat:accessURL",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "access URL",
+        "pt-BR": "disponível em"
+      },
+      "rdfs:comment": "A URL of the resource that gives access to a distribution of the dataset. E.g. landing page, feed, SPARQL endpoint.",
+      "rdfs:domain": "dcat:Resource",
+      "rdfs:range": "xsd:anyURI"
+    },
+    {
+      "@id": "dct:accrualPeriodicity",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "periodicity",
+        "pt-BR": "periodicidade"
+      },
+      "rdfs:comment": "The frequency with which items are added to a collection.",
+      "rdfs:domain": "dcat:Resource",
+      "rdfs:range": "rdfs:Literal"
+    },
+    {
+      "@id": "sdo:referenceQuantity",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "reference quantity",
+        "pt-BR": "quantidade de referência"
+      },
+      "rdfs:comment": "The reference quantity for which a certain price applies, e.g. 1 EUR per 4 kWh of electricity.",
+      "rdfs:domain": "dcat:Resource",
+      "rdfs:range": "rdfs:Literal"
+    },
+    {
+      "@id": "sdo:location",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "location",
+        "pt-BR": "localização"
+      },
+      "rdfs:comment": "The location of, for example, where an event is happening, where an organization is located, or where an action takes place.",
+      "rdfs:domain": "dcat:Resource",
+      "rdfs:range": "rdfs:Literal"
+    },
+    {
+      "@id": "alm:statisticalMethod",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "statistical method",
+        "pt-BR": "método estatístico"
+      },
+      "rdfs:comment": "Summary of the methods used for the process of obtaining data.",
+      "rdfs:domain": "dcat:Resource",
+      "rdfs:range": "xsd:anyURI"
+    },
+    {
+      "@id": "alm:descriptiveStatistics",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "descriptive statistics",
+        "pt-BR": "estatística descritiva"
+      },
+      "rdfs:comment": "Summarizes and describes the main features of a dataset. When used in the context of a time series, it includes metrics such as mean, variance, and trends over time.",
+      "rdfs:domain": "dcat:Resource",
+      "rdfs:range": "rdfs:Literal"
+    },
+    {
+      "@id": "foaf:name",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "name",
+        "pt-BR": "nome"
+      },
+      "rdfs:comment": "A name for some thing.",
+      "rdfs:domain": "foaf:Agent",
+      "rdfs:range": "rdfs:Literal"
+    },
+    {
+      "@id": "foaf:homepage",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "homepage",
+        "pt-BR": "homepage"
+      },
+      "rdfs:comment": "A homepage for some thing.",
+      "rdfs:domain": "foaf:Agent",
+      "rdfs:range": "xsd:anyURI"
+    },
+    {
+      "@id": "foaf:mbox",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "e-mail",
+        "pt-BR": "e-mail"
+      },
+      "rdfs:comment": "A personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox.",
+      "rdfs:domain": "foaf:Agent",
+      "rdfs:range": "rdfs:Literal"
+    },
+    {
+      "@id": "dc:date",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "date",
+        "pt-BR": "data"
+      },
+      "rdfs:comment": "A point or period of time associated with an event in the lifecycle of the resource.",
+      "rdfs:domain": "dcat:Dataset",
+      "rdfs:range": "xsd:date"
+    },
+    {
+      "@id": "sdo:price",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "price",
+        "pt-BR": "preço"
+      },
+      "rdfs:comment": "The offer price of a product.",
+      "rdfs:domain": "dcat:Dataset",
+      "rdfs:range": "xsd:float"
+    },
+    {
+      "@id": "sdo:currency",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "currency",
+        "pt-BR": "moeda"
+      },
+      "rdfs:comment": "The currency in which the monetary amount is expressed.",
+      "rdfs:domain": "dcat:Dataset",
+      "rdfs:range": "xsd:string"
+    },
+    {
+      "@id": "alm:metadataID",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "metadata ID",
+        "pt-BR": "ID dos metadados"
+      },
+      "rdfs:comment": "The identifier of the metadata record, indicated by dct:identifier.",
+      "rdfs:domain": "dcat:Dataset",
+      "rdfs:range": "xsd:anyURI"
+    }
+  ]
+}
