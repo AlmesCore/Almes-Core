@@ -1,10 +1,11 @@
 This document contains the most up-to-date version of the Agriculture and Livestock Metadata Element Set (Almes Core), maintained by the Almes Core Data Management Group, including classes, properties, vocabulary encoding schemes, and syntax encoding schemes.
 
-Access the human-readable version of the schema: http://purl.org/alm/meta/
 
 Serializations:
-SHACL: https://github.com/Filipi-Soares/almes/blob/almesCoreSHACL/shacl.ttl
-RDF/XML: https://github.com/Filipi-Soares/almes/blob/AlmesCoreRdf/rdf.xml
+
+<a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#almes-core-reference-guide">HTML</a> | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/shacl.ttl">SHACL</a> | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/.json">JSON-LD</a> 
+
+
 
 Recommended citation: 
 
