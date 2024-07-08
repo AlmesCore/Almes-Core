@@ -1,4 +1,3 @@
-# Resource schema definition
 @prefix :         <http://fairdatapoint.org/> .
 @prefix dash:     <http://datashapes.org/dash#> .
 @prefix dcat:     <http://www.w3.org/ns/dcat#> .
@@ -25,6 +24,17 @@
     sh:nodeKind sh:Literal ;
     sh:maxCount 1 ;
     dash:editor dash:TextAreaEditor ;
+  ], [
+    sh:path dcterms:publisher ;
+    sh:name "Editor";
+    sh:node :AgentShape ;
+    dash:editor dash:BlankNodeEditor ;
+  ], [
+    sh:path dcterms:creator;
+    sh:name "Criador";
+    sh:node :AgentShape ;
+    sh:minCount 1 ;
+    dash:editor dash:BlankNodeEditor ;
   ], [
     sh:path dcterms:modified ;
     sh:name "Última atualização" ;
@@ -63,20 +73,28 @@
     dash:viewer dash:LiteralViewer ;
   ] .
 
-# -- end of resouce schema definition --
-
-# Data set schema definition
-@prefix :         <http://fairdatapoint.org/> .
-@prefix dash:     <http://datashapes.org/dash#> .
-@prefix dcat:     <http://www.w3.org/ns/dcat#> .
-@prefix dcterms:  <http://purl.org/dc/terms/> .
-@prefix sh:       <http://www.w3.org/ns/shacl#> .
-@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
-@prefix alm:      <http://purl.org/almescore> .
-@prefix sdo:      <https://schema.org/docs/schemas.html> .
-@prefix freq:     <http://purl.org/cld/freq/> .
-@prefix foaf:     <http://xmlns.com/foaf/0.1/>.
-
+:AgentShape a sh:NodeShape ;
+  sh:targetClass foaf:Agent ;
+  sh:property [
+    sh:path foaf:name;
+    sh:name "Nome" ;
+    sh:nodeKind sh:Literal ;
+    sh:minCount 1 ;
+    sh:maxCount  1 ;
+    dash:editor dash:TextFieldEditor ;
+  ], [
+    sh:path foaf:mbox ;
+    sh:name "Email";
+    sh:nodeKind sh:Literal ;
+    dash:editor dash:TextFieldEditor ;
+    sh:maxCount 1;
+  ], [
+    sh:path foaf:homepage ;
+    sh:name "Website";
+    sh:nodeKind sh:IRI;
+    sh:maxCount 1;
+    dash:editor dash:URIEditor ;
+  ] .
 
 :DatasetShape a sh:NodeShape ;
   sh:targetClass dcat:Dataset ;
@@ -149,16 +167,13 @@
     dash:editor dash:URIEditor ;
     dash:viewer dash:LabelViewer ;
   ], [
-    sh:path dcterms:publisher ;
-    sh:name "Editor";
-    sh:node :AgentShape ;
-    dash:editor dash:BlankNodeEditor ;
-  ], [
-    sh:path dcterms:creator;
-    sh:name "Criador";
-    sh:node :AgentShape ;
-    sh:minCount 1 ;
-    dash:editor dash:BlankNodeEditor ].
+    sh:path dcat:accessURL ;
+    sh:name "URL de acesso" ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1 ;
+    dash:editor dash:URIEditor ;
+    dash:viewer dash:LabelViewer ;
+    ] .
     
     :ProductTypeShape a sh:NodeShape ;
   sh:property [
@@ -168,8 +183,8 @@
     sh:maxCount 1 ;
     dash:editor dash:URIEditor ;
   ], [
-    sh:path alm:productTypeLabel ;
-    sh:name "Label" ;
+    sh:path alm:productTypeName ;
+    sh:name "Nome" ;
     sh:nodeKind sh:Literal ;
     sh:maxCount 1 ;
     dash:editor dash:TextFieldEditor ;
@@ -183,84 +198,9 @@
     sh:maxCount 1 ;
     dash:editor dash:URIEditor ;
   ], [
-    sh:path alm:productGroupLabel ;
-    sh:name "Label" ;
-    sh:nodeKind sh:Literal ;
-    sh:maxCount 1 ;
-    dash:editor dash:TextFieldEditor ;
-  ] .
-  
-  :AgentShape a sh:NodeShape ;
-  sh:targetClass foaf:Agent ;
-  sh:property [
-    sh:path foaf:name;
+    sh:path alm:productGroupName ;
     sh:name "Nome" ;
     sh:nodeKind sh:Literal ;
+    sh:maxCount 1 ;
     dash:editor dash:TextFieldEditor ;
-  ], [
-    sh:path foaf:mbox ;
-    sh:name "Email";
-    sh:nodeKind sh:Literal ;
-    dash:editor dash:TextFieldEditor ;
-  ], [
-    sh:path foaf:homepage ;
-    sh:name "Website";
-    sh:nodeKind sh:IRI;
-    dash:editor dash:URIEditor ;
   ] .
-# -- end of data set schema definition --
-
-# Distribution definition
-@prefix :         <http://fairdatapoint.org/> .
-@prefix dash:     <http://datashapes.org/dash#> .
-@prefix dcat:     <http://www.w3.org/ns/dcat#> .
-@prefix dct:      <http://purl.org/dc/terms/> .
-@prefix sh:       <http://www.w3.org/ns/shacl#> .
-@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
-
-:DistributionShape a sh:NodeShape ;
-  sh:targetClass dcat:Distribution ;
-  sh:property [
-    sh:path dct:issued ;
-    sh:name "Data de publicação" ;
-    sh:datatype xsd:dateTime ;
-    sh:maxCount 1 ;
-    dash:editor dash:DatePickerEditor ;
-    dash:viewer dash:LiteralViewer ;
-  ], [
-    sh:path dct:modified ;
-    sh:name "Última atualização" ;
-    sh:datatype xsd:dateTime ;
-    sh:maxCount 1 ;
-    dash:editor dash:DatePickerEditor ;
-    dash:viewer dash:LiteralViewer ;
-  ], [
-    sh:path dcat:accessURL ;
-    sh:name "URL de acesso" ;
-    sh:nodeKind sh:IRI ;
-    sh:maxCount 1 ;
-    dash:editor dash:URIEditor ;
-  ], [
-    sh:path dcat:downloadURL ;
-    sh:name "Link para download" ;
-    sh:nodeKind sh:IRI ;
-    sh:maxCount 1 ;
-    dash:editor dash:URIEditor ;
-  ], [
-    sh:path dcat:mediaType ;
-    sh:name "Tipo de mídia" ;
-    sh:nodeKind sh:Literal ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    dash:editor dash:TextFieldEditor ;
-    dash:viewer dash:LiteralViewer ;
-  ], [
-    sh:path dcat:format ;
-    sh:name "Formato" ;
-    sh:nodeKind sh:Literal ;
-    sh:maxCount 1 ;
-    dash:editor dash:TextFieldEditor ;
-    dash:viewer dash:LiteralViewer ;
-  ] .
-
-
