@@ -8,6 +8,7 @@
 @prefix sdo:      <https://schema.org/docs/schemas.html> .
 @prefix freq:     <http://purl.org/cld/freq/> .
 @prefix foaf:     <http://xmlns.com/foaf/0.1/>.
+@prefix gn:       <http://www.geonames.org/ontology#> .
 
 :ResourceShape a sh:NodeShape ;
   sh:targetClass dcat:Resource ;
@@ -131,7 +132,7 @@
     sh:name "Local" ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
-    sh:nodeKind sh:IRI ;
+    sh:node :GeoNamesFeatureShape ;
     dash:editor dash:URIEditor ;
     dash:viewer dash:LabelViewer ;
   ], [
@@ -175,7 +176,7 @@
     dash:viewer dash:LabelViewer ;
     ] .
     
-    :ProductTypeShape a sh:NodeShape ;
+:ProductTypeShape a sh:NodeShape ;
   sh:property [
     sh:path alm:productTypeURI ;
     sh:name "URI" ;
@@ -203,4 +204,22 @@
     sh:nodeKind sh:Literal ;
     sh:maxCount 1 ;
     dash:editor dash:TextFieldEditor ;
+  ] .
+
+:GeoNamesFeatureShape a sh:NodeShape ;
+  sh:targetClass gn:Feature ;
+  sh:property [
+    sh:path gn:name ;
+    sh:name "geoNames name" ;
+    sh:nodeKind sh:Literal ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    dash:editor dash:TextFieldEditor ;
+  ], [
+    sh:path gn:geonamesID ;
+    sh:name "geoNames ID" ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    dash:editor dash:URIEditor ;
   ] .
