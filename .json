@@ -215,7 +215,7 @@
       "rdfs:label": { "@value": "localização", "@language": "pt-BR" },
       "rdfs:comment": "The location of, for example, where an event is happening, where an organization is located, or where an action takes place.",
       "rdfs:domain": { "@id": "dcat:Resource" },
-      "rdfs:range": { "@id": "rdfs:Literal" }
+      "rdfs:range": { "@id": "gn:Feature" }
     },
     {
       "@id": "alm:statisticalMethod",
@@ -270,6 +270,31 @@
       "rdfs:comment": "A personal mailbox, i.e., an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a 'static inverse functional property', in that there is (across time and change) at most one individual that ever has any particular value for foaf:mbox.",
       "rdfs:domain": { "@id": "foaf:Agent" },
       "rdfs:range": { "@id": "rdfs:Literal" }
+    },
+    {
+      "@id": "gn:Feature",
+      "@type": "rdfs:Class",
+      "rdfs:label": { "@value": "GeoNames Feature", "@language": "en" },
+      "rdfs:label": { "@value": "Característica Geográfica", "@language": "pt-BR" },
+      "rdfs:comment": "A geographical feature. It can be any feature that has a geographical extent, such as a country, city, mountain, river, etc."
+    },
+    {
+      "@id": "gn:name",
+      "@type": "rdf:Property",
+      "rdfs:label": { "@value": "geoNames name", "@language": "en" },
+      "rdfs:label": { "@value": "nome geoNames", "@language": "pt-BR" },
+      "rdfs:comment": "The name of a geographical feature. Examples: 'New York', 'Mount Everest', 'Nile River'.",
+      "rdfs:domain": { "@id": "gn:Feature" },
+      "rdfs:range": { "@id": "rdfs:Literal" }
+    },
+    {
+      "@id": "gn:geonamesID",
+      "@type": "rdf:Property",
+      "rdfs:label": { "@value": "geoNames ID", "@language": "en" },
+      "rdfs:label": { "@value": "identificador geoNames", "@language": "pt-BR" },
+      "rdfs:comment": "The ID of a geographical feature. Examples: 'http://sws.geonames.org/5128581/', 'http://sws.geonames.org/6252001/', 'http://sws.geonames.org/2347283/'.",
+      "rdfs:domain": { "@id": "gn:Feature" },
+      "rdfs:range": { "@id": "xsd:anyURI" }
     },
     {
       "@id": "alm:Data",
