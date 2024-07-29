@@ -4,7 +4,7 @@
 @prefix dcterms:  <http://purl.org/dc/terms/> .
 @prefix sh:       <http://www.w3.org/ns/shacl#> .
 @prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
-@prefix alm:      <http://purl.org/almescore> .
+@prefix alm:      <https://w3id.org/AlmesCore/> .
 @prefix sdo:      <https://schema.org/docs/schemas.html> .
 @prefix freq:     <http://purl.org/cld/freq/> .
 @prefix foaf:     <http://xmlns.com/foaf/0.1/>.
