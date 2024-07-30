@@ -1,17 +1,111 @@
 {
-  "@context": {
-    "alm": "https://w3id.org/AlmesCore/",
-    "dc": "http://purl.org/dc/elements/1.1/",
-    "dcat": "http://www.w3.org/ns/dcat#",
-    "dct": "http://purl.org/dc/terms/",
-    "foaf": "http://xmlns.com/foaf/0.1/",
-    "sdo": "https://schema.org/",
-    "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "gn": "http://www.geonames.org/ontology#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  },
+  "@context": [
+    "https://schema.org",
+    {
+      "alm": "https://w3id.org/AlmesCore/",
+      "dc": "http://purl.org/dc/elements/1.1/",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "dct": "http://purl.org/dc/terms/",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "sdo": "https://schema.org/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "gn": "http://www.geonames.org/ontology#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    }
+  ],
   "@graph": [
+    {
+      "@type": "Dataset",
+      "name": "Agriculture and Livestock Metadata Elements Set (Almes Core)",
+      "creator": {
+        "@type": "Organization",
+        "name": "Almes Core Management Group"
+      },
+      "identifier": "https://w3id.org/AlmesCore/",
+      "url": "https://github.com/AlmesCore/Almes-Core/edit/main/core2024-07-08.md",
+      "version": "2.0.0",
+      "dateModified": "2024-07-08",
+      "description": "This document presents the latest version of the Agriculture and Livestock Metadata Element Set (Almes Core), curated by the Almes Core Data Management Group. It encompasses comprehensive definitions of classes, properties, vocabulary encoding schemes, and syntax encoding schemes. The current core focuses on providing a detailed description of agricultural price index datasets.",
+      "keywords": [
+        "Agriculture",
+        "metadata schema",
+        "commodities",
+        "price index"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/html",
+          "contentUrl": "https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#almes-core-reference-guide"
+        },
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/turtle",
+          "contentUrl": "https://github.com/AlmesCore/Almes-Core/blob/main/shacl.ttl"
+        },
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "application/ld+json",
+          "contentUrl": "https://github.com/AlmesCore/Almes-Core/blob/main/.json"
+        }
+      ],
+      "isAccessibleForFree": true,
+      "status": "valid",
+      "contributor": [
+        {
+          "@type": "Person",
+          "name": "Filipi Miranda Soares",
+          "sameAs": "https://orcid.org/0000-0002-0674-7960"
+        },
+        {
+          "@type": "Person",
+          "name": "Fernando Elias Corrêa",
+          "sameAs": "https://orcid.org/0000-0002-2744-6104"
+        },
+        {
+          "@type": "Person",
+          "name": "Dilvan de Abreu Moreira",
+          "sameAs": "https://orcid.org/0000-0002-4801-2225"
+        },
+        {
+          "@type": "Person",
+          "name": "Debora Pignatari Drucker",
+          "sameAs": "https://orcid.org/0000-0003-4177-1322"
+        },
+        {
+          "@type": "Person",
+          "name": "Kelly Rosa Braghetto",
+          "sameAs": "https://orcid.org/0000-0001-6218-6849"
+        },
+        {
+          "@type": "Person",
+          "name": "Alexandre Cláudio Botazzo Delbem",
+          "sameAs": "https://orcid.org/0000-0003-1810-1742"
+        },
+        {
+          "@type": "Person",
+          "name": "Luís Ferreira Pires",
+          "sameAs": "https://orcid.org/0000-0001-7432-7653"
+        },
+        {
+          "@type": "Person",
+          "name": "Luiz Olavo Bonino da Silva Santos",
+          "sameAs": "https://orcid.org/0000-0002-1164-1351"
+        },
+        {
+          "@type": "Person",
+          "name": "Antonio Mauro Saraiva",
+          "sameAs": "https://orcid.org/0000-0003-2283-1123"
+        }
+      ],
+      "hasPart": {
+        "@type": "CreativeWork",
+        "name": "Version History",
+        "url": "https://github.com/AlmesCore/Almes-Core/blob/main/deprecatedElements.md"
+      }
+    },
     {
       "@id": "dcat:Resource",
       "@type": "rdfs:Class",
