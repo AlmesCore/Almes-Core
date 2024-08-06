@@ -2,7 +2,7 @@
   "@context": [
     "https://schema.org",
     {
-      "alm": "https://w3id.org/AlmesCore/",
+      "alm": "https://w3id.org/AlmesCore#",
       "dc": "http://purl.org/dc/elements/1.1/",
       "dcat": "http://www.w3.org/ns/dcat#",
       "dct": "http://purl.org/dc/terms/",
