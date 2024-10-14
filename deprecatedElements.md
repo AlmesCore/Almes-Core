@@ -44,3 +44,13 @@
 | Date deprecated | 2023-06-13 |
 | Replaced by | <a href="https://github.com/Filipi-Soares/almes/blob/main/README.md#accrualPeriodicity">dct:accrualPeriodicity</a> |
 | Comment | Deprecated only in the Almes Core schema, but still in use in Schema.org. 
+
+## Data
+| Term name | alm:Data |
+| ------------- | ------------- |
+| Type of Term  | Class  |
+| Status | deprecated |
+| Date deprecated | 2024-10-14 |
+| URI  | https://w3id.org/AlmesCore#data |
+| Definition  | A unit of data in a dataset.  |
+| Replaced by | <a href="https://github.com/Filipi-Soares/almes/blob/main/README.md#accrualPeriodicity">alm:Observation</a> |
