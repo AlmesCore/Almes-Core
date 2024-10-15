@@ -43,12 +43,17 @@
         {
           "@type": "DataDownload",
           "encodingFormat": "text/turtle",
-          "contentUrl": "https://github.com/AlmesCore/Almes-Core/blob/main/Serializations/almes-core-schema-shacl.ttl"
+          "contentUrl": "https://raw.githubusercontent.com/AlmesCore/Almes-Core/refs/heads/main/Serializations/almes-core-schema-shacl.ttl"
         },
         {
           "@type": "DataDownload",
           "encodingFormat": "application/ld+json",
-          "contentUrl": "https://github.com/AlmesCore/Almes-Core/edit/main/Serializations/almes-core-schema.json"
+          "contentUrl": "https://raw.githubusercontent.com/AlmesCore/Almes-Core/refs/heads/main/Serializations/almes-core-schema.json"
+        },
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "application/plantuml",
+          "contentUrl": "https://raw.githubusercontent.com/AlmesCore/Almes-Core/refs/heads/main/Serializations/almes-core-schema.plantuml" 
         }
       ],
       "isAccessibleForFree": true,
