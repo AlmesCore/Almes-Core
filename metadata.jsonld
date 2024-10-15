@@ -1,92 +1,246 @@
 {
-  "@context": "https://schema.org",
-  "@type": "Dataset",
-  "name": "Agriculture and Livestock Metadata Elements Set (Almes Core)",
-  "creator": {
-    "@type": "Organization",
-    "name": "Almes Core Management Group"
+  "@context": {
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dct": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "sdo": "https://schema.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "gn": "http://www.geonames.org/ontology#",
+    "alm": "https://w3id.org/AlmesCore#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
-  "identifier": "https://w3id.org/AlmesCore/",
-  "url": "https://github.com/AlmesCore/Almes-Core/edit/main/core2024-07-08.md",
-  "version": "2.0.0",
-  "dateModified": "2024-07-08",
-  "description": "This document contains the most up-to-date version of the Agriculture and Livestock Metadata Element Set (Almes Core), maintained by the Almes Core Data Management Group, including classes, properties, vocabulary encoding schemes, and syntax encoding schemes.",
-  "keywords": [
-    "Agriculture",
-    "metadata schema",
-    "commodities",
-    "price index"
-  ],
-  "license": "https://creativecommons.org/licenses/by/4.0/",
-  "distribution": [
+  "@graph": [
     {
-      "@type": "DataDownload",
-      "encodingFormat": "text/html",
-      "contentUrl": "https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#almes-core-reference-guide"
+      "@id": "https://www.w3.org/ns/dcat#Resource",
+      "@type": "rdfs:Class",
+      "rdfs:label": {
+        "en": "Resource",
+        "pt-BR": "Recurso"
+      },
+      "rdfs:comment": {
+        "en": "Resource published or curated by a single agent.",
+        "pt-BR": "Recurso publicado ou curado por um único agente."
+      }
     },
     {
-      "@type": "DataDownload",
-      "encodingFormat": "text/turtle",
-      "contentUrl": "https://github.com/AlmesCore/Almes-Core/blob/main/shacl.ttl"
+      "@id": "http://purl.org/dc/terms/identifier",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "identifier",
+        "pt-BR": "identificador"
+      },
+      "rdfs:comment": {
+        "en": "An unambiguous reference to the resource within a given context.",
+        "pt-BR": "Uma referência inequívoca ao recurso em um determinado contexto."
+      },
+      "dct:domain": "https://www.w3.org/ns/dcat#Resource",
+      "dct:range": "xsd:anyURI"
     },
     {
-      "@type": "DataDownload",
-      "encodingFormat": "application/ld+json",
-      "contentUrl": "https://github.com/AlmesCore/Almes-Core/blob/main/.json"
+      "@id": "http://purl.org/dc/elements/1.1/title",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "title",
+        "pt-BR": "título"
+      },
+      "rdfs:comment": {
+        "en": "A name given to the resource.",
+        "pt-BR": "Um nome dado ao recurso."
+      },
+      "dct:domain": "https://www.w3.org/ns/dcat#Resource",
+      "dct:range": "rdfs:Literal"
+    },
+    {
+      "@id": "http://purl.org/dc/terms/description",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "description",
+        "pt-BR": "descrição"
+      },
+      "rdfs:comment": {
+        "en": "Description may include an abstract, a table of contents, or a free-text account of the resource.",
+        "pt-BR": "A descrição pode incluir um resumo, um índice ou uma descrição em texto livre do recurso."
+      },
+      "dct:domain": "https://www.w3.org/ns/dcat#Resource",
+      "dct:range": "rdfs:Literal"
+    },
+    {
+      "@id": "http://purl.org/dc/elements/1.1/publisher",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "publisher",
+        "pt-BR": "editor"
+      },
+      "rdfs:comment": {
+        "en": "An entity responsible for making the resource available.",
+        "pt-BR": "Uma entidade responsável por disponibilizar o recurso."
+      },
+      "dct:domain": "https://www.w3.org/ns/dcat#Resource",
+      "dct:range": "rdfs:Literal"
+    },
+    {
+      "@id": "http://purl.org/dc/elements/1.1/creator",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "creator",
+        "pt-BR": "criador"
+      },
+      "rdfs:comment": {
+        "en": "An entity primarily responsible for making the resource.",
+        "pt-BR": "Uma entidade responsável principalmente pela criação do recurso."
+      },
+      "dct:domain": "https://www.w3.org/ns/dcat#Resource",
+      "dct:range": "rdfs:Literal"
+    },
+    {
+      "@id": "http://purl.org/dc/terms/modified",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "modified",
+        "pt-BR": "última atualização"
+      },
+      "rdfs:comment": {
+        "en": "Date on which the resource was changed.",
+        "pt-BR": "Data em que o recurso foi alterado."
+      },
+      "dct:domain": "https://www.w3.org/ns/dcat#Resource",
+      "dct:range": "xsd:date"
+    },
+    {
+      "@id": "http://purl.org/dc/terms/hasVersion",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "version",
+        "pt-BR": "versão"
+      },
+      "rdfs:comment": {
+        "en": "The version indicator (name or identifier) of a resource.",
+        "pt-BR": "O indicador de versão (nome ou identificador) de um recurso."
+      },
+      "dct:domain": "https://www.w3.org/ns/dcat#Resource",
+      "dct:range": "rdfs:Literal"
+    },
+    {
+      "@id": "http://purl.org/dc/terms/language",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "language",
+        "pt-BR": "idioma"
+      },
+      "rdfs:comment": {
+        "en": "A language of the resource.",
+        "pt-BR": "Um idioma do recurso."
+      },
+      "dct:domain": "https://www.w3.org/ns/dcat#Resource",
+      "dct:range": "rdfs:Literal"
+    },
+    {
+      "@id": "http://purl.org/dc/terms/license",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "license",
+        "pt-BR": "licença de uso"
+      },
+      "rdfs:comment": {
+        "en": "A legal document giving official permission to do something with the resource.",
+        "pt-BR": "Um documento legal que concede permissão oficial para fazer algo com o recurso."
+      },
+      "dct:domain": "https://www.w3.org/ns/dcat#Resource",
+      "dct:range": "xsd:anyURI"
+    },
+    {
+      "@id": "http://purl.org/dc/elements/1.1/rights",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "rights",
+        "pt-BR": "direitos"
+      },
+      "rdfs:comment": {
+        "en": "Information about rights held in and over the resource.",
+        "pt-BR": "Informações sobre os direitos mantidos sobre o recurso."
+      },
+      "dct:domain": "https://www.w3.org/ns/dcat#Resource",
+      "dct:range": "rdfs:Literal"
+    },
+    {
+      "@id": "https://www.w3.org/ns/dcat#Dataset",
+      "@type": "rdfs:Class",
+      "rdfs:label": {
+        "en": "Dataset",
+        "pt-BR": "Dataset"
+      },
+      "rdfs:comment": {
+        "en": "Data encoded in a defined structure.",
+        "pt-BR": "Dados codificados em uma estrutura definida."
+      }
+    },
+    {
+      "@id": "https://w3id.org/AlmesCore#hasObservation",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "has observation",
+        "pt-BR": "tem observação"
+      },
+      "rdfs:comment": {
+        "en": "Associates a dataset with a recorded price observation related to an agricultural product.",
+        "pt-BR": "Associa um conjunto de dados a uma observação de preço registrada relacionada a um produto agrícola."
+      },
+      "dct:domain": "https://www.w3.org/ns/dcat#Dataset",
+      "dct:range": "https://w3id.org/AlmesCore#Observation"
+    },
+    {
+      "@id": "https://w3id.org/AlmesCore#Observation",
+      "@type": "rdfs:Class",
+      "rdfs:label": {
+        "en": "Observation",
+        "pt-BR": "Observação"
+      },
+      "rdfs:comment": {
+        "en": "A recorded observation of an agricultural product price on a specific date.",
+        "pt-BR": "Uma observação registrada do preço de um produto agrícola em uma data específica."
+      }
+    },
+    {
+      "@id": "http://purl.org/dc/elements/1.1/date",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "date",
+        "pt-BR": "data"
+      },
+      "rdfs:comment": {
+        "en": "A point or period of time associated with an event in the lifecycle of the resource.",
+        "pt-BR": "Um ponto ou período de tempo associado a um evento no ciclo de vida do recurso."
+      },
+      "dct:domain": "https://w3id.org/AlmesCore#Observation",
+      "dct:range": "xsd:date"
+    },
+    {
+      "@id": "https://schema.org/price",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "price",
+        "pt-BR": "preço"
+      },
+      "rdfs:comment": {
+        "en": "The offer price of a product.",
+        "pt-BR": "O preço de oferta de um produto."
+      },
+      "dct:domain": "https://w3id.org/AlmesCore#Observation",
+      "dct:range": "xsd:float"
+    },
+    {
+      "@id": "https://schema.org/currency",
+      "@type": "rdf:Property",
+      "rdfs:label": {
+        "en": "currency",
+        "pt-BR": "moeda"
+      },
+      "rdfs:comment": {
+        "en": "The currency in which the monetary amount is expressed.",
+        "pt-BR": "A moeda na qual o valor monetário é expresso."
+      },
+      "dct:domain": "https://w3id.org/AlmesCore#Observation",
+      "dct:range": "xsd:string"
     }
-  ],
-  "isAccessibleForFree": true,
-  "status": "valid",
-  "contributor": [
-    {
-      "@type": "Person",
-      "name": "Filipi Miranda Soares",
-      "sameAs": "https://orcid.org/0000-0002-0674-7960"
-    },
-    {
-      "@type": "Person",
-      "name": "Fernando Elias Corrêa",
-      "sameAs": "https://orcid.org/0000-0002-2744-6104"
-    },
-    {
-      "@type": "Person",
-      "name": "Dilvan de Abreu Moreira",
-      "sameAs": "https://orcid.org/0000-0002-4801-2225"
-    },
-    {
-      "@type": "Person",
-      "name": "Debora Pignatari Drucker",
-      "sameAs": "https://orcid.org/0000-0003-4177-1322"
-    },
-    {
-      "@type": "Person",
-      "name": "Kelly Rosa Braghetto",
-      "sameAs": "https://orcid.org/0000-0001-6218-6849"
-    },
-    {
-      "@type": "Person",
-      "name": "Alexandre Cláudio Botazzo Delbem",
-      "sameAs": "https://orcid.org/0000-0003-1810-1742"
-    },
-    {
-      "@type": "Person",
-      "name": "Luís Ferreira Pires",
-      "sameAs": "https://orcid.org/0000-0001-7432-7653"
-    },
-    {
-      "@type": "Person",
-      "name": "Luiz Olavo Bonino da Silva Santos",
-      "sameAs": "https://orcid.org/0000-0002-1164-1351"
-    },
-    {
-      "@type": "Person",
-      "name": "Antonio Mauro Saraiva",
-      "sameAs": "https://orcid.org/0000-0003-2283-1123"
-    }
-  ],
-  "hasPart": {
-    "@type": "CreativeWork",
-    "name": "Version History",
-    "url": "https://github.com/AlmesCore/Almes-Core/blob/main/deprecatedElements.md"
-  }
+  ]
 }
