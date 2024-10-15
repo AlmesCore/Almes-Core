@@ -43,12 +43,12 @@
         {
           "@type": "DataDownload",
           "encodingFormat": "text/turtle",
-          "contentUrl": "https://github.com/AlmesCore/Almes-Core/blob/main/shacl.ttl"
+          "contentUrl": "https://github.com/AlmesCore/Almes-Core/blob/main/Serializations/almes-core-schema-shacl.ttl"
         },
         {
           "@type": "DataDownload",
           "encodingFormat": "application/ld+json",
-          "contentUrl": "https://github.com/AlmesCore/Almes-Core/blob/main/.json"
+          "contentUrl": "https://github.com/AlmesCore/Almes-Core/edit/main/Serializations/almes-core-schema.json"
         }
       ],
       "isAccessibleForFree": true,
