@@ -114,6 +114,13 @@
     dash:editor dash:BlankNodeEditor ;
     dash:viewer dash:LabelViewer ;
   ], [
+    sh:path alm:hasObservation ;
+    sh:name "Tem Observação" ;
+    sh:node :ObservationShape ;
+    sh:maxCount 1 ;
+    dash:editor dash:BlankNodeEditor ;
+    dash:viewer dash:LabelViewer ;
+  ], [
     sh:path sdo:referenceQuantity ;
     sh:name "Quantidade de referência" ;
     sh:maxCount 1 ;
@@ -203,6 +210,29 @@
     sh:name "Nome" ;
     sh:nodeKind sh:Literal ;
     sh:maxCount 1 ;
+    dash:editor dash:TextFieldEditor ;
+  ] .
+
+:ObservationShape a sh:NodeShape ;
+  sh:targetClass alm:Observation ;
+  sh:property [
+    sh:path dcterms:date ;
+    sh:name "Data" ;
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:date ;
+    dash:editor dash:DatePickerEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path sdo:price ;
+    sh:name "Preço" ;
+    sh:datatype xsd:float ;
+    sh:nodeKind sh:Literal ;
+    dash:editor dash:TextFieldEditor ;
+  ], [
+    sh:path sdo:currency ;
+    sh:name "Moeda" ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
     dash:editor dash:TextFieldEditor ;
   ] .
 
