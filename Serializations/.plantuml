@@ -1,0 +1,62 @@
+@startuml
+
+' Resource Class Definition
+class Resource {
+  + identifier : xsd:anyURI
+  + title : rdfs:Literal
+  + description : rdfs:Literal
+  + publisher : Agent
+  + creator : Agent
+  + modified : xsd:date
+  + version : rdfs:Literal
+  + language : rdfs:Literal
+  + license : xsd:anyURI
+  + rights : rdfs:Literal
+}
+
+' Dataset Class Definition
+class Dataset {
+  + productGroup : rdfs:Literal
+  + productGroupURI : xsd:anyURI
+  + productGroupName : rdfs:Literal
+  + productType : rdfs:Literal
+  + productTypeURI : xsd:anyURI
+  + productTypeName : rdfs:Literal
+  + theme : rdfs:Literal
+  + accessURL : xsd:anyURI
+  + accrualPeriodicity : rdfs:Literal
+  + referenceQuantity : rdfs:Literal
+  + location : GeoNamesFeature
+  + statisticalMethod : xsd:anyURI
+  + descriptiveStatistics : rdfs:Literal
+  + startDate : xsd:date
+  + endDate : xsd:date
+  + hasObservation : Observation
+}
+
+' Observation Class Definition
+class Observation {
+  + date : xsd:date
+  + price : xsd:float
+  + currency : xsd:string
+}
+
+' Agent Class Definition
+class Agent {
+  + name : rdfs:Literal
+  + homepage : xsd:anyURI
+  + email : rdfs:Literal
+}
+
+' GeoNamesFeature Class Definition
+class GeoNamesFeature {
+  + geoNamesName : rdfs:Literal
+  + geoNamesID : xsd:anyURI
+}
+
+' Relationships
+Resource --|> Dataset
+Dataset --> Observation : hasObservation
+Dataset --> GeoNamesFeature : location
+Resource --> Agent : publisher
+Resource --> Agent : creator
