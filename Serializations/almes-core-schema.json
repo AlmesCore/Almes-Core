@@ -16,7 +16,7 @@
   ],
   "@graph": [
     {
-      "@type": "Dataset",
+      "@type": "CreativeWork",
       "name": "Agriculture and Livestock Metadata Elements Set (Almes Core)",
       "creator": {
         "@type": "Organization",
@@ -24,8 +24,8 @@
       },
       "identifier": "https://w3id.org/AlmesCore#",
       "url": "https://github.com/AlmesCore/Almes-Core/edit/main/core2024-07-08.md",
-      "version": "2.0.0",
-      "dateModified": "2024-07-08",
+      "version": "2.0.1",
+      "dateModified": "2024-10-15",
       "description": "This document presents the latest version of the Agriculture and Livestock Metadata Element Set (Almes Core), curated by the Almes Core Data Management Group. It encompasses comprehensive definitions of classes, properties, vocabulary encoding schemes, and syntax encoding schemes. The current core focuses on providing a detailed description of agricultural price index datasets.",
       "keywords": [
         "Agriculture",
