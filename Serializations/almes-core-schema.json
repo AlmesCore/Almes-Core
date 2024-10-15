@@ -106,336 +106,238 @@
         "url": "https://github.com/AlmesCore/Almes-Core/blob/main/deprecatedElements.md"
       }
     },
+ "@graph": [
     {
-      "@id": "dcat:Resource",
+      "@id": "https://www.w3.org/ns/dcat#Resource",
       "@type": "rdfs:Class",
-      "rdfs:label": { "@value": "Resource", "@language": "en" },
-      "rdfs:label": { "@value": "Recurso", "@language": "pt-BR" },
-      "rdfs:comment": "Resource published or curated by a single agent.",
-      "rdfs:seeAlso": "https://www.w3.org/ns/dcat#Resource"
+      "rdfs:label": {
+        "en": "Resource",
+        "pt-BR": "Recurso"
+      },
+      "rdfs:comment": {
+        "en": "Resource published or curated by a single agent.",
+        "pt-BR": "Recurso publicado ou curado por um único agente."
+      }
     },
     {
-      "@id": "dct:identifier",
+      "@id": "http://purl.org/dc/terms/identifier",
       "@type": "rdf:Property",
-      "rdfs:label": { "@value": "identifier", "@language": "en" },
-      "rdfs:label": { "@value": "identificador", "@language": "pt-BR" },
-      "rdfs:comment": "An unambiguous reference to the resource within a given context.",
-      "rdfs:domain": { "@id": "dcat:Resource" },
-      "rdfs:range": { "@id": "xsd:anyURI" }
+      "rdfs:label": {
+        "en": "identifier",
+        "pt-BR": "identificador"
+      },
+      "rdfs:comment": {
+        "en": "An unambiguous reference to the resource within a given context.",
+        "pt-BR": "Uma referência inequívoca ao recurso em um determinado contexto."
+      },
+      "dct:domain": "https://www.w3.org/ns/dcat#Resource",
+      "dct:range": "xsd:anyURI"
     },
     {
-      "@id": "dc:title",
+      "@id": "http://purl.org/dc/elements/1.1/title",
       "@type": "rdf:Property",
-      "rdfs:label": { "@value": "title", "@language": "en" },
-      "rdfs:label": { "@value": "título", "@language": "pt-BR" },
-      "rdfs:comment": "A name given to the resource.",
-      "rdfs:domain": { "@id": "dcat:Resource" },
-      "rdfs:range": { "@id": "rdfs:Literal" }
+      "rdfs:label": {
+        "en": "title",
+        "pt-BR": "título"
+      },
+      "rdfs:comment": {
+        "en": "A name given to the resource.",
+        "pt-BR": "Um nome dado ao recurso."
+      },
+      "dct:domain": "https://www.w3.org/ns/dcat#Resource",
+      "dct:range": "rdfs:Literal"
     },
     {
-      "@id": "dct:description",
+      "@id": "http://purl.org/dc/terms/description",
       "@type": "rdf:Property",
-      "rdfs:label": { "@value": "description", "@language": "en" },
-      "rdfs:label": { "@value": "descrição", "@language": "pt-BR" },
-      "rdfs:comment": "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.",
-      "rdfs:domain": { "@id": "dcat:Resource" },
-      "rdfs:range": { "@id": "rdfs:Literal" }
+      "rdfs:label": {
+        "en": "description",
+        "pt-BR": "descrição"
+      },
+      "rdfs:comment": {
+        "en": "Description may include an abstract, a table of contents, or a free-text account of the resource.",
+        "pt-BR": "A descrição pode incluir um resumo, um índice ou uma descrição em texto livre do recurso."
+      },
+      "dct:domain": "https://www.w3.org/ns/dcat#Resource",
+      "dct:range": "rdfs:Literal"
     },
     {
-      "@id": "dc:publisher",
+      "@id": "http://purl.org/dc/elements/1.1/publisher",
       "@type": "rdf:Property",
-      "rdfs:label": { "@value": "publisher", "@language": "en" },
-      "rdfs:label": { "@value": "editor", "@language": "pt-BR" },
-      "rdfs:comment": "An entity responsible for making the resource available.",
-      "rdfs:domain": { "@id": "dcat:Resource" },
-      "rdfs:range": { "@id": "foaf:Agent" }
+      "rdfs:label": {
+        "en": "publisher",
+        "pt-BR": "editor"
+      },
+      "rdfs:comment": {
+        "en": "An entity responsible for making the resource available.",
+        "pt-BR": "Uma entidade responsável por disponibilizar o recurso."
+      },
+      "dct:domain": "https://www.w3.org/ns/dcat#Resource",
+      "dct:range": "rdfs:Literal"
     },
     {
-      "@id": "dc:creator",
+      "@id": "http://purl.org/dc/elements/1.1/creator",
       "@type": "rdf:Property",
-      "rdfs:label": { "@value": "creator", "@language": "en" },
-      "rdfs:label": { "@value": "criador", "@language": "pt-BR" },
-      "rdfs:comment": "An entity primarily responsible for making the resource.",
-      "rdfs:domain": { "@id": "dcat:Resource" },
-      "rdfs:range": { "@id": "foaf:Agent" }
+      "rdfs:label": {
+        "en": "creator",
+        "pt-BR": "criador"
+      },
+      "rdfs:comment": {
+        "en": "An entity primarily responsible for making the resource.",
+        "pt-BR": "Uma entidade responsável principalmente pela criação do recurso."
+      },
+      "dct:domain": "https://www.w3.org/ns/dcat#Resource",
+      "dct:range": "rdfs:Literal"
     },
     {
-      "@id": "dct:modified",
+      "@id": "http://purl.org/dc/terms/modified",
       "@type": "rdf:Property",
-      "rdfs:label": { "@value": "modified", "@language": "en" },
-      "rdfs:label": { "@value": "última atualização", "@language": "pt-BR" },
-      "rdfs:comment": "Date on which the resource was changed.",
-      "rdfs:domain": { "@id": "dcat:Resource" },
-      "rdfs:range": { "@id": "xsd:date" }
+      "rdfs:label": {
+        "en": "modified",
+        "pt-BR": "última atualização"
+      },
+      "rdfs:comment": {
+        "en": "Date on which the resource was changed.",
+        "pt-BR": "Data em que o recurso foi alterado."
+      },
+      "dct:domain": "https://www.w3.org/ns/dcat#Resource",
+      "dct:range": "xsd:date"
     },
     {
-      "@id": "dct:hasVersion",
+      "@id": "http://purl.org/dc/terms/hasVersion",
       "@type": "rdf:Property",
-      "rdfs:label": { "@value": "version", "@language": "en" },
-      "rdfs:label": { "@value": "versão", "@language": "pt-BR" },
-      "rdfs:comment": "The version indicator (name or identifier) of a resource.",
-      "rdfs:domain": { "@id": "dcat:Resource" },
-      "rdfs:range": { "@id": "rdfs:Literal" }
+      "rdfs:label": {
+        "en": "version",
+        "pt-BR": "versão"
+      },
+      "rdfs:comment": {
+        "en": "The version indicator (name or identifier) of a resource.",
+        "pt-BR": "O indicador de versão (nome ou identificador) de um recurso."
+      },
+      "dct:domain": "https://www.w3.org/ns/dcat#Resource",
+      "dct:range": "rdfs:Literal"
     },
     {
-      "@id": "dct:language",
+      "@id": "http://purl.org/dc/terms/language",
       "@type": "rdf:Property",
-      "rdfs:label": { "@value": "language", "@language": "en" },
-      "rdfs:label": { "@value": "idioma", "@language": "pt-BR" },
-      "rdfs:comment": "A language of the resource.",
-      "rdfs:domain": { "@id": "dcat:Resource" },
-      "rdfs:range": { "@id": "rdfs:Literal" }
+      "rdfs:label": {
+        "en": "language",
+        "pt-BR": "idioma"
+      },
+      "rdfs:comment": {
+        "en": "A language of the resource.",
+        "pt-BR": "Um idioma do recurso."
+      },
+      "dct:domain": "https://www.w3.org/ns/dcat#Resource",
+      "dct:range": "rdfs:Literal"
     },
     {
-      "@id": "dct:license",
+      "@id": "http://purl.org/dc/terms/license",
       "@type": "rdf:Property",
-      "rdfs:label": { "@value": "license", "@language": "en" },
-      "rdfs:label": { "@value": "licença de uso", "@language": "pt-BR" },
-      "rdfs:comment": "A legal document giving official permission to do something with the resource.",
-      "rdfs:domain": { "@id": "dcat:Resource" },
-      "rdfs:range": { "@id": "xsd:anyURI" }
+      "rdfs:label": {
+        "en": "license",
+        "pt-BR": "licença de uso"
+      },
+      "rdfs:comment": {
+        "en": "A legal document giving official permission to do something with the resource.",
+        "pt-BR": "Um documento legal que concede permissão oficial para fazer algo com o recurso."
+      },
+      "dct:domain": "https://www.w3.org/ns/dcat#Resource",
+      "dct:range": "xsd:anyURI"
     },
     {
-      "@id": "dc:rights",
+      "@id": "http://purl.org/dc/elements/1.1/rights",
       "@type": "rdf:Property",
-      "rdfs:label": { "@value": "rights", "@language": "en" },
-      "rdfs:label": { "@value": "direitos", "@language": "pt-BR" },
-      "rdfs:comment": "Information about rights held in and over the resource.",
-      "rdfs:domain": { "@id": "dcat:Resource" },
-      "rdfs:range": { "@id": "rdfs:Literal" }
+      "rdfs:label": {
+        "en": "rights",
+        "pt-BR": "direitos"
+      },
+      "rdfs:comment": {
+        "en": "Information about rights held in and over the resource.",
+        "pt-BR": "Informações sobre os direitos mantidos sobre o recurso."
+      },
+      "dct:domain": "https://www.w3.org/ns/dcat#Resource",
+      "dct:range": "rdfs:Literal"
     },
     {
-      "@id": "dcat:Dataset",
+      "@id": "https://www.w3.org/ns/dcat#Dataset",
       "@type": "rdfs:Class",
-      "rdfs:label": { "@value": "Dataset", "@language": "en" },
-      "rdfs:label": { "@value": "Dataset", "@language": "pt-BR" },
-      "rdfs:comment": "Data encoded in a defined structure.",
-      "rdfs:seeAlso": "https://www.w3.org/ns/dcat#Dataset"
+      "rdfs:label": {
+        "en": "Dataset",
+        "pt-BR": "Dataset"
+      },
+      "rdfs:comment": {
+        "en": "Data encoded in a defined structure.",
+        "pt-BR": "Dados codificados em uma estrutura definida."
+      }
     },
     {
-      "@id": "alm:productGroup",
+      "@id": "https://w3id.org/AlmesCore#hasObservation",
       "@type": "rdf:Property",
-      "rdfs:label": { "@value": "product group", "@language": "en" },
-      "rdfs:label": { "@value": "grupo do produto", "@language": "pt-BR" },
-      "rdfs:comment": "A ProductGroup represents a group of products resulting from agriculture or livestock activities that vary only in certain well-described ways, being aggregated according to common biological traits.",
-      "rdfs:domain": { "@id": "dcat:Resource" },
-      "rdfs:range": { "@id": "rdfs:Literal" },
-      "skos:broaderMatch": { "@id": "sdo:productGroup" }
+      "rdfs:label": {
+        "en": "has observation",
+        "pt-BR": "tem observação"
+      },
+      "rdfs:comment": {
+        "en": "Associates a dataset with a recorded price observation related to an agricultural product.",
+        "pt-BR": "Associa um conjunto de dados a uma observação de preço registrada relacionada a um produto agrícola."
+      },
+      "dct:domain": "https://www.w3.org/ns/dcat#Dataset",
+      "dct:range": "https://w3id.org/AlmesCore#Observation"
     },
     {
-      "@id": "alm:productGroupURI",
-      "@type": "rdf:Property",
-      "rdfs:label": { "@value": "product group URI", "@language": "en" },
-      "rdfs:label": { "@value": "URI do grupo do produto", "@language": "pt-BR" },
-      "rdfs:comment": "A URI of a term from any controlled vocabulary describing a productGroup.",
-      "rdfs:domain": { "@id": "dcat:Resource" },
-      "rdfs:range": { "@id": "xsd:anyURI" }
-    },
-    {
-      "@id": "alm:productGroupName",
-      "@type": "rdf:Property",
-      "rdfs:label": { "@value": "product group name", "@language": "en" },
-      "rdfs:label": { "@value": "nome do grupo do produto", "@language": "pt-BR" },
-      "rdfs:comment": "The name of a productGroup in a controlled vocabulary.",
-      "rdfs:domain": { "@id": "dcat:Resource" },
-      "rdfs:range": { "@id": "rdfs:Literal" }
-    },
-    {
-      "@id": "alm:productType",
-      "@type": "rdf:Property",
-      "rdfs:label": { "@value": "product type", "@language": "en" },
-      "rdfs:label": { "@value": "produto", "@language": "pt-BR" },
-      "rdfs:comment": "Name of the agricultural or livestock product type targeted by the commercial operation.",
-      "rdfs:domain": { "@id": "dcat:Resource" },
-      "rdfs:range": { "@id": "rdfs:Literal" },
-      "skos:broaderMatch": { "@id": "sdo:product" }
-    },
-    {
-      "@id": "alm:productTypeURI",
-      "@type": "rdf:Property",
-      "rdfs:label": { "@value": "product type URI", "@language": "en" },
-      "rdfs:label": { "@value": "URI do tipo de produto", "@language": "pt-BR" },
-      "rdfs:comment": "A URI of a term from any controlled vocabulary describing a productType.",
-      "rdfs:domain": { "@id": "dcat:Resource" },
-      "rdfs:range": { "@id": "xsd:anyURI" }
-    },
-    {
-      "@id": "alm:productTypeName",
-      "@type": "rdf:Property",
-      "rdfs:label": { "@value": "product type name", "@language": "en" },
-      "rdfs:label": { "@value": "nome do tipo de produto", "@language": "pt-BR" },
-      "rdfs:comment": "The name of a productType in a controlled vocabulary.",
-      "rdfs:domain": { "@id": "dcat:Resource" },
-      "rdfs:range": { "@id": "rdfs:Literal" }
-    },
-    {
-      "@id": "alm:theme",
-      "@type": "rdf:Property",
-      "rdfs:label": { "@value": "theme", "@language": "en" },
-      "rdfs:label": { "@value": "tema", "@language": "pt-BR" },
-      "rdfs:comment": "Indicates the main theme investigated in the economic statistical operation.",
-      "rdfs:domain": { "@id": "dcat:Resource" },
-      "rdfs:range": { "@id": "rdfs:Literal" },
-      "skos:broaderMatch": { "@id": "dcat:theme" }
-    },
-    {
-      "@id": "dcat:accessURL",
-      "@type": "rdf:Property",
-      "rdfs:label": { "@value": "access URL", "@language": "en" },
-      "rdfs:label": { "@value": "disponível em", "@language": "pt-BR" },
-      "rdfs:comment": "A URL of the resource that gives access to a distribution of the dataset. E.g. landing page, feed, SPARQL endpoint.",
-      "rdfs:domain": { "@id": "dcat:Resource" },
-      "rdfs:range": { "@id": "xsd:anyURI" }
-    },
-    {
-      "@id": "dct:accrualPeriodicity",
-      "@type": "rdf:Property",
-      "rdfs:label": { "@value": "periodicity", "@language": "en" },
-      "rdfs:label": { "@value": "periodicidade", "@language": "pt-BR" },
-      "rdfs:comment": "The frequency with which items are added to a collection.",
-      "rdfs:domain": { "@id": "dcat:Resource" },
-      "rdfs:range": { "@id": "rdfs:Literal" }
-    },
-    {
-      "@id": "sdo:referenceQuantity",
-      "@type": "rdf:Property",
-      "rdfs:label": { "@value": "reference quantity", "@language": "en" },
-      "rdfs:label": { "@value": "quantidade de referência", "@language": "pt-BR" },
-      "rdfs:comment": "The reference quantity for which a certain price applies, e.g. 1 EUR per 4 kWh of electricity. This property is a replacement for unitOfMeasurement for the advanced cases where the price does not relate to a standard unit.",
-      "rdfs:domain": { "@id": "dcat:Resource" },
-      "rdfs:range": { "@id": "rdfs:Literal" }
-    },
-    {
-      "@id": "sdo:location",
-      "@type": "rdf:Property",
-      "rdfs:label": { "@value": "location", "@language": "en" },
-      "rdfs:label": { "@value": "localização", "@language": "pt-BR" },
-      "rdfs:comment": "The location of, for example, where an event is happening, where an organization is located, or where an action takes place.",
-      "rdfs:domain": { "@id": "dcat:Resource" },
-      "rdfs:range": { "@id": "gn:Feature" }
-    },
-    {
-      "@id": "alm:statisticalMethod",
-      "@type": "rdf:Property",
-      "rdfs:label": { "@value": "statistical method", "@language": "en" },
-      "rdfs:label": { "@value": "método estatístico", "@language": "pt-BR" },
-      "rdfs:comment": "Summary of the methods used for the process of obtaining data.",
-      "rdfs:domain": { "@id": "dcat:Resource" },
-      "rdfs:range": { "@id": "xsd:anyURI" }
-    },
-    {
-      "@id": "alm:descriptiveStatistics",
-      "@type": "rdf:Property",
-      "rdfs:label": { "@value": "descriptive statistics", "@language": "en" },
-      "rdfs:label": { "@value": "estatística descritiva", "@language": "pt-BR" },
-      "rdfs:comment": "Summarizes and describes the main features of a dataset. When used in the context of a time series, it includes metrics such as mean, variance, and trends over time.",
-      "rdfs:domain": { "@id": "dcat:Resource" },
-      "rdfs:range": { "@id": "rdfs:Literal" },
-      "skos:relatedMatch": { "@id": "ddi:DescriptiveStatistics" }
-    },
-    {
-      "@id": "foaf:Agent",
+      "@id": "https://w3id.org/AlmesCore#Observation",
       "@type": "rdfs:Class",
-      "rdfs:label": { "@value": "Agent", "@language": "en" },
-      "rdfs:label": { "@value": "Agente", "@language": "pt-BR" },
-      "rdfs:comment": "An agent (e.g., person, group, software, or physical artifact).",
-      "rdfs:seeAlso": "http://xmlns.com/foaf/0.1/#term_Agent"
+      "rdfs:label": {
+        "en": "Observation",
+        "pt-BR": "Observação"
+      },
+      "rdfs:comment": {
+        "en": "A recorded observation of an agricultural product price on a specific date.",
+        "pt-BR": "Uma observação registrada do preço de um produto agrícola em uma data específica."
+      }
     },
     {
-      "@id": "foaf:name",
+      "@id": "http://purl.org/dc/elements/1.1/date",
       "@type": "rdf:Property",
-      "rdfs:label": { "@value": "name", "@language": "en" },
-      "rdfs:label": { "@value": "nome", "@language": "pt-BR" },
-      "rdfs:comment": "A name for some thing.",
-      "rdfs:domain": { "@id": "foaf:Agent" },
-      "rdfs:range": { "@id": "rdfs:Literal" }
+      "rdfs:label": {
+        "en": "date",
+        "pt-BR": "data"
+      },
+      "rdfs:comment": {
+        "en": "A point or period of time associated with an event in the lifecycle of the resource.",
+        "pt-BR": "Um ponto ou período de tempo associado a um evento no ciclo de vida do recurso."
+      },
+      "dct:domain": "https://w3id.org/AlmesCore#Observation",
+      "dct:range": "xsd:date"
     },
     {
-      "@id": "foaf:homepage",
+      "@id": "https://schema.org/price",
       "@type": "rdf:Property",
-      "rdfs:label": { "@value": "homepage", "@language": "en" },
-      "rdfs:label": { "@value": "homepage", "@language": "pt-BR" },
-      "rdfs:comment": "A homepage for some thing.",
-      "rdfs:domain": { "@id": "foaf:Agent" },
-      "rdfs:range": { "@id": "xsd:anyURI" }
+      "rdfs:label": {
+        "en": "price",
+        "pt-BR": "preço"
+      },
+      "rdfs:comment": {
+        "en": "The offer price of a product.",
+        "pt-BR": "O preço de oferta de um produto."
+      },
+      "dct:domain": "https://w3id.org/AlmesCore#Observation",
+      "dct:range": "xsd:float"
     },
     {
-      "@id": "foaf:mbox",
+      "@id": "https://schema.org/currency",
       "@type": "rdf:Property",
-      "rdfs:label": { "@value": "e-mail", "@language": "en" },
-      "rdfs:label": { "@value": "e-mail", "@language": "pt-BR" },
-      "rdfs:comment": "A personal mailbox, i.e., an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a 'static inverse functional property', in that there is (across time and change) at most one individual that ever has any particular value for foaf:mbox.",
-      "rdfs:domain": { "@id": "foaf:Agent" },
-      "rdfs:range": { "@id": "rdfs:Literal" }
-    },
-    {
-      "@id": "gn:Feature",
-      "@type": "rdfs:Class",
-      "rdfs:label": { "@value": "GeoNames Feature", "@language": "en" },
-      "rdfs:label": { "@value": "Característica Geográfica", "@language": "pt-BR" },
-      "rdfs:comment": "A geographical feature. It can be any feature that has a geographical extent, such as a country, city, mountain, river, etc."
-    },
-    {
-      "@id": "gn:name",
-      "@type": "rdf:Property",
-      "rdfs:label": { "@value": "geoNames name", "@language": "en" },
-      "rdfs:label": { "@value": "nome geoNames", "@language": "pt-BR" },
-      "rdfs:comment": "The name of a geographical feature. Examples: 'New York', 'Mount Everest', 'Nile River'.",
-      "rdfs:domain": { "@id": "gn:Feature" },
-      "rdfs:range": { "@id": "rdfs:Literal" }
-    },
-    {
-      "@id": "gn:geonamesID",
-      "@type": "rdf:Property",
-      "rdfs:label": { "@value": "geoNames ID", "@language": "en" },
-      "rdfs:label": { "@value": "identificador geoNames", "@language": "pt-BR" },
-      "rdfs:comment": "The ID of a geographical feature. Examples: 'http://sws.geonames.org/5128581/', 'http://sws.geonames.org/6252001/', 'http://sws.geonames.org/2347283/'.",
-      "rdfs:domain": { "@id": "gn:Feature" },
-      "rdfs:range": { "@id": "xsd:anyURI" }
-    },
-    {
-      "@id": "alm:Data",
-      "@type": "rdfs:Class",
-      "rdfs:label": { "@value": "Data", "@language": "en" },
-      "rdfs:label": { "@value": "Dado", "@language": "pt-BR" },
-      "rdfs:comment": "A unit of data in a dataset.",
-      "rdfs:seeAlso": "http://purl.org/alm/meta/data"
-    },
-    {
-      "@id": "alm:metadataID",
-      "@type": "rdf:Property",
-      "rdfs:label": { "@value": "metadata ID", "@language": "en" },
-      "rdfs:label": { "@value": "ID dos metadados", "@language": "pt-BR" },
-      "rdfs:comment": "The identifier of the metadata record, indicated by dct:identifier. This metadata field should be used as a foreign key in a database when the metadata and data are stored in separate tables.",
-      "rdfs:domain": { "@id": "alm:Data" },
-      "rdfs:range": { "@id": "xsd:anyURI" }
-    },
-    {
-      "@id": "dc:date",
-      "@type": "rdf:Property",
-      "rdfs:label": { "@value": "date", "@language": "en" },
-      "rdfs:label": { "@value": "data", "@language": "pt-BR" },
-      "rdfs:comment": "A point or period of time associated with an event in the lifecycle of the resource.",
-      "rdfs:domain": { "@id": "alm:Data" },
-      "rdfs:range": { "@id": "xsd:date" }
-    },
-    {
-      "@id": "sdo:price",
-      "@type": "rdf:Property",
-      "rdfs:label": { "@value": "price", "@language": "en" },
-      "rdfs:label": { "@value": "preço", "@language": "pt-BR" },
-      "rdfs:comment": "The offer price of a product. The price should be indicated as a float number with two decimal digits.",
-      "rdfs:domain": { "@id": "alm:Data" },
-      "rdfs:range": { "@id": "xsd:float" }
-    },
-    {
-      "@id": "sdo:currency",
-      "@type": "rdf:Property",
-      "rdfs:label": { "@value": "currency", "@language": "en" },
-      "rdfs:label": { "@value": "moeda", "@language": "pt-BR" },
-      "rdfs:comment": "The currency in which the monetary amount is expressed. Use standard formats: ISO 4217 currency format, e.g., 'USD'; Ticker symbol for cryptocurrencies, e.g., 'BTC'; well-known names for Local Exchange Trading Systems (LETS) and other currency types, e.g., 'Ithaca HOUR'.",
-      "rdfs:domain": { "@id": "alm:Data" },
-      "rdfs:range": { "@id": "xsd:string" }
+      "rdfs:label": {
+        "en": "currency",
+        "pt-BR": "moeda"
+      },
+      "rdfs:comment": {
+        "en": "The currency in which the monetary amount is expressed.",
+        "pt-BR": "A moeda na qual o valor monetário é expresso."
+      },
+      "dct:domain": "https://w3id.org/AlmesCore#Observation",
+      "dct:range": "xsd:string"
     }
   ]
 }
