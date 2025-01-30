@@ -19,12 +19,12 @@ layout: default
 <meta name="og:type" content="website">
 <meta name="og:title" content="Agriculture and Livestock Metadata Elements Set (Almes Core)">
 <meta name="og:description" content="Structured metadata schema for agricultural datasets, supporting FAIR data principles.">
-<meta name="og:image" content="https://github.com/AlmesCore/Almes-Core/blob/main/images/logo.jpeg"> <!-- Add if you have a logo -->
+<meta name="og:image" content="https://raw.githubusercontent.com/AlmesCore/Almes-Core/main/images/logo.jpeg"> <!-- Add if you have a logo -->
 <meta name="og:url" content="https://almescore.github.io/Almes-Core/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Agriculture and Livestock Metadata Elements Set (Almes Core)">
 <meta name="twitter:description" content="Structured metadata schema for agricultural datasets, supporting FAIR data principles.">
-<meta name="twitter:image" content="https://github.com/AlmesCore/Almes-Core/blob/main/images/logo.jpeg"> <!-- Add if you have a logo -->
+<meta name="twitter:image" content="https://raw.githubusercontent.com/AlmesCore/Almes-Core/main/images/logo.jpeg"> <!-- Add if you have a logo -->
 
 # Almes Core Reference Guide
 
@@ -598,9 +598,14 @@ Consider an economic statistical operation that tracks the price of various agri
 
 # Extended Almes Core
 
+The `publisher` and `creator` properties describe the entities responsible for publishing the Datasets. To provide more detailed information about these entities beyond just their names, these properties can be instantiated using the `Agent` class, which includes attributes such as name, homepage, and email. Using the `Agent` class is optional in the Simple Almes Core, and mandatory in the Extended Almes Core.
+
+As mentioned before, in the Simple Almes Core, `location` may provide only the name of the location in textual form. In Extended Almes Core, `location` should be instantiated using the `GeoNamesFeature` class, which has two properties: `geoNamesName`, to give the location name as it appears on the GeoNames ontology, and `geoNamesID`, to provide the URI of the concept representing a location within the GeoNames ontology.
+
+
 ## Conceptual Model
 
-![Conceptual Model Diagram](https://github.com/AlmesCore/Almes-Core/blob/main/images/almesCoreextended.png)
+![Conceptual Model Diagram](https://raw.githubusercontent.com/AlmesCore/Almes-Core/main/images/almesCoreextended.png)
 
 ## Index of Terms
 
