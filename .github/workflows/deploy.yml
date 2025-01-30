@@ -28,7 +28,10 @@ jobs:
           bundle install
 
       - name: Build Jekyll site
-        run: bundle exec jekyll build --trace
+        run: |
+          bundle exec jekyll build --trace
+          echo "Checking _site directory contents:"
+          ls -lah _site  # Debug: List _site contents
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v3
