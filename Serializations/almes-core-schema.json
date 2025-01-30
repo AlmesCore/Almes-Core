@@ -151,7 +151,7 @@
       "rdfs:comment": "Information about rights held in and over the resource.",
       "rdfs:domain": "dcat:Resource",
       "rdfs:range": "rdfs:Literal"
-    }
+    },
 	{
       "@id": "alm:productgroup",
       "@type": "rdf:Property",
@@ -327,7 +327,7 @@
       "rdfs:comment": "Associates an entity to a specific recorded price Observation related to an agricultural product.",
       "rdfs:domain": "dcat:Dataset",
       "rdfs:range": "alm:Observation"
-    }
+    },
 	 {
       "@id": "foaf:name",
       "@type": "rdf:Property",
@@ -360,7 +360,7 @@
       "rdfs:comment": "A personal mailbox, associated with exactly one owner. This is a 'static inverse functional property'.",
       "rdfs:domain": "foaf:Agent",
       "rdfs:range": "rdfs:Literal"
-    }
+    },
 	{
       "@id": "gn:name",
       "@type": "rdf:Property",
@@ -382,7 +382,7 @@
       "rdfs:comment": "The ID of a geographical feature. Examples: http://sws.geonames.org/5128581/, http://sws.geonames.org/6252001/, http://sws.geonames.org/2347283/.",
       "rdfs:domain": "gn:Feature",
       "rdfs:range": "xsd:anyURI"
-    }
+    },
 	 {
       "@id": "dc:date",
       "@type": "rdf:Property",
