@@ -102,7 +102,7 @@ Namespaces and prefixes used in normative parts of this recommendation.
 | ------------- | ------------- |
 | Agrovoc | [http://aims.fao.org/aos/agrovoc](http://aims.fao.org/aos/agrovoc) |
 | Agrotermos  | [https://sistemas.sede.embrapa.br/agrotermos/](https://sistemas.sede.embrapa.br/agrotermos/)  |
-| APTO  | [https://w3id.org/apto](https://w3id.org/apto) |
+| APTO  | [https://w3id.org/APTO#](https://w3id.org/APTO#) |
 
 # Simple Almes Core #
 
