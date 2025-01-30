@@ -19,12 +19,12 @@ layout: default
 <meta name="og:type" content="website">
 <meta name="og:title" content="Agriculture and Livestock Metadata Elements Set (Almes Core)">
 <meta name="og:description" content="Structured metadata schema for agricultural datasets, supporting FAIR data principles.">
-<meta name="og:image" content="https://almescore.github.io/Almes-Core/logo.png"> <!-- Add if you have a logo -->
+<meta name="og:image" content="https://avatars.githubusercontent.com/u/146739645?s=400&u=0561cca9aa2b873df162936851836b66f4483284&v=4"> <!-- Add if you have a logo -->
 <meta name="og:url" content="https://almescore.github.io/Almes-Core/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Agriculture and Livestock Metadata Elements Set (Almes Core)">
 <meta name="twitter:description" content="Structured metadata schema for agricultural datasets, supporting FAIR data principles.">
-<meta name="twitter:image" content="https://almescore.github.io/Almes-Core/logo.png"> <!-- Add if you have a logo -->
+<meta name="twitter:image" content="https://avatars.githubusercontent.com/u/146739645?s=400&u=0561cca9aa2b873df162936851836b66f4483284&v=4"> <!-- Add if you have a logo -->
 
 # Almes Core Reference Guide
 
