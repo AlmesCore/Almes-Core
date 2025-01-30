@@ -599,6 +599,7 @@ Consider an economic statistical operation that tracks the price of various agri
 # Extended Almes Core
 
 ## Conceptual Model
+
 ![Conceptual Model Diagram](https://github.com/AlmesCore/Almes-Core/blob/main/images/almesCoreextended.png)
 
 ## Index of Terms
