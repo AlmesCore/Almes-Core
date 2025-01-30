@@ -32,9 +32,14 @@ jobs:
         run: |
           bundle exec jekyll build --trace
           echo "✅ Checking if _site/ directory exists..."
-          if [ -d "_site" ]; then echo "✅ _site exists"; else echo "❌ _site is missing!"; exit 1; fi
-          echo "📂 Listing contents of _site/:"
-          ls -lah _site
+          if [ -d "_site" ]; then 
+            echo "✅ _site exists"; 
+            echo "📂 Listing contents of _site/:"
+            ls -lah _site
+          else 
+            echo "❌ _site is missing!"; 
+            exit 1
+          fi
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v3
@@ -42,8 +47,9 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: _site  # Ensure this matches where Jekyll builds
+          path: _site
           name: github-pages  # Explicitly name the artifact
+          if-no-files-found: error  # Fail if _site is missing
 
   deploy:
     environment:
