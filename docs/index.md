@@ -45,12 +45,13 @@ layout: default
 
 ### Recommended citation: 
 
-Soares, F., Corrêa, F. E., Moreira, D. de A., Pignatari Drucker, D., Braghetto, K. R., Botazzo Delbem, A. C., Ferreira Pires, L., Bonino da Silva Santos, L. O., & Saraiva, A. M. (2024). Agriculture and Livestock Metadata Elements Set (Almes Core) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.12711290
+Soares, F., Corrêa, F. E., Moreira, D. de A., Pignatari Drucker, D., Braghetto, K. R., Botazzo Delbem, A. C., Ferreira Pires, L., Bonino da Silva Santos, L. O., & Saraiva, A. M. (2024). Agriculture and Livestock Metadata Elements Set (Almes Core) [Data set]. Zenodo. [https://doi.org/10.5281/zenodo.12711290](https://doi.org/10.5281/zenodo.12711290)
 
 ### Related publication:
 
-Soares, F. M., Corrêa, F. E., Pires, L. F., da Silva Santos, L. O. B., Drucker, D. P., Braghetto, K. R., de Abreu Moreira, D., Delbem, A. C. B., da Silva, R. F., da Silva Lopes, C. O., & Saraiva, A. M. (2022). Building a Community-Based FAIR Metadata Schema for Brazilian Agriculture and Livestock Trading Data. In SEMPDW 2022 (CEUR workshop proceedings; Vol. 3235). https://ceur-ws.org/Vol-3235/paper26.pdf
-
+Soares, F. M., Corrêa, F. E., Pires, L. F., da Silva Santos, L. O. B., Drucker, D. P., Braghetto, K. R., de Abreu Moreira, D., Delbem, A. C. B., da Silva, R. F., da Silva Lopes, C. O., & Saraiva, A. M. (2022). Building a Community-Based FAIR Metadata Schema for Brazilian Agriculture and Livestock Trading Data. In SEMPDW 2022 (CEUR workshop proceedings; Vol. 3235). [https://ceur-ws.org/Vol-3235/paper26.pdf
+](https://ceur-ws.org/Vol-3235/paper26.pdf
+)
 
 
 
@@ -81,21 +82,21 @@ Namespaces and prefixes used in normative parts of this recommendation.
 
 | Prefix | Namespace |
 | ------------- | ------------- |
-| alm | https://w3id.org/AlmesCore# |
-| dc  | http://purl.org/dc/elements/1.1/  |
-| sdo  | https://schema.org/  |
-| dcat | http://www.w3.org/ns/dcat# |
-| dct | http://purl.org/dc/terms/ |
-| foaf| http://xmlns.com/foaf/0.1/ |
-| gn | http://www.geonames.org/ontology# |
+| alm | [https://w3id.org/AlmesCore#](https://w3id.org/AlmesCore#) |
+| dc  | [http://purl.org/dc/elements/1.1/](http://purl.org/dc/elements/1.1/)  |
+| sdo  | [https://schema.org/](https://schema.org/)  |
+| dcat | [http://www.w3.org/ns/dcat#](http://www.w3.org/ns/dcat#) |
+| dct | [http://purl.org/dc/terms/](http://purl.org/dc/terms/) |
+| foaf| [http://xmlns.com/foaf/0.1/](http://xmlns.com/foaf/0.1/) |
+| gn | [http://www.geonames.org/ontology#](http://www.geonames.org/ontology#) |
 
 ## Vocabulary Encoding Schemes
 
 | Name | Namespace |
 | ------------- | ------------- |
-| Agrovoc | http://aims.fao.org/aos/agrovoc |
-| Agrotermos  | https://sistemas.sede.embrapa.br/agrotermos/  |
-| APTO  | https://w3id.org/apto |
+| Agrovoc | [http://aims.fao.org/aos/agrovoc](http://aims.fao.org/aos/agrovoc) |
+| Agrotermos  | [https://sistemas.sede.embrapa.br/agrotermos/](https://sistemas.sede.embrapa.br/agrotermos/)  |
+| APTO  | [https://w3id.org/apto](https://w3id.org/apto) |
 
 # Simple Almes Core #
 
