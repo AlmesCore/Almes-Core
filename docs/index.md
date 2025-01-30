@@ -100,6 +100,7 @@ Namespaces and prefixes used in normative parts of this recommendation.
 # Simple Almes Core #
 
 ## Conceptual Model
+
 ![Conceptual Model Diagram](https://github.com/AlmesCore/Almes-Core/blob/main/images/almesCoreUML.png)
 
 This conceptual model represents the metadata schema for managing and documenting resources, datasets, and observations, primarily within the domain of agriculture and economic statistical operations. The model defines a set of classes and properties to describe how data is structured, with a particular focus on datasets and observations of product prices.
