@@ -25,8 +25,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          gem install bundler jekyll
-          bundle install || bundle update  # Ensures dependencies are installed
+          bundle install  # Uses Gemfile to install Jekyll and dependencies
 
       - name: Build Jekyll site
         run: |
