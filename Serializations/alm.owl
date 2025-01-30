@@ -1,1 +1,432 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/AlmesCore#"
+     xml:base="https://w3id.org/AlmesCore"
+     xmlns:dcat="https://www.w3.org/ns/dcat#"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:alm="https://w3id.org/AlmesCore#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:sdo="https://schema.org/"
+     xmlns:gn="http://www.geonames.org/ontology#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 
+    <!-- Ontology Definition -->
+    <owl:Ontology rdf:about="https://w3id.org/AlmesCore">
+    <dcterms:title xml:lang="en">Agriculture and Livestock Metadata Elements Set (Almes Core)</dcterms:title>
+    <dcterms:description xml:lang="en">
+        This document presents the latest version of the Agriculture and Livestock Metadata Element Set (Almes Core),
+        curated by the Almes Core Data Management Group. It encompasses comprehensive definitions of classes,
+        properties, vocabulary encoding schemes, and syntax encoding schemes. The current core focuses on
+        providing a detailed description of agricultural price index datasets.
+    </dcterms:description>
+    
+    <!-- Version Information -->
+    <owl:versionInfo>2.0.1</owl:versionInfo>
+    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-10-15</dcterms:issued>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-10-15</dcterms:modified>
+    
+    <!-- Creator -->
+    <dcterms:creator>
+        <foaf:Organization>
+            <foaf:name>Almes Core Management Group</foaf:name>
+        </foaf:Organization>
+    </dcterms:creator>
+    
+    <!-- Contributors -->
+    <dcterms:contributor>
+        <foaf:Person rdf:about="https://orcid.org/0000-0002-0674-7960">
+            <foaf:name>Filipi Miranda Soares</foaf:name>
+        </foaf:Person>
+    </dcterms:contributor>
+    <dcterms:contributor>
+        <foaf:Person rdf:about="https://orcid.org/0000-0002-2744-6104">
+            <foaf:name>Fernando Elias Corrêa</foaf:name>
+        </foaf:Person>
+    </dcterms:contributor>
+    <dcterms:contributor>
+        <foaf:Person rdf:about="https://orcid.org/0000-0002-4801-2225">
+            <foaf:name>Dilvan de Abreu Moreira</foaf:name>
+        </foaf:Person>
+    </dcterms:contributor>
+    <dcterms:contributor>
+        <foaf:Person rdf:about="https://orcid.org/0000-0003-4177-1322">
+            <foaf:name>Debora Pignatari Drucker</foaf:name>
+        </foaf:Person>
+    </dcterms:contributor>
+    <dcterms:contributor>
+        <foaf:Person rdf:about="https://orcid.org/0000-0001-6218-6849">
+            <foaf:name>Kelly Rosa Braghetto</foaf:name>
+        </foaf:Person>
+    </dcterms:contributor>
+    <dcterms:contributor>
+        <foaf:Person rdf:about="https://orcid.org/0000-0003-1810-1742">
+            <foaf:name>Alexandre Cláudio Botazzo Delbem</foaf:name>
+        </foaf:Person>
+    </dcterms:contributor>
+    <dcterms:contributor>
+        <foaf:Person rdf:about="https://orcid.org/0000-0001-7432-7653">
+            <foaf:name>Luís Ferreira Pires</foaf:name>
+        </foaf:Person>
+    </dcterms:contributor>
+    <dcterms:contributor>
+        <foaf:Person rdf:about="https://orcid.org/0000-0002-1164-1351">
+            <foaf:name>Luiz Olavo Bonino da Silva Santos</foaf:name>
+        </foaf:Person>
+    </dcterms:contributor>
+    <dcterms:contributor>
+        <foaf:Person rdf:about="https://orcid.org/0000-0003-2283-1123">
+            <foaf:name>Antonio Mauro Saraiva</foaf:name>
+        </foaf:Person>
+    </dcterms:contributor>
+    
+    <!-- License -->
+    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/" />
+    
+    <!-- Keywords -->
+    <dcterms:subject>Agriculture</dcterms:subject>
+    <dcterms:subject>Metadata Schema</dcterms:subject>
+    <dcterms:subject>Commodities</dcterms:subject>
+    <dcterms:subject>Price Index</dcterms:subject>
+    
+    <!-- Download Links -->
+    <dcat:distribution>
+        <dcat:Distribution>
+            <dcat:accessURL rdf:resource="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#almes-core-reference-guide"/>
+            <dcterms:format>text/html</dcterms:format>
+        </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+        <dcat:Distribution>
+            <dcat:accessURL rdf:resource="https://raw.githubusercontent.com/AlmesCore/Almes-Core/refs/heads/main/Serializations/almes-core-schema-shacl.ttl"/>
+            <dcterms:format>text/turtle</dcterms:format>
+        </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+        <dcat:Distribution>
+            <dcat:accessURL rdf:resource="https://raw.githubusercontent.com/AlmesCore/Almes-Core/refs/heads/main/Serializations/almes-core-schema.json"/>
+            <dcterms:format>application/ld+json</dcterms:format>
+        </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+        <dcat:Distribution>
+            <dcat:accessURL rdf:resource="https://raw.githubusercontent.com/AlmesCore/Almes-Core/refs/heads/main/Serializations/almes-core-schema.plantuml"/>
+            <dcterms:format>application/plantuml</dcterms:format>
+        </dcat:Distribution>
+    </dcat:distribution>
+
+    <!-- Version History -->
+    <dcterms:hasPart>
+        <dcterms:BibliographicResource>
+            <dcterms:title>Version History</dcterms:title>
+            <dcterms:hasVersion rdf:resource="https://github.com/AlmesCore/Almes-Core/blob/main/deprecatedElements.md"/>
+        </dcterms:BibliographicResource>
+    </dcterms:hasPart>
+
+    </owl:Ontology>
+
+    <owl:Class rdf:about="dcat:Resource">
+        <rdfs:label xml:lang="en">Resource</rdfs:label>
+        <rdfs:label xml:lang="pt-br">Recurso</rdfs:label>
+        <rdfs:comment xml:lang="en">Resource published or curated by a single agent.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="dcat:Dataset">
+        <rdfs:label xml:lang="en">Dataset</rdfs:label>
+        <rdfs:label xml:lang="pt-br">Dataset</rdfs:label>
+        <rdfs:comment xml:lang="en">Data encoded in a defined structure.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="foaf:Agent">
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
+        <rdfs:label xml:lang="pt-br">Agente</rdfs:label>
+        <rdfs:comment xml:lang="en">An agent (e.g., person, group, software, or physical artifact).</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="gn:Feature">
+        <rdfs:label xml:lang="en">GeoNames Feature</rdfs:label>
+        <rdfs:label xml:lang="pt-br">Característica Geográfica</rdfs:label>
+        <rdfs:comment xml:lang="en">A geographical feature. It can be any feature that has a geographical extent, such as a country, city, mountain, river, etc.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="alm:Observation">
+        <rdfs:label xml:lang="en">Observation</rdfs:label>
+        <rdfs:label xml:lang="pt-br">Observação</rdfs:label>
+        <rdfs:comment xml:lang="en">A recorded observation of an agricultural product price on a specific date. The observation captures key attributes such as the price, date of observation, and the applicable currency, which provide a snapshot of the economic value of the product at a given time.</rdfs:comment>
+    </owl:Class>
+
+    <owl:DatatypeProperty rdf:about="dct:identifier">
+        <rdfs:label xml:lang="en">identifier</rdfs:label>
+        <rdfs:label xml:lang="pt-br">identificador</rdfs:label>
+        <rdfs:comment xml:lang="en">An unambiguous reference to the resource within a given context.</rdfs:comment>
+        <rdfs:domain rdf:resource="dcat:Resource"/>
+        <rdfs:range rdf:resource="xsd:anyURI"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="dc:title">
+        <rdfs:label xml:lang="en">title</rdfs:label>
+        <rdfs:label xml:lang="pt-br">título</rdfs:label>
+        <rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>
+        <rdfs:domain rdf:resource="dcat:Resource"/>
+        <rdfs:range rdf:resource="rdfs:Literal"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="dct:description">
+        <rdfs:label xml:lang="en">description</rdfs:label>
+        <rdfs:label xml:lang="pt-br">descrição</rdfs:label>
+        <rdfs:comment xml:lang="en">An abstract, table of contents, a graphical representation, or a free-text account of the resource.</rdfs:comment>
+        <rdfs:domain rdf:resource="dcat:Resource"/>
+        <rdfs:range rdf:resource="rdfs:Literal"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="dc:publisher">
+        <rdfs:label xml:lang="en">publisher</rdfs:label>
+        <rdfs:label xml:lang="pt-br">editor</rdfs:label>
+        <rdfs:comment xml:lang="en">An entity responsible for making the resource available.</rdfs:comment>
+        <rdfs:domain rdf:resource="dcat:Resource"/>
+        <rdfs:range rdf:resource="foaf:Agent"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="dc:creator">
+        <rdfs:label xml:lang="en">creator</rdfs:label>
+        <rdfs:label xml:lang="pt-br">criador</rdfs:label>
+        <rdfs:comment xml:lang="en">An entity primarily responsible for making the resource.</rdfs:comment>
+        <rdfs:domain rdf:resource="dcat:Resource"/>
+        <rdfs:range rdf:resource="foaf:Agent"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="dct:modified">
+        <rdfs:label xml:lang="en">modified</rdfs:label>
+        <rdfs:label xml:lang="pt-br">última atualização</rdfs:label>
+        <rdfs:comment xml:lang="en">Date on which the resource was changed.</rdfs:comment>
+        <rdfs:domain rdf:resource="dcat:Resource"/>
+        <rdfs:range rdf:resource="xsd:date"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="dct:hasVersion">
+        <rdfs:label xml:lang="en">version</rdfs:label>
+        <rdfs:label xml:lang="pt-br">versão</rdfs:label>
+        <rdfs:comment xml:lang="en">The version indicator (name or identifier) of a resource.</rdfs:comment>
+        <rdfs:domain rdf:resource="dcat:Resource"/>
+        <rdfs:range rdf:resource="rdfs:Literal"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="dct:language">
+        <rdfs:label xml:lang="en">language</rdfs:label>
+        <rdfs:label xml:lang="pt-br">idioma</rdfs:label>
+        <rdfs:comment xml:lang="en">A language of the resource.</rdfs:comment>
+        <rdfs:domain rdf:resource="dcat:Resource"/>
+        <rdfs:range rdf:resource="rdfs:Literal"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="dct:license">
+        <rdfs:label xml:lang="en">license</rdfs:label>
+        <rdfs:label xml:lang="pt-br">licença de uso</rdfs:label>
+        <rdfs:comment xml:lang="en">A legal document giving official permission to do something with the resource.</rdfs:comment>
+        <rdfs:domain rdf:resource="dcat:Resource"/>
+        <rdfs:range rdf:resource="xsd:anyURI"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="dc:rights">
+        <rdfs:label xml:lang="en">rights</rdfs:label>
+        <rdfs:label xml:lang="pt-br">direitos</rdfs:label>
+        <rdfs:comment xml:lang="en">Information about rights held in and over the resource.</rdfs:comment>
+        <rdfs:domain rdf:resource="dcat:Resource"/>
+        <rdfs:range rdf:resource="rdfs:Literal"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="alm:productgroup">
+        <rdfs:label xml:lang="en">product group</rdfs:label>
+        <rdfs:label xml:lang="pt-br">grupo do produto</rdfs:label>
+        <rdfs:comment xml:lang="en">A ProductGroup represents a group of products resulting from agriculture or livestock activities that vary only in certain well-described ways.</rdfs:comment>
+        <rdfs:domain rdf:resource="dcat:Dataset"/>
+        <rdfs:range rdf:resource="rdfs:Literal"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="alm:productgroupuri">
+        <rdfs:label xml:lang="en">product group URI</rdfs:label>
+        <rdfs:label xml:lang="pt-br">URI do grupo do produto</rdfs:label>
+        <rdfs:comment xml:lang="en">A URI of a term from any controlled vocabulary describing a productGroup.</rdfs:comment>
+        <rdfs:domain rdf:resource="dcat:Dataset"/>
+        <rdfs:range rdf:resource="xsd:anyURI"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="alm:productgroupname">
+        <rdfs:label xml:lang="en">product group name</rdfs:label>
+        <rdfs:label xml:lang="pt-br">nome do grupo do produto</rdfs:label>
+        <rdfs:comment xml:lang="en">The name of a productGroup in a controlled vocabulary.</rdfs:comment>
+        <rdfs:domain rdf:resource="dcat:Dataset"/>
+        <rdfs:range rdf:resource="rdfs:Literal"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="alm:producttype">
+        <rdfs:label xml:lang="en">product type</rdfs:label>
+        <rdfs:label xml:lang="pt-br">produto</rdfs:label>
+        <rdfs:comment xml:lang="en">Name of the agricultural or livestock product type targeted by the commercial operation.</rdfs:comment>
+        <rdfs:domain rdf:resource="dcat:Dataset"/>
+        <rdfs:range rdf:resource="rdfs:Literal"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="alm:producttypeuri">
+        <rdfs:label xml:lang="en">product type URI</rdfs:label>
+        <rdfs:label xml:lang="pt-br">URI do tipo de produto</rdfs:label>
+        <rdfs:comment xml:lang="en">A URI of a term from any controlled vocabulary describing a productType.</rdfs:comment>
+        <rdfs:domain rdf:resource="dcat:Dataset"/>
+        <rdfs:range rdf:resource="xsd:anyURI"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="alm:producttypename">
+        <rdfs:label xml:lang="en">product type name</rdfs:label>
+        <rdfs:label xml:lang="pt-br">nome do tipo de produto</rdfs:label>
+        <rdfs:comment xml:lang="en">The name of a productType in a controlled vocabulary.</rdfs:comment>
+        <rdfs:domain rdf:resource="dcat:Dataset"/>
+        <rdfs:range rdf:resource="rdfs:Literal"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="alm:theme">
+        <rdfs:label xml:lang="en">theme</rdfs:label>
+        <rdfs:label xml:lang="pt-br">tema</rdfs:label>
+        <rdfs:comment xml:lang="en">Indicates the main subject or topic investigated in the economic statistical operation.</rdfs:comment>
+        <rdfs:domain rdf:resource="dcat:Dataset"/>
+        <rdfs:range rdf:resource="rdfs:Literal"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="dcat:accessURL">
+        <rdfs:label xml:lang="en">access URL</rdfs:label>
+        <rdfs:label xml:lang="pt-br">disponível em</rdfs:label>
+        <rdfs:comment xml:lang="en">A URL of the resource that gives access to a distribution of the dataset.</rdfs:comment>
+        <rdfs:domain rdf:resource="dcat:Dataset"/>
+        <rdfs:range rdf:resource="xsd:anyURI"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="dct:accrualPeriodicity">
+        <rdfs:label xml:lang="en">periodicity</rdfs:label>
+        <rdfs:label xml:lang="pt-br">periodicidade</rdfs:label>
+        <rdfs:comment xml:lang="en">The frequency with which items are added to a collection.</rdfs:comment>
+        <rdfs:domain rdf:resource="dcat:Dataset"/>
+        <rdfs:range rdf:resource="rdfs:Literal"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="sdo:referenceQuantity">
+        <rdfs:label xml:lang="en">reference quantity</rdfs:label>
+        <rdfs:label xml:lang="pt-br">quantidade de referência</rdfs:label>
+        <rdfs:comment xml:lang="en">The reference quantity for which a certain price applies.</rdfs:comment>
+        <rdfs:domain rdf:resource="dcat:Dataset"/>
+        <rdfs:range rdf:resource="rdfs:Literal"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="sdo:location">
+        <rdfs:label xml:lang="en">location</rdfs:label>
+        <rdfs:label xml:lang="pt-br">localização</rdfs:label>
+        <rdfs:comment xml:lang="en">The location of, for example, where an event is happening or where an action takes place.</rdfs:comment>
+        <rdfs:domain rdf:resource="dcat:Dataset"/>
+        <rdfs:range rdf:resource="gn:Feature"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="alm:statisticalMethod">
+        <rdfs:label xml:lang="en">statistical method</rdfs:label>
+        <rdfs:label xml:lang="pt-br">método estatístico</rdfs:label>
+        <rdfs:comment xml:lang="en">Summary of the methods used for the process of obtaining data.</rdfs:comment>
+        <rdfs:domain rdf:resource="dcat:Dataset"/>
+        <rdfs:range rdf:resource="xsd:anyURI"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="alm:descriptiveStatistics">
+        <rdfs:label xml:lang="en">descriptive statistics</rdfs:label>
+        <rdfs:label xml:lang="pt-br">estatística descritiva</rdfs:label>
+        <rdfs:comment xml:lang="en">Summarizes and describes the main features of a dataset.</rdfs:comment>
+        <rdfs:domain rdf:resource="dcat:Dataset"/>
+        <rdfs:range rdf:resource="rdfs:Literal"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="sdo:startDate">
+        <rdfs:label xml:lang="en">start date</rdfs:label>
+        <rdfs:label xml:lang="pt-br">data de início</rdfs:label>
+        <rdfs:comment xml:lang="en">The start date and time of the item (in ISO 8601 date format).</rdfs:comment>
+        <rdfs:domain rdf:resource="dcat:Dataset"/>
+        <rdfs:range rdf:resource="xsd:date"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="sdo:endDate">
+        <rdfs:label xml:lang="en">end date</rdfs:label>
+        <rdfs:label xml:lang="pt-br">data de fim</rdfs:label>
+        <rdfs:comment xml:lang="en">The end date and time of the item (in ISO 8601 date format).</rdfs:comment>
+        <rdfs:domain rdf:resource="dcat:Dataset"/>
+        <rdfs:range rdf:resource="xsd:date"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="alm:hasObservation">
+        <rdfs:label xml:lang="en">has observation</rdfs:label>
+        <rdfs:label xml:lang="pt-br">tem observação</rdfs:label>
+        <rdfs:comment xml:lang="en">Associates an entity to a specific recorded price Observation related to an agricultural product.</rdfs:comment>
+        <rdfs:domain rdf:resource="dcat:Dataset"/>
+        <rdfs:range rdf:resource="alm:Observation"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="foaf:name">
+        <rdfs:label xml:lang="en">name</rdfs:label>
+        <rdfs:label xml:lang="pt-br">nome</rdfs:label>
+        <rdfs:comment xml:lang="en">A name for some thing.</rdfs:comment>
+        <rdfs:domain rdf:resource="foaf:Agent"/>
+        <rdfs:range rdf:resource="rdfs:Literal"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="foaf:homepage">
+        <rdfs:label xml:lang="en">homepage</rdfs:label>
+        <rdfs:label xml:lang="pt-br">homepage</rdfs:label>
+        <rdfs:comment xml:lang="en">A homepage for some thing.</rdfs:comment>
+        <rdfs:domain rdf:resource="foaf:Agent"/>
+        <rdfs:range rdf:resource="xsd:anyURI"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="foaf:mbox">
+        <rdfs:label xml:lang="en">e-mail</rdfs:label>
+        <rdfs:label xml:lang="pt-br">e-mail</rdfs:label>
+        <rdfs:comment xml:lang="en">A personal mailbox, associated with exactly one owner. This is a 'static inverse functional property'.</rdfs:comment>
+        <rdfs:domain rdf:resource="foaf:Agent"/>
+        <rdfs:range rdf:resource="rdfs:Literal"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="gn:name">
+        <rdfs:label xml:lang="en">geoNames name</rdfs:label>
+        <rdfs:label xml:lang="pt-br">nome geoNames</rdfs:label>
+        <rdfs:comment xml:lang="en">The name of a geographical feature. Examples: New York, Mount Everest, Nile River.</rdfs:comment>
+        <rdfs:domain rdf:resource="gn:Feature"/>
+        <rdfs:range rdf:resource="rdfs:Literal"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="gn:geonamesID">
+        <rdfs:label xml:lang="en">geonames ID</rdfs:label>
+        <rdfs:label xml:lang="pt-br">identificador geoNames</rdfs:label>
+        <rdfs:comment xml:lang="en">The ID of a geographical feature. Examples: http://sws.geonames.org/5128581/, http://sws.geonames.org/6252001/, http://sws.geonames.org/2347283/.</rdfs:comment>
+        <rdfs:domain rdf:resource="gn:Feature"/>
+        <rdfs:range rdf:resource="xsd:anyURI"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="dc:date">
+        <rdfs:label xml:lang="en">date</rdfs:label>
+        <rdfs:label xml:lang="pt-br">data</rdfs:label>
+        <rdfs:comment xml:lang="en">A point or period of time associated with an event in the lifecycle of the resource. Recommended practice is to express the date according to ISO 8601-1.</rdfs:comment>
+        <rdfs:domain rdf:resource="alm:Observation"/>
+        <rdfs:range rdf:resource="xsd:date"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="sdo:price">
+        <rdfs:label xml:lang="en">price</rdfs:label>
+        <rdfs:label xml:lang="pt-br">preço</rdfs:label>
+        <rdfs:comment xml:lang="en">The offer price of a product. The price should be indicated as a float number with two decimal digits.</rdfs:comment>
+        <rdfs:domain rdf:resource="alm:Observation"/>
+        <rdfs:range rdf:resource="xsd:float"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="sdo:currency">
+        <rdfs:label xml:lang="en">currency</rdfs:label>
+        <rdfs:label xml:lang="pt-br">moeda</rdfs:label>
+        <rdfs:comment xml:lang="en">The currency in which the monetary amount is expressed. Use standard formats: ISO 4217 currency format (e.g., USD), ticker symbols for cryptocurrencies (e.g., BTC), or well-known names for local exchange trading systems.</rdfs:comment>
+        <rdfs:domain rdf:resource="alm:Observation"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+    </owl:DatatypeProperty>
+
+</rdf:RDF>
