@@ -257,6 +257,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | 	http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### publisher
+
 | Term name | dc:publisher |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -269,6 +270,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### creator
+
 | Term name | dc:creator |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -281,6 +283,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### modified
+
 | Term name | dct:modified |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -293,6 +296,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2001/XMLSchema#date |
 
 ### version
+
 | Term name | dct:hasVersion |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -304,6 +308,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### language
+
 | Term name | dct:language |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -316,6 +321,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### license
+
 | Term name | dct:license |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -328,6 +334,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2001/XMLSchema#anyURI |
 
 ### rights
+
 | Term name | dc:rights |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -340,6 +347,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ## Dataset
+
 | Term name | dcat:Dataset |
 | ------------- | ------------- |
 | Type of Term  | Class  |
@@ -363,6 +371,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### productType
+
 | Term name | alm:producttype |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -376,6 +385,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### theme
+
 | Term name | alm:theme |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -390,6 +400,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### accessURL
+
 | Term name | dcat:accessURL |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -401,6 +412,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2001/XMLSchema#anyURI |
 
 ### accrualPeriodicity
+
 | Term name | dct:accrualPeriodicity |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -413,6 +425,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### referenceQuantity
+
 | Term name | sdo:referenceQuantity |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -424,6 +437,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### location
+
 | Term name | sdo:location |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -436,6 +450,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### statisticalMethod
+
 | Term name | alm:statisticalMethod |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -448,6 +463,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2001/XMLSchema#anyURI |
 
 ### descriptiveStatistics
+
 | Term name | alm:descriptiveStatistics |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -461,6 +477,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### startDate
+
 | Term name | sdo:startDate |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -473,6 +490,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2001/XMLSchema#date | 
 
 ### endDate
+
 | Term name | sdo:endDate |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -485,6 +503,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2001/XMLSchema#date | 
 
 ### hasObservation
+
 | Term name | alm:hasObservation |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -498,6 +517,7 @@ Consider an economic statistical operation that tracks the price of various agri
 
 
 ## Observation
+
 | Term name | alm:Data |
 | ------------- | ------------- |
 | Type of Term  | Class  |
@@ -507,6 +527,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Definition  | A recorded observation of an agricultural product price on a specific date. The observation captures key attributes such as the price, date of observation, and the applicable currency, which provide a snapshot of the economic value of the product at a given time. |
 
 ### date
+
 | Term name | dc:date |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -520,6 +541,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2001/XMLSchema#date | 
 
 ### price
+
 | Term name | sdo:price |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -533,6 +555,7 @@ Consider an economic statistical operation that tracks the price of various agri
 
 
 ### currency
+
 | Term name | sdo:currency |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -596,6 +619,7 @@ Consider an economic statistical operation that tracks the price of various agri
 - [currency](https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#currency)
 
 ## Resource
+
 | Term name | dcat:Resource |
 | ------------- | ------------- |
 | Type of Term  | Class  |
@@ -605,6 +629,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Definition  | Resource published or curated by a single agent.  |
 
 ### identifier
+
 | Term name | dct:identifier |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -616,6 +641,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2001/XMLSchema#anyURI |
 
 ### title
+
 | Term name | dc:title |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -627,6 +653,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | 	http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### description
+
 | Term name | dct:description |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -638,6 +665,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | 	http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### publisher
+
 | Term name | dc:publisher |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -650,6 +678,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | 	<a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#agent">Agent</a> |
 
 ### creator
+
 | Term name | dc:creator |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -662,6 +691,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | 	<a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#agent">Agent</a> |
 
 ### modified
+
 | Term name | dct:modified |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -674,6 +704,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2001/XMLSchema#date |
 
 ### version
+
 | Term name | dct:hasVersion |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -685,6 +716,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### language
+
 | Term name | dct:language |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -697,6 +729,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### license
+
 | Term name | dct:license |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -709,6 +742,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2001/XMLSchema#anyURI |
 
 ### rights
+
 | Term name | dc:rights |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -721,6 +755,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ## Dataset
+
 | Term name | dcat:Dataset |
 | ------------- | ------------- |
 | Type of Term  | Class  |
@@ -770,6 +805,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### productType
+
 | Term name | alm:producttype |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -783,6 +819,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### productTypeURI
+
 | Term name | alm:producttypeuri |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -795,6 +832,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2001/XMLSchema#anyURI |
 
 ### productTypeName
+
 | Term name | alm:producttypename |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -807,6 +845,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### theme
+
 | Term name | alm:theme |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -821,6 +860,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### accessURL
+
 | Term name | dcat:accessURL |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -832,6 +872,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2001/XMLSchema#anyURI |
 
 ### accrualPeriodicity
+
 | Term name | dct:accrualPeriodicity |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -844,6 +885,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### referenceQuantity
+
 | Term name | sdo:referenceQuantity |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -855,6 +897,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### location
+
 | Term name | sdo:location |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -867,6 +910,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | [GeoNamesFeature](https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#geonamesfeature) |
 
 ### statisticalMethod
+
 | Term name | alm:statisticalMethod |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -879,6 +923,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2001/XMLSchema#anyURI |
 
 ### descriptiveStatistics
+
 | Term name | alm:descriptiveStatistics |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -892,6 +937,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### startDate
+
 | Term name | sdo:startDate |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -903,6 +949,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2001/XMLSchema#date | 
 
 ### endDate
+
 | Term name | sdo:endDate |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -914,6 +961,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2001/XMLSchema#date | 
 
 ### hasObservation
+
 | Term name | alm:hasObservation |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -926,6 +974,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | alm:Observation | 
 
 ## Agent
+
 | Term name | foaf:Agent |
 | ------------- | ------------- |
 | Type of Term  | Class  |
@@ -935,6 +984,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Definition  | An agent (eg. person, group, software or physical artifact).  |
  
 ### name
+
 | Term name | foaf:name |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -946,6 +996,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### homepage
+
 | Term name | foaf:homepage |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -957,6 +1008,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2001/XMLSchema#anyURI | 
 
 ### e-mail
+
 | Term name | foaf:mbox |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -968,6 +1020,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal | 
 
 ## GeoNamesFeature
+
 | Term name | gn:Feature |
 | ------------- | ------------- |
 | Type of Term  | Class  |
@@ -977,6 +1030,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Definition  | A geographical feature. It can be any feature that has a geographical extent, such as a country, city, mountain, river, etc.  |
 
 ### geoNamesName
+
 | Term name | gn:name |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -989,6 +1043,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal | 
 
 ### geoNamesID
+
 | Term name | gn:geonamesID |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -1002,6 +1057,7 @@ Consider an economic statistical operation that tracks the price of various agri
 
 
 ## Observation
+
 | Term name | alm:Observation |
 | ------------- | ------------- |
 | Type of Term  | Class  |
@@ -1011,6 +1067,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Definition  | A recorded observation of an agricultural product price on a specific date. The observation captures key attributes such as the price, date of observation, and the applicable currency, which provide a snapshot of the economic value of the product at a given time. |
 
 ### date
+
 | Term name | dc:date |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -1024,6 +1081,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2001/XMLSchema#date | 
 
 ### price
+
 | Term name | sdo:price |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -1037,6 +1095,7 @@ Consider an economic statistical operation that tracks the price of various agri
 
 
 ### currency
+
 | Term name | sdo:currency |
 | ------------- | ------------- |
 | Type of Term  | Property  |
