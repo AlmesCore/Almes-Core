@@ -32,9 +32,9 @@ layout: default
 | ------------- | ------------- |
 | Title  | Agriculture and Livestock Metadata Elements Set (Almes Core)  |
 | Creator  | Almes Core Management Group  |
-| Identifier  | https://w3id.org/AlmesCore# |
-| Latest Version | https://almescore.github.io/Almes-Core/ |
-| Version History | https://github.com/AlmesCore/Almes-Core |
+| Identifier  | [https://w3id.org/AlmesCore#](https://w3id.org/AlmesCore#) |
+| Latest Version | [https://almescore.github.io/Almes-Core/](https://almescore.github.io/Almes-Core/) |
+| Version History | [https://github.com/AlmesCore/Almes-Core](https://github.com/AlmesCore/Almes-Core) |
 | Version number | 2.0.1
 | Last updated | 2024-14-10 |
 | Document Status | valid |
