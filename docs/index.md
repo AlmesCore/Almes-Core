@@ -1,3 +1,31 @@
+---
+title: "Agriculture and Livestock Metadata Elements Set (Almes Core)"
+description: "Structured metadata schema for agricultural datasets, supporting FAIR data principles."
+keywords: "metadata, agriculture, price index, linked data, JSON-LD, SHACL, semantic web"
+robots: "index, follow"
+layout: default
+---
+
+<!-- SEO Meta Tags -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="title" content="Agriculture and Livestock Metadata Elements Set (Almes Core)">
+<meta name="description" content="Structured metadata schema for agricultural datasets, supporting FAIR data principles.">
+<meta name="keywords" content="metadata, agriculture, price index, linked data, JSON-LD, SHACL, semantic web">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Almes Core Management Group">
+<meta name="language" content="en">
+<meta name="copyright" content="Creative Commons Attribution 4.0 (CC BY 4.0)">
+<meta name="og:type" content="website">
+<meta name="og:title" content="Agriculture and Livestock Metadata Elements Set (Almes Core)">
+<meta name="og:description" content="Structured metadata schema for agricultural datasets, supporting FAIR data principles.">
+<meta name="og:image" content="https://almescore.github.io/Almes-Core/logo.png"> <!-- Add if you have a logo -->
+<meta name="og:url" content="https://almescore.github.io/Almes-Core/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Agriculture and Livestock Metadata Elements Set (Almes Core)">
+<meta name="twitter:description" content="Structured metadata schema for agricultural datasets, supporting FAIR data principles.">
+<meta name="twitter:image" content="https://almescore.github.io/Almes-Core/logo.png"> <!-- Add if you have a logo -->
+
 # Almes Core Reference Guide
 
 | Property | Value |
