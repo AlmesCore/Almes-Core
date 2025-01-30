@@ -1139,7 +1139,6 @@ Consider an economic statistical operation that tracks the price of various agri
 
 To improve search engine discoverability, this page contains **structured metadata (JSON-LD)**:
 
-```html
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
