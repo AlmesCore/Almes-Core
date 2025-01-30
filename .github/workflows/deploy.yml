@@ -25,22 +25,24 @@ jobs:
 
       - name: Install dependencies
         run: |
-          gem install bundler
+          gem install bundler jekyll
           bundle install
 
       - name: Build Jekyll site
         run: |
           bundle exec jekyll build --trace
-          echo "Checking _site directory contents:"
-          ls -lah _site  # Debug: List _site contents
+          echo "✅ Checking if _site/ directory exists..."
+          if [ -d "_site" ]; then echo "✅ _site exists"; else echo "❌ _site is missing!"; exit 1; fi
+          echo "📂 Listing contents of _site/:"
+          ls -lah _site
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v3
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3  # Updated from v2 to v3
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: _site  # This is where Jekyll builds the site
+          path: _site  # Ensure this matches where Jekyll builds
           name: github-pages  # Explicitly name the artifact
 
   deploy:
@@ -54,4 +56,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v2
         with:
-          artifact_name: github-pages  # Ensure it matches the artifact name above
+          artifact_name: github-pages
