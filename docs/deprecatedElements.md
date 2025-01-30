@@ -1,4 +1,5 @@
 ### product
+
 | Term name | alm:product |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -8,6 +9,7 @@
 | Replaced by | [productType](http://purl.org/almescore/productType) |
 
 ### references
+
 | Term name | dct:references |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -18,6 +20,7 @@
 | Comment | Deprecated only in the Almes Core schema, but still in use in the Dublin Core. |
 
 ### verbatimName
+
 | Term name | alm:verbatimName |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -27,6 +30,7 @@
 | Replaced by | <a href="https://github.com/Filipi-Soares/almes/blob/main/README.md#title">dc:title</a> |
 
 ### dataType
+
 | Term name | sdo:dataType |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -36,6 +40,7 @@
 | Comment | Deprecated only in the Almes Core schema, but still in use in Schema.org). |
 
 ### frequency
+
 | Term name | sdo:frequency |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -46,6 +51,7 @@
 | Comment | Deprecated only in the Almes Core schema, but still in use in Schema.org. 
 
 ### Data
+
 | Term name | alm:Data |
 | ------------- | ------------- |
 | Type of Term  | Class  |
@@ -56,6 +62,7 @@
 | Replaced by | <a href="https://github.com/Filipi-Soares/almes/blob/main/README.md#accrualPeriodicity">alm:Observation</a> |
 
 ### metadataID
+
 | Term name | alm:metadataID |
 | ------------- | ------------- |
 | Type of Term  | Property  |
