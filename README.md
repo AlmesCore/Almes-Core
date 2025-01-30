@@ -1,3 +1,12 @@
+---
+title: "Almes Core Metadata Schema"
+description: "Structured metadata for agricultural datasets"
+keywords: "metadata, agriculture, price index, linked data, JSON-LD, SHACL"
+robots: "index, follow"
+layout: default
+---
+
+
 This document contains the most up-to-date version of the Agriculture and Livestock Metadata Element Set (Almes Core), maintained by the Almes Core Data Management Group, including classes, properties, vocabulary encoding schemes, and syntax encoding schemes.
 
 
