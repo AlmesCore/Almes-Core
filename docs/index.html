@@ -3134,6 +3134,19 @@
         }
         </script>
     </section>
-
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    let ids = {}; // Object to store ID counts
+    document.querySelectorAll("[id]").forEach(function (el) {
+        let id = el.id;
+        if (ids[id]) {
+            el.id = id + "-" + ids[id]; // Append a number to make it unique
+            ids[id]++;
+        } else {
+            ids[id] = 1;
+        }
+    });
+});
+</script>
 </body>
 </html>
