@@ -1137,7 +1137,7 @@ Consider an economic statistical operation that tracks the price of various agri
 
 ## 🔍 Embedded Metadata
 
-To improve search engine discoverability, this page contains **structured metadata (JSON-LD)**:
+To improve search engine discoverability, this page contains **structured metadata (JSON-LD)**
 
 <script type="application/ld+json">
 {
