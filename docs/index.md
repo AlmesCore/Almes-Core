@@ -77,7 +77,13 @@ Soares, F. M., Corrêa, F. E., Pires, L. F., da Silva Santos, L. O. B., Drucker,
    - [Index of Terms](#index-of-terms-1)
 
 # Overview
+
+The Agriculture and Livestock Metadata Elements Set (Almes Core) is a structured metadata schema designed to enhance the FAIRness (Findability, Accessibility, Interoperability, and Reusability) of agricultural price index datasets. Developed and maintained by the Almes Core Management Group, the schema provides a standardized vocabulary for describing datasets related to agriculture, commodities, and price indexes.
+
+The name "Almes Core" was chosen to reflect the schema’s broad and extensible design, allowing for future expansion into other agricultural domains beyond price index data.
+
 ## Normative namespaces
+
 Namespaces and prefixes used in normative parts of this recommendation.
 
 | Prefix | Namespace |
