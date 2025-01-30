@@ -1106,3 +1106,78 @@ Consider an economic statistical operation that tracks the price of various agri
 | Comment | Use standard formats: ISO 4217 currency format, e.g. "USD"; Ticker symbol for cryptocurrencies, e.g. "BTC"; well known names for Local Exchange Trading Systems (LETS) and other currency types, e.g. "Ithaca HOUR". |
 | Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#observation">Observation</a> |
 | Range | http://www.w3.org/2001/XMLSchema#string | 
+
+## 🔍 Embedded Metadata
+
+To improve search engine discoverability, this page contains **structured metadata (JSON-LD)**:
+
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Agriculture and Livestock Metadata Elements Set (Almes Core)",
+  "creator": {
+    "@type": "Organization",
+    "name": "Almes Core Management Group"
+  },
+  "identifier": "https://w3id.org/AlmesCore#",
+  "url": "https://almescore.github.io/Almes-Core/",
+  "version": "2.0.1",
+  "dateModified": "2024-10-15",
+  "description": "This document presents the latest version of the Agriculture and Livestock Metadata Element Set (Almes Core), curated by the Almes Core Data Management Group. It encompasses comprehensive definitions of classes, properties, vocabulary encoding schemes, and syntax encoding schemes. The current core focuses on providing a detailed description of agricultural price index datasets.",
+  "keywords": [
+    "Agriculture",
+    "metadata schema",
+    "commodities",
+    "price index"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "status": "valid",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/html",
+      "contentUrl": "https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#almes-core-reference-guide"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/turtle",
+      "contentUrl": "https://raw.githubusercontent.com/AlmesCore/Almes-Core/refs/heads/main/Serializations/almes-core-schema-shacl.ttl"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/ld+json",
+      "contentUrl": "https://raw.githubusercontent.com/AlmesCore/Almes-Core/refs/heads/main/Serializations/almes-core-schema.json"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/plantuml",
+      "contentUrl": "https://raw.githubusercontent.com/AlmesCore/Almes-Core/refs/heads/main/Serializations/almes-core-schema.plantuml"
+    }
+  ],
+  "isAccessibleForFree": true,
+  "contributor": [
+    {
+      "@type": "Person",
+      "name": "Filipi Miranda Soares",
+      "sameAs": "https://orcid.org/0000-0002-0674-7960"
+    },
+    {
+      "@type": "Person",
+      "name": "Fernando Elias Corrêa",
+      "sameAs": "https://orcid.org/0000-0002-2744-6104"
+    },
+    {
+      "@type": "Person",
+      "name": "Dilvan de Abreu Moreira",
+      "sameAs": "https://orcid.org/0000-0002-4801-2225"
+    }
+  ],
+  "hasPart": {
+    "@type": "CreativeWork",
+    "name": "Version History",
+    "url": "https://github.com/AlmesCore/Almes-Core/blob/main/deprecatedElements.md"
+  }
+}
+</script>
