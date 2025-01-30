@@ -34,7 +34,7 @@ layout: default
 | Creator  | Almes Core Management Group  |
 | Identifier  | https://w3id.org/AlmesCore# |
 | Latest Version | https://github.com/AlmesCore/Almes-Core/edit/main/core2024-07-08.md |
-| Version History | https://github.com/AlmesCore/Almes-Core/blob/main/deprecatedElements.md |
+| Version History | https://github.com/AlmesCore/Almes-Core |
 | Version number | 2.0.1
 | Last updated | 2024-14-10 |
 | Document Status | valid |
@@ -1172,22 +1172,22 @@ To improve search engine discoverability, this page contains **structured metada
     {
       "@type": "DataDownload",
       "encodingFormat": "text/html",
-      "contentUrl": "https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#almes-core-reference-guide"
+      "contentUrl": "https://almescore.github.io/Almes-Core/"
     },
     {
       "@type": "DataDownload",
       "encodingFormat": "text/turtle",
-      "contentUrl": "https://raw.githubusercontent.com/AlmesCore/Almes-Core/refs/heads/main/Serializations/almes-core-schema-shacl.ttl"
+      "contentUrl": "https://raw.githubusercontent.com/AlmesCore/Almes-Core/refs/heads/main/Serializations/alm-shacl.ttl"
     },
     {
       "@type": "DataDownload",
       "encodingFormat": "application/ld+json",
-      "contentUrl": "https://raw.githubusercontent.com/AlmesCore/Almes-Core/refs/heads/main/Serializations/almes-core-schema.json"
+      "contentUrl": "https://raw.githubusercontent.com/AlmesCore/Almes-Core/refs/heads/main/Serializations/alm.json"
     },
     {
       "@type": "DataDownload",
       "encodingFormat": "application/plantuml",
-      "contentUrl": "https://raw.githubusercontent.com/AlmesCore/Almes-Core/refs/heads/main/Serializations/almes-core-schema.plantuml"
+      "contentUrl": "https://raw.githubusercontent.com/AlmesCore/Almes-Core/refs/heads/main/Serializations/alm.plantuml"
     }
   ],
   "isAccessibleForFree": true,
@@ -1211,7 +1211,7 @@ To improve search engine discoverability, this page contains **structured metada
   "hasPart": {
     "@type": "CreativeWork",
     "name": "Version History",
-    "url": "https://github.com/AlmesCore/Almes-Core/blob/main/deprecatedElements.md"
+    "url": "https://github.com/AlmesCore/Almes-Core"
   }
 }
 </script>
