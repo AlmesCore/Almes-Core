@@ -25,6 +25,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          gem install bundler
           bundle install
 
       - name: Build Jekyll site
@@ -40,6 +41,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3  # Updated from v2 to v3
         with:
           path: _site  # This is where Jekyll builds the site
+          name: github-pages  # Explicitly name the artifact
 
   deploy:
     environment:
@@ -51,3 +53,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+        with:
+          artifact_name: github-pages  # Ensure it matches the artifact name above
