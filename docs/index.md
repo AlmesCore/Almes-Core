@@ -25,7 +25,7 @@ This schema is designed for:
 - 🌐 **Linked Data & Semantic Web developers** integrating agricultural datasets.
 
 **Persistent Identifier (PID) using W3ID:**  
-🔗 `[https://w3id.org/AlmesCore#](https://w3id.org/AlmesCore#)`
+🔗 [https://w3id.org/AlmesCore#](https://w3id.org/AlmesCore#)
 
 ---
 
