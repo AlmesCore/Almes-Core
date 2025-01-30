@@ -208,14 +208,14 @@ Consider an economic statistical operation that tracks the price of various agri
   
 # Simple Almes Core
 
-## Resource
-| Term name | dcat:Resource |
-| ------------- | ------------- |
-| Type of Term  | Class  |
-| Label (EN) | Resource  |
-| Label (PT-BR) | Recurso  |
-| URI  | https://www.w3.org/ns/dcat#Resource  |
-| Definition  | Resource published or curated by a single agent.  |
+### **Resource**
+| Term name   | dcat:Resource  |
+|------------|---------------|
+| Type of Term | Class |
+| Label (EN) | Resource |
+| Label (PT-BR) | Recurso |
+| URI | [https://www.w3.org/ns/dcat#Resource](https://www.w3.org/ns/dcat#Resource) |
+| Definition | Resource published or curated by a single agent. |
 
 ### identifier
 | Term name | dct:identifier |
