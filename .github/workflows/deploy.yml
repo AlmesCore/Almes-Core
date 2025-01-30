@@ -34,7 +34,7 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v4  # Updated from v2 to v4
         with:
           path: _site  # This is where Jekyll builds the site
 
