@@ -49,7 +49,6 @@ jobs:
         with:
           path: _site
           name: github-pages  # Explicitly name the artifact
-          if-no-files-found: error  # Fail if _site is missing
 
   deploy:
     environment:
