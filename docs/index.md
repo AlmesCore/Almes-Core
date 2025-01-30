@@ -50,6 +50,7 @@ Soares, F. M., Corrêa, F. E., Pires, L. F., da Silva Santos, L. O. B., Drucker,
 # Overview
 ## Normative namespaces
 Namespaces and prefixes used in normative parts of this recommendation.
+
 | Prefix | Namespace |
 | ------------- | ------------- |
 | alm | https://w3id.org/AlmesCore# |
@@ -61,6 +62,7 @@ Namespaces and prefixes used in normative parts of this recommendation.
 | gn | http://www.geonames.org/ontology# |
 
 ## Vocabulary Encoding Schemes
+
 | Name | Namespace |
 | ------------- | ------------- |
 | Agrovoc | http://aims.fao.org/aos/agrovoc |
@@ -209,6 +211,7 @@ Consider an economic statistical operation that tracks the price of various agri
 # Simple Almes Core
 
 ## Resource
+
 | Term name | dcat:Resource |
 | ------------- | ------------- |
 | Type of Term  | Class  |
@@ -218,6 +221,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Definition  | Resource published or curated by a single agent.  |
 
 ### identifier
+
 | Term name | dct:identifier |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -229,6 +233,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | http://www.w3.org/2001/XMLSchema#anyURI |
 
 ### title
+
 | Term name | dc:title |
 | ------------- | ------------- |
 | Type of Term  | Property  |
@@ -240,6 +245,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Range | 	http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### description
+
 | Term name | dct:description |
 | ------------- | ------------- |
 | Type of Term  | Property  |
