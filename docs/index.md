@@ -33,6 +33,7 @@ layout: default
 | Title  | Agriculture and Livestock Metadata Elements Set (Almes Core)  |
 | Creator  | Almes Core Management Group  |
 | Identifier  | [https://w3id.org/AlmesCore#](https://w3id.org/AlmesCore#) |
+| AgroPortal URI | https://almescore.github.io/Almes-Core/ |
 | Latest Version | [https://almescore.github.io/Almes-Core/](https://almescore.github.io/Almes-Core/) |
 | Version History | [https://github.com/AlmesCore/Almes-Core](https://github.com/AlmesCore/Almes-Core) |
 | Version number | 2.0.1
