@@ -609,6 +609,8 @@ Extended Almes Core was created to support the use of the metadata schema in RDF
 
 The `publisher` and `creator` properties describe the entities responsible for publishing the Datasets. To provide more detailed information about these entities beyond just their names, these properties can be instantiated using the `Agent` class, which includes attributes such as name, homepage, and email. Using the `Agent` class is optional in the Simple Almes Core, and mandatory in the Extended Almes Core.
 
+The `productGroup` and `productType` properties may have subproperties `productGroupURI`, `productGroupName`, and `productTypeURI`, `productTypeName`, respectively. The use of this subproperties is not mandatory, but highly recommended. 
+
 As mentioned before, in the Simple Almes Core, `location` may provide only the name of the location in textual form. In Extended Almes Core, `location` should be instantiated using the `GeoNamesFeature` class, which has two properties: `geoNamesName`, to give the location name as it appears on the GeoNames ontology, and `geoNamesID`, to provide the URI of the concept representing a location within the GeoNames ontology.
 
 
