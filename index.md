@@ -263,7 +263,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Label (PT-BR) | identificador  |
 | URI  | http://purl.org/dc/terms/identifier  |
 | Definition  | An unambiguous reference to the resource within a given context.  |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#resource">Resource</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#resource">Resource</a> |
 | Range | http://www.w3.org/2001/XMLSchema#anyURI |
 
 ### title
@@ -275,7 +275,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Label (PT-BR) | título  |
 | URI  | http://purl.org/dc/elements/1.1/title  |
 | Definition | A name given to the resource.   |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#resource">Resource</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#resource">Resource</a> |
 | Range | 	http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### description
@@ -287,7 +287,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Label (PT-BR) | descrição  |
 | URI  | http://purl.org/dc/terms/description |
 | Definition | 	Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource. |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#resource">Resource</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#resource">Resource</a> |
 | Range | 	http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### publisher
@@ -300,7 +300,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | URI  | http://purl.org/dc/elements/1.1/publisher  |
 | Definition | An entity responsible for making the resource available. |
 | Comment | Examples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity. |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#resource">Resource</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#resource">Resource</a> |
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### creator
@@ -313,7 +313,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | URI  | http://purl.org/dc/elements/1.1/creator  |
 | Definition | 	An entity primarily responsible for making the resource. |
 | Comments| Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity. |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#resource">Resource</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#resource">Resource</a> |
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### modified
@@ -326,7 +326,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | URI  | http://purl.org/dc/terms/modified |
 | Definition | Date on which the resource was changed. |
 | Comment | Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty. |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#resource">Resource</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#resource">Resource</a> |
 | Range | http://www.w3.org/2001/XMLSchema#date |
 
 ### version
@@ -338,7 +338,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Label (PT-BR) | versão  |
 | URI  | http://purl.org/dc/terms/hasVersion |
 | Definition | The version indicator (name or identifier) of a resource. |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#resource">Resource</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#resource">Resource</a> |
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### language
@@ -351,7 +351,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | URI  | http://purl.org/dc/terms/language  |
 | Definition | A language of the resource. |
 | Comment | Recommended practice is to use either a non-literal value representing a language from a controlled vocabulary such as <a href="https://www.loc.gov/standards/iso639-2/php/code_list-txt.php">ISO 639-2</a> or ISO 639-3, or a literal value consisting of an IETF Best Current Practice 47 <a href="https://www.rfc-editor.org/info/bcp47">(IETF-BCP47)</a> language tag. |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#resource">Resource</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#resource">Resource</a> |
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### license
@@ -364,7 +364,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | URI  | http://purl.org/dc/terms/license |
 | Definition | A legal document giving official permission to do something with the resource. |
 | Comment | Recommended practice is to identify the license document with a URI. If this is not possible or feasible, a literal value that identifies the license may be provided. |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#resource">Resource</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#resource">Resource</a> |
 | Range | http://www.w3.org/2001/XMLSchema#anyURI |
 
 ### rights
@@ -377,7 +377,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | URI  | http://purl.org/dc/elements/1.1/rights |
 | Definition | Information about rights held in and over the resource. |
 | Comment | Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights. |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#resource">Resource</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#resource">Resource</a> |
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ## Dataset
@@ -401,7 +401,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Definition  | A ProductGroup represents a group of products resulting from agriculture or livestock activities that vary only in certain well-described ways, being aggregated according to common biological traits.  |
 | Comment | The best recommended practice is to use a controlled vocabulary, such as the Agricultural Product Types Ontology (APTO). Example: grain, vegetables, meat. |
 | Broader Match | <a href="https://schema.org/ProductGroup">sdo:productGroup</a> |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#dataset">Dataset</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#dataset">Dataset</a> |
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### productType
@@ -415,7 +415,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Definition | Name of the agricultural or livestock product type targeted by the commercial operation.  |
 | Comment | The best recommended practice is to use a controlled vocabulary. Example: soy, corn, fed cattle. |
 | Broader Match | <a href="https://schema.org/Product">sdo:product</a> |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#dataset">Dataset</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#dataset">Dataset</a> |
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### theme
@@ -430,7 +430,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Comment | The recommended best practice is to use a controlled vocabulary for consistency and accuracy. Examples of possible themes include Price Index, Domestic Material Consumption Indicator, Agricultural Production, Export and Import Data, Inflation Rate, Employment Statistics, and Energy Consumption. |
 | References | https://metadados.ibge.gov.br/consulta/estatisticos/temas |
 | Broader Match | <a href="http://www.w3.org/ns/dcat#theme">dcat:theme</a> |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#dataset">Dataset</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#dataset">Dataset</a> |
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### accessURL
@@ -442,7 +442,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Label (PT-BR) | disponível em  |
 | URI  | https://www.w3.org/ns/dcat#accessURL |
 | Definition | A URL of the resource that gives access to a distribution of the dataset. E.g. landing page, feed, SPARQL endpoint. |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#dataset">Dataset</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#dataset">Dataset</a> |
 | Range | http://www.w3.org/2001/XMLSchema#anyURI |
 
 ### accrualPeriodicity
@@ -455,7 +455,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | URI  | http://purl.org/dc/terms/accrualPeriodicity |
 | Definition | The frequency with which items are added to a collection. |
 | Comment | Recommended practice is to use a value from the Collection Description Frequency Vocabulary <a href="https://www.dublincore.org/specifications/dublin-core/collection-description/frequency/">(DCMI-COLLFREQ)</a>. 
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#dataset">Dataset</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#dataset">Dataset</a> |
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### referenceQuantity
@@ -467,7 +467,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Label (PT-BR) | quantidade de referência  |
 | URI  | https://schema.org/referenceQuantity |
 | Definition | The reference quantity for which a certain price applies, e.g. 1 EUR per 4 kWh of electricity. This property is a replacement for unitOfMeasurement for the advanced cases where the price does not relate to a standard unit. |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#dataset">Dataset</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#dataset">Dataset</a> |
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### location
@@ -480,7 +480,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | URI  | https://schema.org/location |
 | Definition | The location of, for example, where an event is happening, where an organization is located, or where an action takes place. |
 | Comment | Recommended practice is to use a value from a controlled vocabulary such as <a href="https://www.geonames.org/">Geonames.org</a>. 
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#dataset">Dataset</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#dataset">Dataset</a> |
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### statisticalMethod
@@ -493,7 +493,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | URI  | https://w3id.org/AlmesCore#statisticalmethod |
 | Definition | Summary of the methods used for the process of obtaining data. |
 | Comment| Recommended best practice is to indicate the published resource URI in an open access format. |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#dataset">Dataset</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#dataset">Dataset</a> |
 | Range | http://www.w3.org/2001/XMLSchema#anyURI |
 
 ### descriptiveStatistics
@@ -507,7 +507,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | Definition | Summarizes and describes the main features of a dataset. When used in the context of a time series, it includes metrics such as mean, variance, and trends over time. |
 | Comment|  Recommended best practice is to use a controlled vocabulary. Example: ``time series``, ``mean``, ``Range``, ``trend analysis``, ``seasonal snalysis``, etc. |
 | Related Match | <a href="https://rdf-vocabulary.ddialliance.org/discovery.html#descriptivestatistics">ddi:DescriptiveStatistics</a> |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#dataset">Dataset</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#dataset">Dataset</a> |
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### startDate
@@ -520,7 +520,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | URI  | https://schema.org/startDate |
 | Definition  | The start date and time of the item (in ISO 8601 date format).  |
 | Comment|  In Almes Core, it is used to inform the start date of a price index time series. |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#dataset">Dataset</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#dataset">Dataset</a> |
 | Range | http://www.w3.org/2001/XMLSchema#date | 
 
 ### endDate
@@ -533,7 +533,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | URI  | https://schema.org/endDate |
 | Definition  | The end date and time of the item (in ISO 8601 date format).  |
 | Comment|  In Almes Core, it is used to inform the end date of a price index time series. In case the price index is still active, this field should be left blank. |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#dataset">Dataset</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#dataset">Dataset</a> |
 | Range | http://www.w3.org/2001/XMLSchema#date | 
 
 ### hasObservation
@@ -546,7 +546,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | URI  | https://w3id.org/AlmesCore#hasObservation |
 | Definition  | Associates an entity (represented by an ``dct:identifier``) to a specific recorded price ``Observation`` related to an agricultural product.  |
 | Comment | This metadata field should be used to create a blank node in an RDF representation, including the properties ``dc:date``, ``sdo:price``, and ``sdo:currency``.|
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#dataset">Dataset</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#dataset">Dataset</a> |
 | Range | alm:Observation | 
 
 
@@ -570,7 +570,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | URI  | http://purl.org/dc/elements/1.1/date  |
 | Definition | A point or period of time associated with an event in the lifecycle of the resource. |
 | Comment 1 | Date may be used to express temporal information at any level of granularity. Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [ISO 8601-1] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [W3CDTF] or the Extended Date/Time Format Specification [EDTF]. If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a '/' (slash) character. Either the start or end date may be missing. |
-| Comment 2 | In case the date is a range, [sdo:startDate](https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#startdate) and [sdo:ednDate](https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#enddate) should be used instead to indicate the beginning and the end of the period. |
+| Comment 2 | In case the date is a range, [sdo:startDate](https://almescore.github.io/Almes-Core/#startdate) and [sdo:ednDate](https://almescore.github.io/Almes-Core/#enddate) should be used instead to indicate the beginning and the end of the period. |
 | Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#observation">Observation</a> |
 | Range | http://www.w3.org/2001/XMLSchema#date | 
 
@@ -584,7 +584,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | URI  | https://schema.org/price |
 | Definition | The offer price of a product. |
 | Comment | The price should be indicated as a float number with two decimal digits. |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#observation">Observation</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#observation">Observation</a> |
 | Range | http://www.w3.org/2001/XMLSchema#float | 
 
 
@@ -598,7 +598,7 @@ Consider an economic statistical operation that tracks the price of various agri
 | URI  | https://schema.org/currency |
 | Definition | The currency in which the monetary amount is expressed. |
 | Comment | Use standard formats: ISO 4217 currency format, e.g. "USD"; Ticker symbol for cryptocurrencies, e.g. "BTC"; well known names for Local Exchange Trading Systems (LETS) and other currency types, e.g. "Ithaca HOUR". |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#observation">Observation</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#observation">Observation</a> |
 | Range | http://www.w3.org/2001/XMLSchema#string | 
 
 # Extended Almes Core
