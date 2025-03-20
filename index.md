@@ -74,7 +74,7 @@ Soares, F. M., Corrêa, F. E., Pires, L. F., da Silva Santos, L. O. B., Drucker,
    - [Key Relationships](#key-relationships)
    - [Use Case Example](#use-case-example)
    - [Index of Terms](#index-of-terms)
-3. [Extended Almes Core](#extended-almes-core)
+3. [Extended Almes Core (RDF)](#extended-almes-core)
    - [Conceptual Model](#conceptual-model-1)
    - [Index of Terms](#index-of-terms-1)
 
