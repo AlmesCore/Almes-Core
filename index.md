@@ -91,6 +91,7 @@ Namespaces and prefixes used in normative parts of this recommendation.
 | Prefix | Namespace |
 | ------------- | ------------- |
 | alm | [https://w3id.org/AlmesCore#](https://w3id.org/AlmesCore#) |
+| alm | [https://w3id.org/AlmesCore/rdf#](https://w3id.org/AlmesCore/rdf#)
 | dc  | [http://purl.org/dc/elements/1.1/](http://purl.org/dc/elements/1.1/)  |
 | sdo  | [https://schema.org/](https://schema.org/)  |
 | dcat | [http://www.w3.org/ns/dcat#](http://www.w3.org/ns/dcat#) |
