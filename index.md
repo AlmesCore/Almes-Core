@@ -32,7 +32,8 @@ layout: default
 | ------------- | ------------- |
 | Title  | Agriculture and Livestock Metadata Elements Set (Almes Core)  |
 | Creator  | Almes Core Management Group  |
-| Identifier  | [https://w3id.org/AlmesCore#](https://w3id.org/AlmesCore#) |
+| Namespace  | [https://w3id.org/AlmesCore#](https://w3id.org/AlmesCore#) |
+| RDF namespace | https://w3id.org/AlmesCore/rdf# |
 | AgroPortal URI | [https://agroportal.lirmm.fr/ontologies/ALM](https://agroportal.lirmm.fr/ontologies/ALM) |
 | Latest Version | [https://almescore.github.io/Almes-Core/](https://almescore.github.io/Almes-Core/) |
 | Version History | [https://github.com/AlmesCore/Almes-Core](https://github.com/AlmesCore/Almes-Core) |
@@ -603,7 +604,7 @@ Consider an economic statistical operation that tracks the price of various agri
 
 # Extended Almes Core
 
-Extended Almes Core was created to support the use of the metadata schema in RDF.
+Extended Almes Core was created to support the use of the metadata schema in RDF, within the namespace `https://w3id.org/AlmesCore/rdf#`.
 
 The `publisher` and `creator` properties describe the entities responsible for publishing the Datasets. To provide more detailed information about these entities beyond just their names, these properties can be instantiated using the `Agent` class, which includes attributes such as name, homepage, and email. Using the `Agent` class is optional in the Simple Almes Core, and mandatory in the Extended Almes Core.
 
@@ -679,7 +680,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Label (PT-BR) | identificador  |
 | URI  | http://purl.org/dc/terms/identifier  |
 | Definition  | An unambiguous reference to the resource within a given context.  |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#resource">Resource</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#resource-1">Resource</a> |
 | Range | http://www.w3.org/2001/XMLSchema#anyURI |
 
 ### title
@@ -691,7 +692,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Label (PT-BR) | título  |
 | URI  | http://purl.org/dc/elements/1.1/title  |
 | Definition | A name given to the resource.   |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#resource">Resource</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#resource-1">Resource</a> |
 | Range | 	http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### description
@@ -703,7 +704,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Label (PT-BR) | descrição  |
 | URI  | http://purl.org/dc/terms/description |
 | Definition | 	Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource. |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#resource">Resource</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#resource-1">Resource</a> |
 | Range | 	http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### publisher
@@ -716,8 +717,8 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | URI  | http://purl.org/dc/elements/1.1/publisher  |
 | Definition | An entity responsible for making the resource available. |
 | Comment | Examples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity. |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#resource">Resource</a> |
-| Range | 	<a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#agent">Agent</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#resource-1">Resource</a> |
+| Range | 	<a href="https://almescore.github.io/Almes-Core/#agent-1">Agent</a> |
 
 ### creator
 
@@ -729,8 +730,8 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | URI  | http://purl.org/dc/elements/1.1/creator  |
 | Definition | 	An entity primarily responsible for making the resource. |
 | Comments| Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity. |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#resource">Resource</a> |
-| Range | 	<a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#agent">Agent</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#resource-1">Resource</a> |
+| Range | 	<a href="https://almescore.github.io/Almes-Core/#agent-1">Agent</a> |
 
 ### modified
 
@@ -742,7 +743,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | URI  | http://purl.org/dc/terms/modified |
 | Definition | Date on which the resource was changed. |
 | Comment | Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty. |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#resource">Resource</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#resource-1">Resource</a> |
 | Range | http://www.w3.org/2001/XMLSchema#date |
 
 ### version
@@ -754,7 +755,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Label (PT-BR) | versão  |
 | URI  | http://purl.org/dc/terms/hasVersion |
 | Definition | The version indicator (name or identifier) of a resource. |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#resource">Resource</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#resource-1">Resource</a> |
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### language
@@ -767,7 +768,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | URI  | http://purl.org/dc/terms/language  |
 | Definition | A language of the resource. |
 | Comment | Recommended practice is to use either a non-literal value representing a language from a controlled vocabulary such as <a href="https://www.loc.gov/standards/iso639-2/php/code_list-txt.php">ISO 639-2</a> or ISO 639-3, or a literal value consisting of an IETF Best Current Practice 47 <a href="https://www.rfc-editor.org/info/bcp47">(IETF-BCP47)</a> language tag. |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#resource">Resource</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#resource-1">Resource</a> |
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### license
@@ -780,7 +781,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | URI  | http://purl.org/dc/terms/license |
 | Definition | A legal document giving official permission to do something with the resource. |
 | Comment | Recommended practice is to identify the license document with a URI. If this is not possible or feasible, a literal value that identifies the license may be provided. |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#resource">Resource</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#resource-1">Resource</a> |
 | Range | http://www.w3.org/2001/XMLSchema#anyURI |
 
 ### rights
@@ -793,7 +794,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | URI  | http://purl.org/dc/elements/1.1/rights |
 | Definition | Information about rights held in and over the resource. |
 | Comment | Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights. |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#resource">Resource</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#resource-1">Resource</a> |
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ## Dataset
@@ -817,7 +818,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Definition  | A ProductGroup represents a group of products resulting from agriculture or livestock activities that vary only in certain well-described ways, being aggregated according to common biological traits.  |
 | Comment | The best recommended practice is to use a controlled vocabulary, such as the Agricultural Product Types Ontology (APTO). Example: grain, vegetables, meat. |
 | Broader Match | <a href="https://schema.org/ProductGroup">sdo:productGroup</a> |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#dataset">Dataset</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#dataset-1">Dataset</a> |
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### productGroupURI
@@ -828,9 +829,9 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Label (EN) | product group URI |
 | Label (PT-BR) | URI do grupo do produto  |
 | URI  | https://w3id.org/AlmesCore#productgroupuri |
-| Definition  | A URI of a term from any controlled vocabulary describing a <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#productgroup">productGroup</a>. |
+| Definition  | A URI of a term from any controlled vocabulary describing a <a href="https://almescore.github.io/Almes-Core/#productgroup-1">productGroup</a>. |
 | Comment | Example: https://agrovoc.fao.org/browse/agrovoc/en/page/c_3346 |
-| Subproperty of | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#productgroup">productGroup</a> |
+| Subproperty of | <a href="https://almescore.github.io/Almes-Core/#productgroupuri-1">productGroup</a> |
 | Range | http://www.w3.org/2001/XMLSchema#anyURI |
 
 ### productGroupName
@@ -841,9 +842,9 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Label (EN) | product group name |
 | Label (PT-BR) | nome do grupo do produto  |
 | URI  | https://w3id.org/AlmesCore#productgroupname |
-| Definition  | The name of a <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#productgroup">productGroup</a> in a controlled vocabulary. |
+| Definition  | The name of a <a href="https://almescore.github.io/Almes-Core/#productgroup-1">productGroup</a> in a controlled vocabulary. |
 | Comment | Examples: grain, vegetables, meat. |
-| Subproperty of | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#productgroup">productGroup</a> |
+| Subproperty of | <a href="https://almescore.github.io/Almes-Core/#productgroupuri-1">productGroup</a> |
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### productType
@@ -857,7 +858,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Definition | Name of the agricultural or livestock product type targeted by the commercial operation.  |
 | Comment | The best recommended practice is to use a controlled vocabulary. Example: soy, corn, fed cattle. |
 | Broader Match | <a href="https://schema.org/Product">sdo:product</a> |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#dataset">Dataset</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#dataset-1">Dataset</a> |
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### productTypeURI
@@ -868,9 +869,9 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Label (EN) | product type URI  |
 | Label (PT-BR) | URI do tipo de produto  |
 | URI  | https://w3id.org/AlmesCore#producttypeuri |
-| Definition | A URI of a term from any controlled vocabulary describing a <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#producttype">productType</a>. |
+| Definition | A URI of a term from any controlled vocabulary describing a <a href="https://almescore.github.io/Almes-Core/#producttype-1">productType</a>. |
 | Comment | Example: http://aims.fao.org/aos/agrovoc/c_a77edd1d |
-| Subproperty of | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#producttype">productType</a> |
+| Subproperty of | <a href="https://almescore.github.io/Almes-Core/#producttype-1">productType</a> |
 | Range | http://www.w3.org/2001/XMLSchema#anyURI |
 
 ### productTypeName
@@ -881,9 +882,9 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Label (EN) | product type name  |
 | Label (PT-BR) | nome do tipo de produto  |
 | URI  | https://w3id.org/AlmesCore#producttypename |
-| Definition | The name of a <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#producttype">productType</a> in a controlled vocabulary. |
+| Definition | The name of a <a href="https://almescore.github.io/Almes-Core/#producttype-1">productType</a> in a controlled vocabulary. |
 | Comment | Examples: cassava flour, honey, beef. |
-| Subproperty of | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#producttype">productType</a> |
+| Subproperty of | <a href="https://almescore.github.io/Almes-Core/#producttype-1">productType</a> |
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### theme
@@ -898,7 +899,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Comment | The recommended best practice is to use a controlled vocabulary for consistency and accuracy. Examples of possible themes include Price Index, Domestic Material Consumption Indicator, Agricultural Production, Export and Import Data, Inflation Rate, Employment Statistics, and Energy Consumption. |
 | References | https://metadados.ibge.gov.br/consulta/estatisticos/temas |
 | Broader Match | <a href="http://www.w3.org/ns/dcat#theme">dcat:theme</a> |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#dataset">Dataset</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#dataset-1">Dataset</a> |
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### accessURL
@@ -910,7 +911,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Label (PT-BR) | disponível em  |
 | URI  | https://www.w3.org/ns/dcat#accessURL |
 | Definition | A URL of the resource that gives access to a distribution of the dataset. E.g. landing page, feed, SPARQL endpoint. |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#dataset">Dataset</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#dataset-1">Dataset</a> |
 | Range | http://www.w3.org/2001/XMLSchema#anyURI |
 
 ### accrualPeriodicity
@@ -923,7 +924,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | URI  | http://purl.org/dc/terms/accrualPeriodicity |
 | Definition | The frequency with which items are added to a collection. |
 | Comment | Recommended practice is to use a value from the Collection Description Frequency Vocabulary <a href="https://www.dublincore.org/specifications/dublin-core/collection-description/frequency/">(DCMI-COLLFREQ)</a>. 
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#dataset">Dataset</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#dataset-1">Dataset</a> |
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### referenceQuantity
@@ -935,7 +936,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Label (PT-BR) | quantidade de referência  |
 | URI  | https://schema.org/referenceQuantity |
 | Definition | The reference quantity for which a certain price applies, e.g. 1 EUR per 4 kWh of electricity. This property is a replacement for unitOfMeasurement for the advanced cases where the price does not relate to a standard unit. |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#dataset">Dataset</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#dataset-1">Dataset</a> |
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### location
@@ -948,8 +949,8 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | URI  | https://schema.org/location |
 | Definition | The location of, for example, where an event is happening, where an organization is located, or where an action takes place. |
 | Comment | Recommended practice is to use a value from a controlled vocabulary such as <a href="https://www.geonames.org/">Geonames.org</a>. 
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#dataset">Dataset</a> |
-| Range | [GeoNamesFeature](https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#geonamesfeature) |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#dataset-1">Dataset</a> |
+| Range | [GeoNamesFeature](https://almescore.github.io/Almes-Core/#geonamesfeature-1) |
 
 ### statisticalMethod
 
@@ -961,7 +962,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | URI  | https://w3id.org/AlmesCore#statisticalmethod |
 | Definition | Summary of the methods used for the process of obtaining data. |
 | Comment| Recommended best practice is to indicate the published resource URI in an open access format. |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#dataset">Dataset</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#dataset-1">Dataset</a> |
 | Range | http://www.w3.org/2001/XMLSchema#anyURI |
 
 ### descriptiveStatistics
@@ -975,7 +976,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Definition | Summarizes and describes the main features of a dataset. When used in the context of a time series, it includes metrics such as mean, variance, and trends over time. |
 | Comment|  Recommended best practice is to use a controlled vocabulary. Example: ``time series``, ``mean``, ``Range``, ``trend analysis``, ``seasonal snalysis``, etc. |
 | Related Match | <a href="https://rdf-vocabulary.ddialliance.org/discovery.html#descriptivestatistics">ddi:DescriptiveStatistics</a> |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#dataset">Dataset</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#dataset-1">Dataset</a> |
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### startDate
@@ -987,7 +988,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Label (PT-BR) | data de início  |
 | URI  | https://schema.org/startDate |
 | Definition  | The start date and time of the item (in ISO 8601 date format).  |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#dataset">Dataset</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#dataset-1">Dataset</a> |
 | Range | http://www.w3.org/2001/XMLSchema#date | 
 
 ### endDate
@@ -999,7 +1000,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Label (PT-BR) | data de fim  |
 | URI  | https://schema.org/endDate |
 | Definition  | The end date and time of the item (in ISO 8601 date format).  |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#dataset">Dataset</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#dataset-1">Dataset</a> |
 | Range | http://www.w3.org/2001/XMLSchema#date | 
 
 ### hasObservation
@@ -1012,7 +1013,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | URI  | https://w3id.org/AlmesCore#hasObservation |
 | Definition  | Associates an entity (represented by an ``dct:identifier``) to a specific recorded price ``Observation`` related to an agricultural product.  |
 | Comment | This metadata field should be used to create a blank node in an RDF representation, including the properties ``dc:date``, ``sdo:price``, and ``sdo:currency``.|
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#dataset">Dataset</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#dataset-1">Dataset</a> |
 | Range | alm:Observation | 
 
 ## Agent
@@ -1034,7 +1035,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Label (PT-BR) | nome  |
 | URI  | http://xmlns.com/foaf/0.1/#term_name |
 | Definition  | A name for some thing.  |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#agent">Agent</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#agent-1">Agent</a> |
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal |
 
 ### homepage
@@ -1046,7 +1047,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Label (PT-BR) | homepage  |
 | URI  | http://xmlns.com/foaf/0.1/#term_homepage |
 | Definition  | A homepage for some thing.  |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#agent">Agent</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#agent-1">Agent</a> |
 | Range | http://www.w3.org/2001/XMLSchema#anyURI | 
 
 ### e-mail
@@ -1058,7 +1059,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Label (PT-BR) | e-mail  |
 | URI  | http://xmlns.com/foaf/0.1/#term_mbox |
 | Definition  | A personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a 'static inverse functional property', in that there is (across time and change) at most one individual that ever has any particular value for foaf:mbox.  |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#agent">Agent</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#agent-1">Agent</a> |
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal | 
 
 ## GeoNamesFeature
@@ -1081,7 +1082,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | URI  | http://www.geonames.org/ontology#name |
 | Definition  | The name of a geographical feature.  |
 | Comments | Examples: ``New York``, ``Mount Everest``, ``Nile River``.
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#geonamesfeature">GeoNamesFeature</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#geonamesfeature-1">GeoNamesFeature</a> |
 | Range | http://www.w3.org/2000/01/rdf-schema#Literal | 
 
 ### geoNamesID
@@ -1094,7 +1095,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | URI  | http://www.geonames.org/ontology#geonamesID |
 | Definition  | The ID of a geographical feature.  |
 | Comments | Examples: ``http://sws.geonames.org/5128581/``, ``http://sws.geonames.org/6252001/``, ``http://sws.geonames.org/2347283/``.
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#geonamesfeature">GeoNamesFeature</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#geonamesfeature-1">GeoNamesFeature</a> |
 | Range | http://www.w3.org/2001/XMLSchema#anyURI | 
 
 
@@ -1118,8 +1119,8 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | URI  | http://purl.org/dc/elements/1.1/date  |
 | Definition | A point or period of time associated with an event in the lifecycle of the resource. |
 | Comment 1 | Date may be used to express temporal information at any level of granularity. Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [ISO 8601-1] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [W3CDTF] or the Extended Date/Time Format Specification [EDTF]. If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a '/' (slash) character. Either the start or end date may be missing. |
-| Comment 2 | In case the date is a range, [sdo:startDate](https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#startdate) and [sdo:ednDate](https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#enddate) should be used instead to indicate the beginning and the end of the period. |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#observation">Observation</a> |
+| Comment 2 | In case the date is a range, [sdo:startDate](https://almescore.github.io/Almes-Core/#startdate-1) and [sdo:ednDate](https://almescore.github.io/Almes-Core/#enddate-1) should be used instead to indicate the beginning and the end of the period. |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#observation-1">Observation</a> |
 | Range | http://www.w3.org/2001/XMLSchema#date | 
 
 ### price
@@ -1132,7 +1133,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | URI  | https://schema.org/price |
 | Definition | The offer price of a product. |
 | Comment | The price should be indicated as a float number with two decimal digits. |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#observation">Observation</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#observation-1">Observation</a> |
 | Range | http://www.w3.org/2001/XMLSchema#float | 
 
 
@@ -1146,7 +1147,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | URI  | https://schema.org/currency |
 | Definition | The currency in which the monetary amount is expressed. |
 | Comment | Use standard formats: ISO 4217 currency format, e.g. "USD"; Ticker symbol for cryptocurrencies, e.g. "BTC"; well known names for Local Exchange Trading Systems (LETS) and other currency types, e.g. "Ithaca HOUR". |
-| Domain | <a href="https://github.com/AlmesCore/Almes-Core/blob/main/core2024-07-08.md#observation">Observation</a> |
+| Domain | <a href="https://almescore.github.io/Almes-Core/#observation-1">Observation</a> |
 | Range | http://www.w3.org/2001/XMLSchema#string | 
 
 ## 🔍 Embedded Metadata
