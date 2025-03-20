@@ -814,7 +814,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Type of Term  | Property  |
 | Label (EN) | product group  |
 | Label (PT-BR) | grupo do produto  |
-| URI  | https://w3id.org/AlmesCore#productgroup |
+| URI  | https://w3id.org/AlmesCore/rdf#productgroup |
 | Definition  | A ProductGroup represents a group of products resulting from agriculture or livestock activities that vary only in certain well-described ways, being aggregated according to common biological traits.  |
 | Comment | The best recommended practice is to use a controlled vocabulary, such as the Agricultural Product Types Ontology (APTO). Example: grain, vegetables, meat. |
 | Broader Match | <a href="https://schema.org/ProductGroup">sdo:productGroup</a> |
@@ -828,7 +828,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Type of Term  | Property  |
 | Label (EN) | product group URI |
 | Label (PT-BR) | URI do grupo do produto  |
-| URI  | https://w3id.org/AlmesCore#productgroupuri |
+| URI  | https://w3id.org/AlmesCore/rdf#productgroupuri |
 | Definition  | A URI of a term from any controlled vocabulary describing a <a href="https://almescore.github.io/Almes-Core/#productgroup-1">productGroup</a>. |
 | Comment | Example: https://agrovoc.fao.org/browse/agrovoc/en/page/c_3346 |
 | Subproperty of | <a href="https://almescore.github.io/Almes-Core/#productgroupuri-1">productGroup</a> |
@@ -841,7 +841,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Type of Term  | Property  |
 | Label (EN) | product group name |
 | Label (PT-BR) | nome do grupo do produto  |
-| URI  | https://w3id.org/AlmesCore#productgroupname |
+| URI  | https://w3id.org/AlmesCore/rdf#productgroupname |
 | Definition  | The name of a <a href="https://almescore.github.io/Almes-Core/#productgroup-1">productGroup</a> in a controlled vocabulary. |
 | Comment | Examples: grain, vegetables, meat. |
 | Subproperty of | <a href="https://almescore.github.io/Almes-Core/#productgroupuri-1">productGroup</a> |
@@ -854,7 +854,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Type of Term  | Property  |
 | Label (EN) | product type  |
 | Label (PT-BR) | produto  |
-| URI  | https://w3id.org/AlmesCore#producttype |
+| URI  | https://w3id.org/AlmesCore/rdf#producttype |
 | Definition | Name of the agricultural or livestock product type targeted by the commercial operation.  |
 | Comment | The best recommended practice is to use a controlled vocabulary. Example: soy, corn, fed cattle. |
 | Broader Match | <a href="https://schema.org/Product">sdo:product</a> |
@@ -868,7 +868,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Type of Term  | Property  |
 | Label (EN) | product type URI  |
 | Label (PT-BR) | URI do tipo de produto  |
-| URI  | https://w3id.org/AlmesCore#producttypeuri |
+| URI  | https://w3id.org/AlmesCore/rdf#producttypeuri |
 | Definition | A URI of a term from any controlled vocabulary describing a <a href="https://almescore.github.io/Almes-Core/#producttype-1">productType</a>. |
 | Comment | Example: http://aims.fao.org/aos/agrovoc/c_a77edd1d |
 | Subproperty of | <a href="https://almescore.github.io/Almes-Core/#producttype-1">productType</a> |
@@ -881,7 +881,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Type of Term  | Property  |
 | Label (EN) | product type name  |
 | Label (PT-BR) | nome do tipo de produto  |
-| URI  | https://w3id.org/AlmesCore#producttypename |
+| URI  | https://w3id.org/AlmesCore/rdf#producttypename |
 | Definition | The name of a <a href="https://almescore.github.io/Almes-Core/#producttype-1">productType</a> in a controlled vocabulary. |
 | Comment | Examples: cassava flour, honey, beef. |
 | Subproperty of | <a href="https://almescore.github.io/Almes-Core/#producttype-1">productType</a> |
@@ -894,7 +894,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Type of Term  | Property  |
 | Label (EN) | theme  |
 | Label (PT-BR) | tema  |
-| URI  | https://w3id.org/AlmesCore#theme |
+| URI  | https://w3id.org/AlmesCore/rdf#theme |
 | Definition | Indicates the main subject or topic investigated in the economic statistical operation. Themes help categorize the dataset for easier discovery and analysis. |
 | Comment | The recommended best practice is to use a controlled vocabulary for consistency and accuracy. Examples of possible themes include Price Index, Domestic Material Consumption Indicator, Agricultural Production, Export and Import Data, Inflation Rate, Employment Statistics, and Energy Consumption. |
 | References | https://metadados.ibge.gov.br/consulta/estatisticos/temas |
@@ -959,7 +959,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Type of Term  | Property  |
 | Label (EN) | statistical method  |
 | Label (PT-BR) | método estatístico  |
-| URI  | https://w3id.org/AlmesCore#statisticalmethod |
+| URI  | https://w3id.org/AlmesCore/rdf#statisticalmethod |
 | Definition | Summary of the methods used for the process of obtaining data. |
 | Comment| Recommended best practice is to indicate the published resource URI in an open access format. |
 | Domain | <a href="https://almescore.github.io/Almes-Core/#dataset-1">Dataset</a> |
@@ -972,7 +972,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Type of Term  | Property  |
 | Label (EN) | descriptive statistics  |
 | Label (PT-BR) | estatística descritiva  |
-| URI  | https://w3id.org/AlmesCore#descriptivestatistics |
+| URI  | https://w3id.org/AlmesCore/rdf#descriptivestatistics |
 | Definition | Summarizes and describes the main features of a dataset. When used in the context of a time series, it includes metrics such as mean, variance, and trends over time. |
 | Comment|  Recommended best practice is to use a controlled vocabulary. Example: ``time series``, ``mean``, ``Range``, ``trend analysis``, ``seasonal snalysis``, etc. |
 | Related Match | <a href="https://rdf-vocabulary.ddialliance.org/discovery.html#descriptivestatistics">ddi:DescriptiveStatistics</a> |
@@ -1010,7 +1010,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Type of Term  | Property  |
 | Label (EN) | has observation  |
 | Label (PT-BR) | tem observação  |
-| URI  | https://w3id.org/AlmesCore#hasObservation |
+| URI  | https://w3id.org/AlmesCore/rdf#hasObservation |
 | Definition  | Associates an entity (represented by an ``dct:identifier``) to a specific recorded price ``Observation`` related to an agricultural product.  |
 | Comment | This metadata field should be used to create a blank node in an RDF representation, including the properties ``dc:date``, ``sdo:price``, and ``sdo:currency``.|
 | Domain | <a href="https://almescore.github.io/Almes-Core/#dataset-1">Dataset</a> |
@@ -1106,7 +1106,7 @@ As mentioned before, in the Simple Almes Core, `location` may provide only the n
 | Type of Term  | Class  |
 | Label (EN) | Observation  |
 | Label (PT-BR) | Observação  |
-| URI  | https://w3id.org/AlmesCore#Observation |
+| URI  | https://w3id.org/AlmesCore/rdf#Observation |
 | Definition  | A recorded observation of an agricultural product price on a specific date. The observation captures key attributes such as the price, date of observation, and the applicable currency, which provide a snapshot of the economic value of the product at a given time. |
 
 ### date
