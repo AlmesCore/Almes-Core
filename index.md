@@ -33,7 +33,7 @@ layout: default
 | Title  | Agriculture and Livestock Metadata Elements Set (Almes Core)  |
 | Creator  | Almes Core Management Group  |
 | Namespace  | [https://w3id.org/AlmesCore#](https://w3id.org/AlmesCore#) |
-| RDF namespace | https://w3id.org/AlmesCore/rdf# |
+| RDF namespace | [https://w3id.org/AlmesCore/rdf#](https://w3id.org/AlmesCore/rdf#) |
 | AgroPortal URI | [https://agroportal.lirmm.fr/ontologies/ALM](https://agroportal.lirmm.fr/ontologies/ALM) |
 | Latest Version | [https://almescore.github.io/Almes-Core/](https://almescore.github.io/Almes-Core/) |
 | Version History | [https://github.com/AlmesCore/Almes-Core](https://github.com/AlmesCore/Almes-Core) |
