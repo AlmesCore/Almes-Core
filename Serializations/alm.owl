@@ -1,4 +1,3 @@
-@prefix : <https://w3id.org/AlmesCore/rdf#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix gn: <http://www.geonames.org/ontology#> .
 @prefix alm: <https://w3id.org/AlmesCore/rdf#> .
