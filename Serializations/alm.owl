@@ -1,6 +1,6 @@
+@prefix : <https://w3id.org/AlmesCore/rdf#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix gn: <http://www.geonames.org/ontology#> .
-@prefix alm: <https://w3id.org/AlmesCore/rdf#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -81,13 +81,13 @@ sdo:location rdf:type owl:ObjectProperty ;
 
 
 ###  https://w3id.org/AlmesCore/rdf#hasObservation
-alm:hasObservation rdf:type owl:ObjectProperty ;
-                   rdfs:domain dcat:Dataset ;
-                   rdfs:range alm:Observation ;
-                   rdfs:comment "This metadata field should be used to create a blank node in an RDF representation, including the properties dc:date, sdo:price, and sdo:currency."@en ;
-                   rdfs:label "has observation"@en ,
-                              "tem observação"@pt-br ;
-                   skos:definition "Associates an entity (represented by an dct:identifier) to a specific recorded price Observation related to an agricultural product."@en .
+:hasObservation rdf:type owl:ObjectProperty ;
+                rdfs:domain dcat:Dataset ;
+                rdfs:range :Observation ;
+                rdfs:comment "This metadata field should be used to create a blank node in an RDF representation, including the properties dc:date, sdo:price, and sdo:currency."@en ;
+                rdfs:label "has observation"@en ,
+                           "tem observação"@pt-br ;
+                skos:definition "Associates an entity (represented by an dct:identifier) to a specific recorded price Observation related to an agricultural product."@en .
 
 
 #################################################################
@@ -96,7 +96,7 @@ alm:hasObservation rdf:type owl:ObjectProperty ;
 
 ###  http://purl.org/dc/elements/1.1/date
 dc:date rdf:type owl:DatatypeProperty ;
-        rdfs:domain alm:Observation ;
+        rdfs:domain :Observation ;
         rdfs:range xsd:date ;
         rdfs:comment "Date may be used to express temporal information at any level of granularity. Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [ISO 8601-1] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [W3CDTF] or the Extended Date/Time Format Specification [EDTF]. If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a ‘/’ (slash) character. Either the start or end date may be missing. In this Aplication Profile, alternativelly, periods of time may be represented using  sdo:startDate and sdo:ednDate."@en ;
         rdfs:label "data"@pt-br ,
@@ -239,7 +239,7 @@ foaf:name rdf:type owl:DatatypeProperty ;
 
 ###  https://schema.org/currency
 sdo:currency rdf:type owl:DatatypeProperty ;
-             rdfs:domain alm:Observation ;
+             rdfs:domain :Observation ;
              rdfs:range xsd:string ;
              rdfs:comment "Use standard formats: ISO 4217 currency format, e.g. “USD”; Ticker symbol for cryptocurrencies, e.g. “BTC”; well known names for Local Exchange Trading Systems (LETS) and other currency types, e.g. “Ithaca HOUR”."@en ;
              rdfs:label "currency"@en ,
@@ -259,7 +259,7 @@ sdo:endDate rdf:type owl:DatatypeProperty ;
 
 ###  https://schema.org/price
 sdo:price rdf:type owl:DatatypeProperty ;
-          rdfs:domain alm:Observation ;
+          rdfs:domain :Observation ;
           rdfs:range xsd:float ;
           rdfs:comment "The price should be indicated as a float number with two decimal digits."@en ;
           rdfs:label "preço"@pt-br ,
@@ -287,94 +287,94 @@ sdo:startDate rdf:type owl:DatatypeProperty ;
 
 
 ###  https://w3id.org/AlmesCore/rdf#descriptivestatistics
-alm:descriptivestatistics rdf:type owl:DatatypeProperty ;
-                          rdfs:domain dcat:Dataset ;
-                          rdfs:range rdfs:Literal ;
-                          rdfs:comment "Recommended best practice is to use a controlled vocabulary. Example: time series, mean, Range, trend analysis, seasonal snalysis, etc."@en ;
-                          rdfs:label "descriptive statistics"@en ,
-                                     "estatística descritiva"@pt-br ;
-                          skos:definition "Summarizes and describes the main features of a dataset. When used in the context of a time series, it includes metrics such as mean, variance, and trends over time."@en ;
-                          skos:relatedMatch <http://rdf-vocabulary.ddialliance.org/discovery#DescriptiveStatistics> .
+:descriptivestatistics rdf:type owl:DatatypeProperty ;
+                       rdfs:domain dcat:Dataset ;
+                       rdfs:range rdfs:Literal ;
+                       rdfs:comment "Recommended best practice is to use a controlled vocabulary. Example: time series, mean, Range, trend analysis, seasonal snalysis, etc."@en ;
+                       rdfs:label "descriptive statistics"@en ,
+                                  "estatística descritiva"@pt-br ;
+                       skos:definition "Summarizes and describes the main features of a dataset. When used in the context of a time series, it includes metrics such as mean, variance, and trends over time."@en ;
+                       skos:relatedMatch <http://rdf-vocabulary.ddialliance.org/discovery#DescriptiveStatistics> .
 
 
 ###  https://w3id.org/AlmesCore/rdf#productgroup
-alm:productgroup rdf:type owl:DatatypeProperty ;
-                 rdfs:domain dcat:Dataset ;
-                 rdfs:range rdfs:Literal ;
-                 rdfs:comment "The best recommended practice is to use a controlled vocabulary. Example: AGROVOC, APTO, FoodOn."@en ;
-                 rdfs:label "grupo do produto"@pt-br ,
-                            "product group"@en ;
-                 skos:broadMatch sdo:productGroup ;
-                 skos:definition "Group of products aggregated by common biological traits or any other characteristics (e.g., grain, vegetables, meat)."@en .
+:productgroup rdf:type owl:DatatypeProperty ;
+              rdfs:domain dcat:Dataset ;
+              rdfs:range rdfs:Literal ;
+              rdfs:comment "The best recommended practice is to use a controlled vocabulary. Example: AGROVOC, APTO, FoodOn."@en ;
+              rdfs:label "grupo do produto"@pt-br ,
+                         "product group"@en ;
+              skos:broadMatch sdo:productGroup ;
+              skos:definition "Group of products aggregated by common biological traits or any other characteristics (e.g., grain, vegetables, meat)."@en .
 
 
 ###  https://w3id.org/AlmesCore/rdf#productgroupname
-alm:productgroupname rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf alm:productgroup ;
-                     rdfs:range rdfs:Literal ;
-                     rdfs:comment "Label of the product group term (e.g., grain, vegetables, meat)."@en ;
-                     rdfs:label "nome do grupo do produto"@pt-br ,
-                                "product group name"@en .
+:productgroupname rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :productgroup ;
+                  rdfs:range rdfs:Literal ;
+                  rdfs:comment "Label of the product group term (e.g., grain, vegetables, meat)."@en ;
+                  rdfs:label "nome do grupo do produto"@pt-br ,
+                             "product group name"@en .
 
 
 ###  https://w3id.org/AlmesCore/rdf#productgroupuri
-alm:productgroupuri rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf alm:productgroup ;
-                    rdfs:range xsd:anyURI ;
-                    rdfs:comment "URI of a term describing the product group (e.g., https://agrovoc.fao.org/browse/agrovoc/en/page/c_3346)."@en ;
-                    rdfs:label "URI do grupo do produto"@pt-br ,
-                               "product group URI"@en .
+:productgroupuri rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :productgroup ;
+                 rdfs:range xsd:anyURI ;
+                 rdfs:comment "URI of a term describing the product group (e.g., https://agrovoc.fao.org/browse/agrovoc/en/page/c_3346)."@en ;
+                 rdfs:label "URI do grupo do produto"@pt-br ,
+                            "product group URI"@en .
 
 
 ###  https://w3id.org/AlmesCore/rdf#producttype
-alm:producttype rdf:type owl:DatatypeProperty ;
-                rdfs:domain dcat:Dataset ;
-                rdfs:range rdfs:Literal ;
-                rdfs:comment "The best recommended practice is to use a controlled vocabulary. Example: AGROVOC, APTO, FoodOn."@en ;
-                rdfs:label "product type"@en ,
-                           "produto"@pt-br ;
-                skos:broadMatch sdo:product ;
-                skos:definition "Name of the agricultural or livestock product type targeted by the commercial operation."@en .
+:producttype rdf:type owl:DatatypeProperty ;
+             rdfs:domain dcat:Dataset ;
+             rdfs:range rdfs:Literal ;
+             rdfs:comment "The best recommended practice is to use a controlled vocabulary. Example: AGROVOC, APTO, FoodOn."@en ;
+             rdfs:label "product type"@en ,
+                        "produto"@pt-br ;
+             skos:broadMatch sdo:product ;
+             skos:definition "Name of the agricultural or livestock product type targeted by the commercial operation."@en .
 
 
 ###  https://w3id.org/AlmesCore/rdf#producttypename
-alm:producttypename rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf alm:producttype ;
-                    rdfs:range rdfs:Literal ;
-                    rdfs:comment "Label of the controlled term (e.g., cassava flour, honey, beef)."@en ;
-                    rdfs:label "nome do tipo de produto"@pt-br ,
-                               "product type name"@en .
+:producttypename rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :producttype ;
+                 rdfs:range rdfs:Literal ;
+                 rdfs:comment "Label of the controlled term (e.g., cassava flour, honey, beef)."@en ;
+                 rdfs:label "nome do tipo de produto"@pt-br ,
+                            "product type name"@en .
 
 
 ###  https://w3id.org/AlmesCore/rdf#producttypeuri
-alm:producttypeuri rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf alm:producttype ;
-                   rdfs:range xsd:anyURI ;
-                   rdfs:comment "URI of a controlled term for the product type (e.g., http://aims.fao.org/aos/agrovoc/c_a77edd1d)."@en ;
-                   rdfs:label "URI do tipo de produto"@pt-br ,
-                              "product type URI"@en .
+:producttypeuri rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :producttype ;
+                rdfs:range xsd:anyURI ;
+                rdfs:comment "URI of a controlled term for the product type (e.g., http://aims.fao.org/aos/agrovoc/c_a77edd1d)."@en ;
+                rdfs:label "URI do tipo de produto"@pt-br ,
+                           "product type URI"@en .
 
 
 ###  https://w3id.org/AlmesCore/rdf#statisticalmethod
-alm:statisticalmethod rdf:type owl:DatatypeProperty ;
-                      rdfs:domain dcat:Dataset ;
-                      rdfs:range xsd:anyURI ;
-                      rdfs:comment "Recommended best practice is to indicate the published resource URI in an open access format."@en ;
-                      rdfs:label "método estatístico"@pt-br ,
-                                 "statistical method"@en ;
-                      skos:definition "Summary of the methods used for the process of obtaining data."@en .
+:statisticalmethod rdf:type owl:DatatypeProperty ;
+                   rdfs:domain dcat:Dataset ;
+                   rdfs:range xsd:anyURI ;
+                   rdfs:comment "Recommended best practice is to indicate the published resource URI in an open access format."@en ;
+                   rdfs:label "método estatístico"@pt-br ,
+                              "statistical method"@en ;
+                   skos:definition "Summary of the methods used for the process of obtaining data."@en .
 
 
 ###  https://w3id.org/AlmesCore/rdf#theme
-alm:theme rdf:type owl:DatatypeProperty ;
-          rdfs:domain dcat:Dataset ;
-          rdfs:range rdfs:Literal ;
-          dct:references "https://metadados.ibge.gov.br/consulta/estatisticos/temas"^^xsd:anyURI ;
-          rdfs:comment "The recommended best practice is to use a controlled vocabulary for consistency and accuracy. Examples of possible themes include Price Index, Domestic Material Consumption Indicator, Agricultural Production, Export and Import Data, Inflation Rate, Employment Statistics, and Energy Consumption."@en ;
-          rdfs:label "tema"@pt-br ,
-                     "theme"@en ;
-          skos:broadMatch dcat:theme ;
-          skos:definition "Indicates the main subject or topic investigated in the economic statistical operation. Themes help categorize the dataset for easier discovery and analysis."@en .
+:theme rdf:type owl:DatatypeProperty ;
+       rdfs:domain dcat:Dataset ;
+       rdfs:range rdfs:Literal ;
+       dct:references "https://metadados.ibge.gov.br/consulta/estatisticos/temas"^^xsd:anyURI ;
+       rdfs:comment "The recommended best practice is to use a controlled vocabulary for consistency and accuracy. Examples of possible themes include Price Index, Domestic Material Consumption Indicator, Agricultural Production, Export and Import Data, Inflation Rate, Employment Statistics, and Energy Consumption."@en ;
+       rdfs:label "tema"@pt-br ,
+                  "theme"@en ;
+       skos:broadMatch dcat:theme ;
+       skos:definition "Indicates the main subject or topic investigated in the economic statistical operation. Themes help categorize the dataset for easier discovery and analysis."@en .
 
 
 ###  https://www.w3.org/ns/dcat#accessURL
@@ -405,10 +405,10 @@ foaf:Agent rdf:type owl:Class ;
 
 
 ###  https://w3id.org/AlmesCore/rdf#Observation
-alm:Observation rdf:type owl:Class ;
-                rdfs:label "Observation"@en ,
-                           "Observação"@pt-br ;
-                skos:definition "A recorded observation of an agricultural product price on a specific date. The observation captures key attributes such as the price, date of observation, and the applicable currency, which provide a snapshot of the economic value of the product at a given time."@en .
+:Observation rdf:type owl:Class ;
+             rdfs:label "Observation"@en ,
+                        "Observação"@pt-br ;
+             skos:definition "A recorded observation of an agricultural product price on a specific date. The observation captures key attributes such as the price, date of observation, and the applicable currency, which provide a snapshot of the economic value of the product at a given time."@en .
 
 
 ###  https://www.w3.org/ns/dcat#Dataset
