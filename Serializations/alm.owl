@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/AlmesCore/rdf#> .
+@prefix : <https://w3id.org/AlmesCore/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix gn: <http://www.geonames.org/ontology#> .
 @prefix dct: <http://purl.org/dc/terms/> .
@@ -11,9 +11,9 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@base <https://w3id.org/AlmesCore/rdf> .
+@base <https://w3id.org/AlmesCore/> .
 
-<https://w3id.org/AlmesCore/rdf> rdf:type owl:Ontology ;
+<https://w3id.org/AlmesCore/> rdf:type owl:Ontology ;
                                   rdfs:comment "Application OWL profile adding labels, domains/ranges and mapping links over reused vocabularies (DCAT, DCMI, FOAF, GeoNames, Schema.org)."@en ;
                                   rdfs:label "AlmesCore application profile for resources, datasets, agents, places and observations"@en ,
                                              "Perfil de aplicação AlmesCore para recursos, conjuntos de dados, agentes, locais e observações"@pt-br .
