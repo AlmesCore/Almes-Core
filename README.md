@@ -25,7 +25,7 @@
 | Title  | Agriculture and Livestock Metadata Elements Set (Almes Core)  |
 | Creator  | Almes Core Management Group  |
 | Namespace  | [https://w3id.org/AlmesCore/](https://w3id.org/AlmesCore/) |
-| AgroPortal URI | [https://agroportal.lirmm.fr/ontologies/ALM](https://agroportal.lirmm.fr/ontologies/ALM) |
+| AgroPortal URI | [https://agroportal.eu/ontologies/ALM](https://agroportal.eu/ontologies/ALM) |
 | Latest Version | [https://almescore.github.io/Almes-Core/](https://almescore.github.io/Almes-Core/) |
 | Version History | [https://github.com/AlmesCore/Almes-Core](https://github.com/AlmesCore/Almes-Core) |
 | Version number | 2.0.2
