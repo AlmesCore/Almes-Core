@@ -14,7 +14,7 @@
 @base <https://w3id.org/AlmesCore/> .
 
 <https://w3id.org/AlmesCore/> rdf:type owl:Ontology ;
-                                  rdfs:comment "In this version, hash URIs have been replaced with slash URIs."@en ;
+                                  rdfs:comment "In this version, hash URIs have been replaced with slash URIs"@en ;
                                   owl:versionInfo "2.0.2" ;
                                   rdfs:label "Agriculture and Livestock Metadata Elements Set (Almes Core)"@en .
 
