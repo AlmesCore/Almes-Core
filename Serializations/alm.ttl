@@ -14,9 +14,9 @@
 @base <https://w3id.org/AlmesCore/> .
 
 <https://w3id.org/AlmesCore/> rdf:type owl:Ontology ;
-                                  rdfs:comment "Application OWL profile adding labels, domains/ranges and mapping links over reused vocabularies (DCAT, DCMI, FOAF, GeoNames, Schema.org)."@en ;
-                                  rdfs:label "AlmesCore application profile for resources, datasets, agents, places and observations"@en ,
-                                             "Perfil de aplicação AlmesCore para recursos, conjuntos de dados, agentes, locais e observações"@pt-br .
+                                  rdfs:comment "In this new version, the hash URIs have been replaced with slash URIs"@en ;
+                                  rdfs:label "Agriculture and Livestock Metadata Elements Set (Almes Core)"@en ;
+                                  owl:versionInfo "2.0.2" .
 
 #################################################################
 #    Annotation properties
