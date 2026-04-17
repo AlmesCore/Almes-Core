@@ -22,19 +22,12 @@
 #    Annotation properties
 #################################################################
 
-###  http://purl.org/dc/terms/references
 dct:references rdf:type owl:AnnotationProperty .
 
-
-###  http://www.w3.org/2004/02/skos/core#broadMatch
 skos:broadMatch rdf:type owl:AnnotationProperty .
 
-
-###  http://www.w3.org/2004/02/skos/core#definition
 skos:definition rdf:type owl:AnnotationProperty .
 
-
-###  http://www.w3.org/2004/02/skos/core#relatedMatch
 skos:relatedMatch rdf:type owl:AnnotationProperty .
 
 
@@ -42,15 +35,12 @@ skos:relatedMatch rdf:type owl:AnnotationProperty .
 #    Datatypes
 #################################################################
 
-###  http://www.w3.org/2001/XMLSchema#date
 xsd:date rdf:type rdfs:Datatype .
-
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://purl.org/dc/elements/1.1/creator
 dc:creator rdf:type owl:ObjectProperty ;
            rdfs:domain dcat:Resource ;
            rdfs:range foaf:Agent ;
@@ -59,8 +49,6 @@ dc:creator rdf:type owl:ObjectProperty ;
                       "criador"@pt-br ;
            skos:definition "An entity primarily responsible for making the resource."@en .
 
-
-###  http://purl.org/dc/elements/1.1/publisher
 dc:publisher rdf:type owl:ObjectProperty ;
              rdfs:domain dcat:Resource ;
              rdfs:range foaf:Agent ;
@@ -69,8 +57,6 @@ dc:publisher rdf:type owl:ObjectProperty ;
                         "publisher"@en ;
              skos:definition "An entity responsible for making the resource available."@en .
 
-
-###  https://schema.org/location
 sdo:location rdf:type owl:ObjectProperty ;
              rdfs:domain dcat:Dataset ;
              rdfs:range gn:Feature ;
@@ -79,8 +65,6 @@ sdo:location rdf:type owl:ObjectProperty ;
                         "location"@en ;
              skos:definition "The location of, for example, where an event is happening, where an organization is located, or where an action takes place."@en .
 
-
-###  https://w3id.org/AlmesCore/rdf#hasObservation
 :hasObservation rdf:type owl:ObjectProperty ;
                 rdfs:domain dcat:Dataset ;
                 rdfs:range :Observation ;
@@ -94,7 +78,6 @@ sdo:location rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  http://purl.org/dc/elements/1.1/date
 dc:date rdf:type owl:DatatypeProperty ;
         rdfs:domain :Observation ;
         rdfs:range xsd:date ;
@@ -103,8 +86,6 @@ dc:date rdf:type owl:DatatypeProperty ;
                    "date"@en ;
         skos:definition "A point or period of time associated with an event in the lifecycle of the resource."@en .
 
-
-###  http://purl.org/dc/elements/1.1/rights
 dc:rights rdf:type owl:DatatypeProperty ;
           rdfs:domain dcat:Resource ;
           rdfs:range rdfs:Literal ;
@@ -113,8 +94,6 @@ dc:rights rdf:type owl:DatatypeProperty ;
                      "rights"@en ;
           skos:definition "Information about rights held in and over the resource."@en .
 
-
-###  http://purl.org/dc/elements/1.1/title
 dc:title rdf:type owl:DatatypeProperty ;
          rdfs:domain dcat:Resource ;
          rdfs:range rdfs:Literal ;
@@ -122,8 +101,6 @@ dc:title rdf:type owl:DatatypeProperty ;
                     "título"@pt-br ;
          skos:definition "A name given to the resource."@en .
 
-
-###  http://purl.org/dc/terms/accrualPeriodicity
 dct:accrualPeriodicity rdf:type owl:DatatypeProperty ;
                        rdfs:domain dcat:Dataset ;
                        rdfs:range rdfs:Literal ;
@@ -132,8 +109,6 @@ dct:accrualPeriodicity rdf:type owl:DatatypeProperty ;
                                   "periodicity"@en ;
                        skos:definition "The frequency with which items are added to a collection."@en .
 
-
-###  http://purl.org/dc/terms/description
 dct:description rdf:type owl:DatatypeProperty ;
                 rdfs:domain dcat:Resource ;
                 rdfs:range rdfs:Literal ;
@@ -141,8 +116,6 @@ dct:description rdf:type owl:DatatypeProperty ;
                            "descrição"@pt-br ;
                 skos:definition "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."@en .
 
-
-###  http://purl.org/dc/terms/hasVersion
 dct:hasVersion rdf:type owl:DatatypeProperty ;
                rdfs:domain dcat:Resource ;
                rdfs:range rdfs:Literal ;
@@ -150,8 +123,6 @@ dct:hasVersion rdf:type owl:DatatypeProperty ;
                           "versão"@pt-br ;
                skos:definition "Version indicator (name or identifier) of a resource."@en .
 
-
-###  http://purl.org/dc/terms/identifier
 dct:identifier rdf:type owl:DatatypeProperty ;
                rdfs:domain dcat:Resource ;
                rdfs:range xsd:anyURI ;
@@ -159,8 +130,6 @@ dct:identifier rdf:type owl:DatatypeProperty ;
                           "identifier"@en ;
                skos:definition "An unambiguous reference to the resource within a given context."@en .
 
-
-###  http://purl.org/dc/terms/language
 dct:language rdf:type owl:DatatypeProperty ;
              rdfs:domain dcat:Resource ;
              rdfs:range rdfs:Literal ;
@@ -169,8 +138,6 @@ dct:language rdf:type owl:DatatypeProperty ;
                         "language"@en ;
              skos:definition "A language of the resource."@en .
 
-
-###  http://purl.org/dc/terms/license
 dct:license rdf:type owl:DatatypeProperty ;
             rdfs:domain dcat:Resource ;
             rdfs:range xsd:anyURI ;
@@ -179,8 +146,6 @@ dct:license rdf:type owl:DatatypeProperty ;
                        "licença de uso"@pt-br ;
             skos:definition "A legal document giving official permission to do something with the resource."@en .
 
-
-###  http://purl.org/dc/terms/modified
 dct:modified rdf:type owl:DatatypeProperty ;
              rdfs:domain dcat:Resource ;
              rdfs:range xsd:date ;
@@ -189,8 +154,6 @@ dct:modified rdf:type owl:DatatypeProperty ;
                         "última atualização"@pt-br ;
              skos:definition "Date on which the resource was changed."@en .
 
-
-###  http://www.geonames.org/ontology#geonamesID
 gn:geonamesID rdf:type owl:DatatypeProperty ;
               rdfs:domain gn:Feature ;
               rdfs:range xsd:anyURI ;
@@ -199,8 +162,6 @@ gn:geonamesID rdf:type owl:DatatypeProperty ;
                          "identificador geoNames"@pt-br ;
               skos:definition "The ID of a geographical feature."@en .
 
-
-###  http://www.geonames.org/ontology#name
 gn:name rdf:type owl:DatatypeProperty ;
         rdfs:domain gn:Feature ;
         rdfs:range rdfs:Literal ;
@@ -209,8 +170,6 @@ gn:name rdf:type owl:DatatypeProperty ;
                    "nome geoNames"@pt-br ;
         skos:definition "The name of a geographical feature."@en .
 
-
-###  http://xmlns.com/foaf/0.1/homepage
 foaf:homepage rdf:type owl:DatatypeProperty ;
               rdfs:domain foaf:Agent ;
               rdfs:range xsd:anyURI ;
@@ -218,8 +177,6 @@ foaf:homepage rdf:type owl:DatatypeProperty ;
                          "homepage"@pt-br ;
               skos:definition "A homepage for some thing."@en .
 
-
-###  http://xmlns.com/foaf/0.1/mbox
 foaf:mbox rdf:type owl:DatatypeProperty ;
           rdfs:domain foaf:Agent ;
           rdfs:range rdfs:Literal ;
@@ -227,8 +184,6 @@ foaf:mbox rdf:type owl:DatatypeProperty ;
                      "e-mail"@pt-br ;
           skos:definition "A personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a ‘static inverse functional property’, in that there is (across time and change) at most one individual that ever has any particular value for foaf:mbox."@en .
 
-
-###  http://xmlns.com/foaf/0.1/name
 foaf:name rdf:type owl:DatatypeProperty ;
           rdfs:domain foaf:Agent ;
           rdfs:range rdfs:Literal ;
@@ -236,8 +191,6 @@ foaf:name rdf:type owl:DatatypeProperty ;
                      "nome"@pt-br ;
           skos:definition "A name for some thing."@en .
 
-
-###  https://schema.org/currency
 sdo:currency rdf:type owl:DatatypeProperty ;
              rdfs:domain :Observation ;
              rdfs:range xsd:string ;
@@ -246,8 +199,6 @@ sdo:currency rdf:type owl:DatatypeProperty ;
                         "moeda"@pt-br ;
              skos:definition "The currency in which the monetary amount is expressed."@en .
 
-
-###  https://schema.org/endDate
 sdo:endDate rdf:type owl:DatatypeProperty ;
             rdfs:domain dcat:Dataset ;
             rdfs:range xsd:date ;
@@ -256,8 +207,6 @@ sdo:endDate rdf:type owl:DatatypeProperty ;
                        "end date"@en ;
             skos:definition "The end date and time of the item (in ISO 8601 date format)."@en .
 
-
-###  https://schema.org/price
 sdo:price rdf:type owl:DatatypeProperty ;
           rdfs:domain :Observation ;
           rdfs:range xsd:float ;
@@ -266,8 +215,6 @@ sdo:price rdf:type owl:DatatypeProperty ;
                      "price"@en ;
           skos:definition "The offer price of a product."@en .
 
-
-###  https://schema.org/referenceQuantity
 sdo:referenceQuantity rdf:type owl:DatatypeProperty ;
                       rdfs:domain dcat:Dataset ;
                       rdfs:range rdfs:Literal ;
@@ -275,8 +222,6 @@ sdo:referenceQuantity rdf:type owl:DatatypeProperty ;
                                  "reference quantity"@en ;
                       skos:definition "The reference quantity for which a certain price applies, e.g. 1 EUR per 4 kWh of electricity. This property is a replacement for unitOfMeasurement for the advanced cases where the price does not relate to a standard unit.."@en .
 
-
-###  https://schema.org/startDate
 sdo:startDate rdf:type owl:DatatypeProperty ;
               rdfs:domain dcat:Dataset ;
               rdfs:range xsd:date ;
@@ -285,8 +230,6 @@ sdo:startDate rdf:type owl:DatatypeProperty ;
                          "start date"@en ;
               skos:definition "The start date and time of the item (in ISO 8601 date format)."@en .
 
-
-###  https://w3id.org/AlmesCore/rdf#descriptivestatistics
 :descriptivestatistics rdf:type owl:DatatypeProperty ;
                        rdfs:domain dcat:Dataset ;
                        rdfs:range rdfs:Literal ;
@@ -296,8 +239,6 @@ sdo:startDate rdf:type owl:DatatypeProperty ;
                        skos:definition "Summarizes and describes the main features of a dataset. When used in the context of a time series, it includes metrics such as mean, variance, and trends over time."@en ;
                        skos:relatedMatch <http://rdf-vocabulary.ddialliance.org/discovery#DescriptiveStatistics> .
 
-
-###  https://w3id.org/AlmesCore/rdf#productgroup
 :productgroup rdf:type owl:DatatypeProperty ;
               rdfs:domain dcat:Dataset ;
               rdfs:range rdfs:Literal ;
@@ -307,8 +248,6 @@ sdo:startDate rdf:type owl:DatatypeProperty ;
               skos:broadMatch sdo:productGroup ;
               skos:definition "Group of products aggregated by common biological traits or any other characteristics (e.g., grain, vegetables, meat)."@en .
 
-
-###  https://w3id.org/AlmesCore/rdf#productgroupname
 :productgroupname rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf :productgroup ;
                   rdfs:range rdfs:Literal ;
@@ -316,8 +255,6 @@ sdo:startDate rdf:type owl:DatatypeProperty ;
                   rdfs:label "nome do grupo do produto"@pt-br ,
                              "product group name"@en .
 
-
-###  https://w3id.org/AlmesCore/rdf#productgroupuri
 :productgroupuri rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf :productgroup ;
                  rdfs:range xsd:anyURI ;
@@ -325,8 +262,6 @@ sdo:startDate rdf:type owl:DatatypeProperty ;
                  rdfs:label "URI do grupo do produto"@pt-br ,
                             "product group URI"@en .
 
-
-###  https://w3id.org/AlmesCore/rdf#producttype
 :producttype rdf:type owl:DatatypeProperty ;
              rdfs:domain dcat:Dataset ;
              rdfs:range rdfs:Literal ;
@@ -336,8 +271,6 @@ sdo:startDate rdf:type owl:DatatypeProperty ;
              skos:broadMatch sdo:product ;
              skos:definition "Name of the agricultural or livestock product type targeted by the commercial operation."@en .
 
-
-###  https://w3id.org/AlmesCore/rdf#producttypename
 :producttypename rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf :producttype ;
                  rdfs:range rdfs:Literal ;
@@ -345,8 +278,6 @@ sdo:startDate rdf:type owl:DatatypeProperty ;
                  rdfs:label "nome do tipo de produto"@pt-br ,
                             "product type name"@en .
 
-
-###  https://w3id.org/AlmesCore/rdf#producttypeuri
 :producttypeuri rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf :producttype ;
                 rdfs:range xsd:anyURI ;
@@ -354,8 +285,6 @@ sdo:startDate rdf:type owl:DatatypeProperty ;
                 rdfs:label "URI do tipo de produto"@pt-br ,
                            "product type URI"@en .
 
-
-###  https://w3id.org/AlmesCore/rdf#statisticalmethod
 :statisticalmethod rdf:type owl:DatatypeProperty ;
                    rdfs:domain dcat:Dataset ;
                    rdfs:range xsd:anyURI ;
@@ -364,8 +293,6 @@ sdo:startDate rdf:type owl:DatatypeProperty ;
                               "statistical method"@en ;
                    skos:definition "Summary of the methods used for the process of obtaining data."@en .
 
-
-###  https://w3id.org/AlmesCore/rdf#theme
 :theme rdf:type owl:DatatypeProperty ;
        rdfs:domain dcat:Dataset ;
        rdfs:range rdfs:Literal ;
@@ -376,8 +303,6 @@ sdo:startDate rdf:type owl:DatatypeProperty ;
        skos:broadMatch dcat:theme ;
        skos:definition "Indicates the main subject or topic investigated in the economic statistical operation. Themes help categorize the dataset for easier discovery and analysis."@en .
 
-
-###  https://www.w3.org/ns/dcat#accessURL
 dcat:accessURL rdf:type owl:DatatypeProperty ;
                rdfs:domain dcat:Dataset ;
                rdfs:range xsd:anyURI ;
@@ -390,35 +315,26 @@ dcat:accessURL rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################################################
 
-###  http://www.geonames.org/ontology#Feature
 gn:Feature rdf:type owl:Class ;
            rdfs:label "Característica Geográfica"@pt-br ,
                       "GeoNames Feature"@en ;
            skos:definition "A geographical feature. It can be any feature that has a geographical extent, such as a country, city, mountain, river, etc."@en .
 
-
-###  http://xmlns.com/foaf/0.1/Agent
 foaf:Agent rdf:type owl:Class ;
            rdfs:label "Agent"@en ,
                       "Agente"@pt-br ;
            skos:definition "An agent (eg. person, group, software or physical artifact)."@en .
 
-
-###  https://w3id.org/AlmesCore/rdf#Observation
 :Observation rdf:type owl:Class ;
              rdfs:label "Observation"@en ,
                         "Observação"@pt-br ;
              skos:definition "A recorded observation of an agricultural product price on a specific date. The observation captures key attributes such as the price, date of observation, and the applicable currency, which provide a snapshot of the economic value of the product at a given time."@en .
 
-
-###  https://www.w3.org/ns/dcat#Dataset
 dcat:Dataset rdf:type owl:Class ;
              rdfs:label "Dataset"@en ,
                         "Dataset"@pt-br ;
              skos:definition "Data encoded in a defined structure."@en .
 
-
-###  https://www.w3.org/ns/dcat#Resource
 dcat:Resource rdf:type owl:Class ;
               rdfs:label "Recurso"@pt-br ,
                          "Resource"@en ;
